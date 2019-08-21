@@ -1,0 +1,36 @@
+* Version 16.0.3 [2019-08-08]
+
+UPDATED: Croatian locale
+FIXED: Disabled Next in App Store/Updater until selection made
+FIXED: Default focus to app list in store/updater when in screen reader mode
+FIXED: Platform automatic upgrade not closing platform on some systems
+FIXED: Untranslated 'Drive' shown in lower right
+
+* Version 16.0.2 [2019-07-10]
+
+UPDATED: French, Polich, Traditional Chinese, Vietnamese locales
+FIXED: Keep Menu Visible option not saving
+FIXED: Improved unsafe eject platform handling
+
+* Version 16.0.1 [2019-04-11]
+
+ADDED: LinkedIn to Help
+UPDATED: 7-Zip to 19.00
+UPDATED: Favorites taskbar menu icon
+UPDATED: Bulgarian, Hungarian, Korean, Polish locales
+UPDATED: Removed Google+ form Help
+FIXED: Platform installer may upgrade incorrect location when run manually
+
+* Version 16 [2018-12-06]
+
+Changes since last stable release
+
+ADDED: Pin to taskbar for compatible PA.c Format apps
+ADDED: Network mapping on UNC paths (enable manually)
+ADDED: Platform logging (enable manually)
+ADDED: Hindi locale (machine translation)
+ADDED: New tabs in Options window
+ADDED: Options window items for Show app paths in tooltips, Show app publisher in tooltips, Keep menu visible after starting apps, Start the menu minimized, Hide taskbar icon, Hide search bar when not in use
+UPDATED: Taskbar and submenu iconography
+UPDATED: Bulgarian, Dutch, English, Finnish, French, German, Hungarian, Polish, Portuguese, Russian, Simplified Chinese, Turkish locales
+FIXED: Failure to free some objects

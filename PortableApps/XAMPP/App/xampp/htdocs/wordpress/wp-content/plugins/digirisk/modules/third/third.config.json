@@ -1,0 +1,13 @@
+{
+	"name": "Third",
+	"slug": "third",
+	"since": "6.1.3",
+	"version": "7.0.0",
+	"description": "Le module gérant les contact de Digirisk",
+	"path": "modules/third/",
+	"dependencies": {
+		"model": {},
+		"class": {},
+		"action": {}
+	}
+}

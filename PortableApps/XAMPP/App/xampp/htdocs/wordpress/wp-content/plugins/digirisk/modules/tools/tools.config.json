@@ -1,0 +1,11 @@
+{
+	"name": "Tools",
+	"slug": "tools",
+	"version": "6.5.0",
+	"description": "Le module gérant les outils de Digirisk",
+	"path": "modules/tools/",
+	"dependencies": {
+		"action": {},
+    "class": {}
+	}
+}

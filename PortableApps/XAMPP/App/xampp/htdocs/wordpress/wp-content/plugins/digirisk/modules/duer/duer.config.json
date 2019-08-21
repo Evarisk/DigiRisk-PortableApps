@@ -1,0 +1,16 @@
+{
+	"name": "DUER",
+	"slug": "duer",
+	"since": "6.2.1",
+	"version": "7.0.0",
+	"description": "Le module gérant les DUER de Digirisk",
+	"path": "modules/duer/",
+	"dependencies": {
+		"model": {},
+		"shortcode": {},
+		"class": {},
+		"action": {},
+    "filter": {}
+	},
+	"meta_key_generate_duer": "generate_duer_tmp"
+}

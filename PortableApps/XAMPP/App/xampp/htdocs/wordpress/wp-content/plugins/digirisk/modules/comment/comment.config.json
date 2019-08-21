@@ -1,0 +1,13 @@
+{
+	"name": "Commentaire",
+	"slug": "comment",
+	"since": "6.3.0",
+	"version": "7.0.0",
+	"description": "Le module gérant les commentaires de Digirisk",
+	"path": "modules/comment/",
+	"dependencies": {
+		"shortcode": {},
+		"class": {},
+		"action": {}
+	}
+}
