@@ -779,7 +779,7 @@
                                 </xsl:attribute>
                             </xsl:when>
                             <!-- as we create an automatic style, the parent is not allowed to be an automatic style as well
-                                if the parent would be a automatic (unnamed) style, the style information have to be embedded to this style -->
+                                if the parent would be an automatic (unnamed) style, the style information have to be embedded to this style -->
                             <xsl:otherwise>
                                 <xsl:attribute name="style:parent-style-name">
                                     <xsl:call-template name="encode-as-nc-name">
@@ -5018,7 +5018,7 @@
                     </xsl:call-template>
                     <xsl:text>cm</xsl:text>
                 </xsl:when>
-                <!-- Note: Specify where this value come from.. -->
+                <!-- Note: Specify where this value come from... -->
                 <xsl:otherwise>2.096cm</xsl:otherwise>
             </xsl:choose>
         </xsl:variable>
@@ -5986,7 +5986,7 @@
             </xsl:choose>
         </xsl:variable>
         <xsl:if test="@ss:Index - $expandedRowCountIndex &gt; 0">
-            <!-- create the precding missing rows -->
+            <!-- create the preceding missing rows -->
             <xsl:element name="table:table-row">
                 <!-- fill the preceding gap with rows without a cell -->
                 <xsl:attribute name="table:number-rows-repeated">
@@ -6312,13 +6312,13 @@
                     </xsl:choose>
                 </xsl:when>
                 <xsl:otherwise>
-                    <!-- as for the spanned cells no style is taken.. -->
+                    <!-- as for the spanned cells no style is taken... -->
                     <xsl:choose>
                         <!-- inherit style from parent row style-->
                         <xsl:when test="../@ss:StyleID">
                             <xsl:value-of select="../@ss:StyleID"/>
                         </xsl:when>
-                        <!-- if no correspondent column style exisit.. -->
+                        <!-- if no correspondent column style exists... -->
                         <!-- inherit style from parent table style -->
                         <xsl:when test="../../@ss:StyleID">
                             <!-- function to give in col-pos and get back column style  -->
@@ -6541,7 +6541,7 @@
                                                              )
                                                          ) "/>
         <xsl:choose>
-            <!-- Scenario: The missing cells scipped by using the ss:Index attribute will be added -->
+            <!-- Scenario: The missing cells skipped by using the ss:Index attribute will be added -->
             <xsl:when test="@ss:Index and @ss:Index &gt; $col-pos-written + 1">
                 <!-- In Open Document nothing comparable to Index exists,
                     the missing cells might have to be created, if they had content as only style will be repeated-->
@@ -6741,7 +6741,7 @@
                             <xsl:value-of select="../@ss:StyleID"/>
                         </xsl:attribute>
                     </xsl:when>
-                    <!-- if no correspondent column style exisit.. -->
+                    <!-- if no correspondent column style exists... -->
                     <!-- inherit style from parent table style -->
                     <xsl:when test="../../@ss:StyleID">
                         <!-- function to give in col-pos and get back column style  -->
@@ -6999,7 +6999,7 @@
                 </xsl:attribute>
             </xsl:when>
         </xsl:choose>
-        <!-- maybe multi functions occur at same time in the same Cell, such as ConditionalFormatting and DataValidation -->
+        <!-- maybe multi functions occur at the same time in the same Cell, such as ConditionalFormatting and DataValidation -->
         <xsl:if test="contains($condition-pos-str, $current-pos-str)">
             <xsl:choose>
                 <xsl:when test="starts-with($temp-str, 'v')">
@@ -7026,7 +7026,7 @@
         </xsl:if>
     </xsl:template>
     <xsl:template name="validation-row-column-string">
-        <!-- returns a string with structer,including row\column position by extraction from x:DataValidation -->
+        <!-- returns a string with structure, including row/column position by extraction from x:DataValidation -->
         <xsl:param name="last"/>
         <xsl:param name="total"/>
         <xsl:param name="index"/>
@@ -7049,7 +7049,7 @@
         </xsl:if>
     </xsl:template>
     <xsl:template name="condition-row-column-string">
-        <!-- returns a string with structer,including row\column position by extraction from x:ConditionalFormatting -->
+        <!-- returns a string with structure, including row/column position by extraction from x:ConditionalFormatting -->
         <xsl:param name="last"/>
         <xsl:param name="total"/>
         <xsl:param name="index"/>
@@ -8863,7 +8863,7 @@
         </xsl:choose>
     </xsl:template>
     <xsl:template name="min-of-three">
-        <!-- return minest of three for sorting -->
+        <i!-- return lowest of three for sorting -->
         <xsl:param name="first-num"/>
         <xsl:param name="second-num"/>
         <xsl:param name="third-num"/>
@@ -8893,7 +8893,7 @@
         <xsl:value-of select="$second-comp"/>
     </xsl:template>
     <xsl:template name="max-of-three">
-        <!-- return maxest of three for sorting -->
+        <!-- return greatest of three for sorting -->
         <xsl:param name="first-num"/>
         <xsl:param name="second-num"/>
         <xsl:param name="third-num"/>

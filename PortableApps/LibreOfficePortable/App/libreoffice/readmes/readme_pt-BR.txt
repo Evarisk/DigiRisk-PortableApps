@@ -1,6 +1,6 @@
 
 ======================================================================
-Arquivo LEIAME do LibreOffice 6.2
+Arquivo LEIAME do LibreOffice 6.4
 ======================================================================
 
 
@@ -85,7 +85,7 @@ Notas sobre a integração do ambiente de trabalho para distribuições Linux n�
 
 É possível instalar facilmente o LibreOffice em outras distribuições Linux não especificadas nestas instruções de instalação. O principal aspecto das diferenças poderá estar na integração com o ambiente de trabalho.
 
-O diretório RPMS (ou DEBS, respectivamente) também contém um pacote com o nome libreoffice6.2-freedesktop-menus-6.2.0.1-1.noarch.rpm (ou libreoffice6.2-debian-menus_6.2.0.1-1_all.deb, respectivamente, ou similar). Este é o pacote para distribuições Linux que tenham suporte às especificações/recomendações do Freedesktop.org (https://en.wikipedia.org/wiki/Freedesktop.org), servindo também para a instalação em distribuições Linux não abrangidas pelas instruções apresentadas.
+O diretório RPMS (ou DEBS, respectivamente) também contém um pacote com o nome libreoffice6.4-freedesktop-menus-6.4.0.1-1.noarch.rpm (ou libreoffice6.4-debian-menus_6.4.0.1-1_all.deb, respectivamente, ou similar). Este é o pacote para distribuições Linux que tenham suporte às especificações/recomendações do Freedesktop.org (https://en.wikipedia.org/wiki/Freedesktop.org), servindo também para a instalação em distribuições Linux não abrangidas pelas instruções apresentadas.
 
 Instalar um pacote de idioma
 ----------------------------------------------------------------------
@@ -198,7 +198,7 @@ Participar de um ou mais projetos
 
 Você pode dar importantes contribuições a esse projeto de código aberto mesmo se você tiver pouca experiência em projetos e programação de software. Isso mesmo, você!
 
-Esperamos que você aprecie em trabalhar com o novo LibreOffice 6.2 e que participará de nossa comunidade on-line.
+Esperamos que você aprecie em trabalhar com o novo LibreOffice 6.4 e que participará de nossa comunidade on-line.
 
 A comunidade LibreOffice
 

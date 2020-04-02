@@ -1,6 +1,6 @@
 
 ======================================================================
-Léame de LibreOffice 6.2
+Léame de LibreOffice 6.4
 ======================================================================
 
 
@@ -85,7 +85,7 @@ Observaciones acerca de la integración con el escritorio para distribuciones de
 
 No debería resultar complicada la instalación de LibreOffice en otras distribuciones Linux no incluidas en estas instrucciones. Las diferencias principales que podría encontrar están en la integración con el escritorio.
 
-La carpeta RPMS (o DEBS, según el caso) contiene también un paquete llamado «libreoffice6.2-freedesktop-menus-6.2.0.1-1.noarch.rpm» (o libreoffice6.2-debian-menus_6.2.0.1-1_all.deb»). Este paquete es para todas las distribuciones Linux compatibles con las especificaciones de Freedesktop.org (https://en.wikipedia.org/wiki/Freedesktop.org) y se proporciona para su instalación en distribuciones Linux no mencionadas en las instrucciones anteriores.
+La carpeta RPMS (o DEBS, según el caso) contiene también un paquete llamado «libreoffice6.4-freedesktop-menus-6.4.0.1-1.noarch.rpm» (o libreoffice6.4-debian-menus_6.4.0.1-1_all.deb»). Este paquete es para todas las distribuciones Linux compatibles con las especificaciones de Freedesktop.org (https://en.wikipedia.org/wiki/Freedesktop.org) y se proporciona para su instalación en distribuciones Linux no mencionadas en las instrucciones anteriores.
 
 Instalación de un paquete de idioma
 ----------------------------------------------------------------------
@@ -198,7 +198,7 @@ Unirse a uno o más proyectos
 
 Puede hacer contribuciones importantes a este gran proyecto de código abierto, aun si su experiencia en programación o diseño de software es limitada. ¡No lo dude!
 
-Esperamos que disfrute trabajar con el nuevo LibreOffice 6.2 y que participe con nuestra comunidad en línea.
+Esperamos que disfrute trabajar con el nuevo LibreOffice 6.4 y que participe con nuestra comunidad en línea.
 
 La comunidad de LibreOffice
 

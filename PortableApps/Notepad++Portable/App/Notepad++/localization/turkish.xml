@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <NotepadPlus>
-	<Native-Langue name="Turkish" filename="turkish.xml" version="7.6.5">
+	<Native-Langue name="Turkish" filename="turkish.xml" version="7.8.3">
 		<Menu>
 			<Main>
 				<!-- Ana Menü Girişleri -->
@@ -63,6 +63,7 @@
 					<Item subMenuId="encoding-turkish" name="Türkçe"/>
 					<Item subMenuId="encoding-westernEuropean" name="Batı Avrupa"/>
 					<Item subMenuId="encoding-vietnamese" name="Vietnamca"/>
+					<Item subMenuId="language-userDefinedLanguage" name="Kullanıcı Tanımlı Dil"/>
 					<Item subMenuId="settings-import" name="İçe Aktar"/>
 					<Item subMenuId="tools-md5"  name="MD5"/>
 					<Item subMenuId="tools-sha256"  name="SHA-256"/>
@@ -106,6 +107,7 @@
 					<Item id="42008" name="Girintiyi Artır"/>
 					<Item id="42009" name="Girintiyi Azalt"/>
 					<Item id="42010" name="Geçerli Satırı Çoğalt"/>
+					<Item id="42077" name="Ardışık Aynı Satırları Kaldır"/>
 					<Item id="42012" name="Satırları Böl"/>
 					<Item id="42013" name="Satırları Birleştir"/>
 					<Item id="42014" name="Geçerli Satırı Yukarı Taşı"/>
@@ -262,16 +264,22 @@
 					<Item id="45001" name="Windows (CR LF) Biçimine Dönüştür"/>
 					<Item id="45002" name="UNIX (LF)Biçimine Dönüştür"/>
 					<Item id="45003" name="Mac OS (CR)Biçimine Dönüştür"/>
-					<Item id="45004" name="ANSI Olarak Kodla"/>
-					<Item id="45005" name="UTF-8 BOM Olarak Kodla"/>
-					<Item id="45006" name="UCS-2 Big-Endian BOM Olarak Kodla"/>
-					<Item id="45007" name="UCS-2 Little-Endian BOM Olarak Kodla"/>
-					<Item id="45008" name="UTF-8 Olarak Kodla"/>
+					<Item id="45004" name="ANSI"/>
+					<Item id="45005" name="UTF-8 BOM"/>
+					<Item id="45006" name="UCS-2 Big-Endian BOM"/>
+					<Item id="45007" name="UCS-2 Little-Endian BOM"/>
+					<Item id="45008" name="UTF-8"/>
 					<Item id="45009" name="ANSI'ye Dönüştür"/>
 					<Item id="45010" name="UTF-8'e Dönüştür"/>
 					<Item id="45011" name="UTF-8 BOM'a Dönüştür"/>
 					<Item id="45012" name="UCS-2 Big-Endian BOM'a Dönüştür"/>
 					<Item id="45013" name="UCS-2 Little-Endian BOM'a Dönüştür"/>
+					<Item id="45060" name="Big5 (Geleneksel)"/>
+					<Item id="45061" name="GB2312 (Basitleştirilmiş)"/>
+					<Item id="45054" name="OEM 861: İzlandaca"/>
+					<Item id="45057" name="OEM 865: Nordik"/>
+					<Item id="45053" name="OEM 860: Portekizce"/>
+					<Item id="45056" name="OEM 863: Fransızca"/>
 
 					<Item id="10001" name="Diğer Görünüme Taşı"/>
 					<Item id="10002" name="Diğer Görünüme Kopyala"/>
@@ -280,6 +288,7 @@
 
 					<Item id="46001" name="&amp;Stil Yapılandırıcı…"/>
 					<Item id="46250" name="Dil &amp;Tanımla"/>
+					<Item id="46300" name="Kullanıcı Tanımlı Dil Klasörünü Aç..."/>
 					<Item id="46180" name="Tanımlı Dili &amp;Kullan"/>
 					<Item id="47000" name="Notepad++ &amp;Hakkında"/>
 					<Item id="47010" name="Komut Satırı Değişkenleri…"/>
@@ -310,6 +319,9 @@
 					<Item id="50000" name="Fonksiyonu Tamamla"/>
 					<Item id="50001" name="Kelimeyi Tamamla"/>
 					<Item id="50002" name="Fonksiyon Parametre İpuçlarını Tamamla"/>
+					<Item id="50003" name="Önceki dosyaya geç"/>
+					<Item id="50004" name="Sonraki dosyaya geç"/>
+					<Item id="50005" name="Makro kaydını başlat/durdur"/>
 					<Item id="50006" name="Yolu Tamamla"/>
 					<Item id="44042" name="Satırları Gizle"/>
 					<Item id="42040" name="Son Kullanılan Dosyaların Tümünü Aç"/>
@@ -386,6 +398,8 @@
 			 	<Item id="1641" name="Geçerli Belgede Tümünü Bul"/>
 			 	<Item id="1686" name="Saydamlaş&amp;tır"/>
 				<Item id="1703" name="&amp;. yeni satırı eşle"/>
+                <Item id="1721" name="▲"/>
+                <Item id="1723" name="▼ Sonrakini Bul"/>
 			</Find>
 
 			<FindCharsInRange title="Aralıktaki Karakterleri Bul…">
@@ -773,6 +787,7 @@
 				</DefaultDir>
 
 				<FileAssoc title="Dosya İlişkilendirmeleri">
+					<Item id="4008" name="Bu özelliği kullanmak için, Notepad++'ı kapatıp yönetici olarak tekrar açın."/>
 					<Item id="4009" name="Desteklenen uzantılar:"/>
 					<Item id="4010" name="Kaydedilen uzantılar:"/>
 				</FileAssoc>
@@ -785,6 +800,7 @@
                     <Item id="6302" name="Boşlukla değiştir"/>
                     <Item id="6303" name="Sekme boyutu: "/>
                     <Item id="6510" name="Varsayılan değeri kullan"/>
+                    <Item id="6335" name="SQL için kaçış karakteri olarak ters eğik çizgi kullan"/>
 				</Language>
 				
 				<Highlighting title="Vurgulama">
@@ -857,6 +873,7 @@
 				</Backup>
 
 				<AutoCompletion title="Otomatik Tamamlama">
+					<Item id="6115" name="Otomatik olarak girinti bırak"/>
 					<Item id="6807" name="Otomatik Olarak Tamamla"/>
 					<Item id="6808" name="Yazarken otomatik tamamlamayı etkinleştir"/>
 					<Item id="6809" name="Fonksiyonu tamamla"/>
@@ -930,14 +947,14 @@
 					<Item id="6324" name="Belge Değiştirici (Ctrl + Tab)"/>
 					<Item id="6331" name="Başlık çubuğunda sadece dosya adını göster"/>
 					<Item id="6334" name="Karakter kodlamasını otomatik olarak algıla"/>
-					<Item id="6335" name="SQL için kaçış karakteri olarak ters eğik çizgi kullan"/>
+					<Item id="6314" name="Bul penceresinde sabit genişlikli yazıtipi kullan (Notepad++ yeniden başlatılmalıdır)"/>
 					<Item id="6337" name="Çalışma alanı dosya uzantısı:"/>
 					<Item id="6114" name="Etkin"/>
-					<Item id="6115" name="Otomatik olarak girinti bırak"/>
 					<Item id="6117" name="MRU (en son kullanılan) davranışı etkin"/>
 					<Item id="6344" name="Belge İzleyici"/>
-                    <Item id="6345" name="Sekmede İzle"/>
-                    <Item id="6346" name="Belge Haritasında İzle"/>
+					<Item id="6345" name="Sekmede İzle"/>
+					<Item id="6346" name="Belge Haritasında İzle"/>
+					<Item id="6348" name="Bul penceresinde bul boşluğunu seçilmiş kelime ile doldurma"/>
 				</MISC>
 			</Preference>
 			<MultiMacro title="Makroyu Birden Çok Kez Çalıştır">
@@ -983,6 +1000,14 @@
                 <Item id="1718" name="G&amp;eliştirilmiş (\n, \r, \t, \0, \x...)"/>
                 <Item id="1720" name="&amp;. Yeni Satır Eşleşiyor"/>
             </FindInFinder>
+            <DoSaveOrNot title="Kaydet"> 
+                <Item id="1761" name=" &quot;$STR_REPLACE$&quot; dosyası kaydedilsin mi?"/>
+                <Item id="6" name="&amp;Evet"/>
+                <Item id="7" name="&amp;Hayır"/>
+                <Item id="2" name="&amp;İptal"/>
+                <Item id="4" name="&amp;Tümüne Evet"/>
+                <Item id="5" name="Tümüne &amp;Hayır"/>
+            </DoSaveOrNot>
 		</Dialog>
 		<MessageBox><!-- $INT_REPLACE$ bir yer tutucudur, çevirmeyin -->
 			<ContextMenuXmlEditWarning title="contextMenu.xml Dosyasını Düzenle" message="contextMenu.xml dosyasını düzenleyerek Notepad++ sağ tık bağlam menüsü değiştirilebilir.
@@ -1016,7 +1041,6 @@ Bu işlemin çalışması için, klasör bırakmada, klasörü Çalışma alanı
             <SortingError title="Sıralama Hatası" message="$INT_REPLACE$ satırındaki hatadan dolayı Numerik sıralanamadı."/>
             <ColumnModeTip title="Sütun Modu İpucu" message="Lütfen &quot;ALT+Fare Seçimi&quot; ya da &quot;Alt+Shift+Ok tuşu&quot; kullanarak sütun moduna geçiş yapın."/>
             <BufferInvalidWarning title="Kayıt Başarısız" message="Kaydedilemiyor: Arabellek geçersiz."/>		
-			<DoSaveOrNot title="Kaydet" message="&quot;$STR_REPLACE$&quot; dosyası kaydedilsin mi?"/>
             <DoCloseOrNot title="Mevcut Olmayan Dosyayı Sakla" message="&quot;$STR_REPLACE$&quot; dosyası artık mevcut değil.
 Editörde saklansın mı?"/>
             <DoDeleteOrNot title="Dosyayı Sil" message="&quot;$STR_REPLACE$&quot; dosyası
@@ -1034,6 +1058,7 @@ Tekrar yükleyerek Notepad++ içindeki değişiklerin kaybolmasını istiyor mus
             <PrehistoricSystemDetected title="Antik Sistem Bulundu" message="Görünüşe göre, halen antik bir sistem kullanıyorsunuz. Bu özellik sadece modern bir sistemde kullanılabilir, üzgünüm."/>
             <XpUpdaterProblem title="Notepad++ Güncelleyici" message="Notepad++ güncelleyici XP ile uyumlu değil, çünkü XP güvenlik yapısı oldukça eski.
 Notepad++ sayfasına giderek en son sürümü indirmek ister misiniz?"/>
+            <GUpProxyConfNeedAdminMode title="Vekil Sunucu Ayarları" message="Vekil sunucuyu ayarlamak için, lütfen Notepad++'ı yönetici olarak tekrar başlatın."/>
             <DocTooDirtyToMonitor title="İzleme Sorunu" message="Belge kirli. İzlemeden önce lütfen değişikliği kaydedin."/>
             <DocNoExistToMonitor title="İzleme Sorunu" message="İzlenmesi için dosyanın mevcut olması gerekir."/>
             <FileTooBigToOpen title="Dosya Boyutu Sorunu" message="Dosya, Notepad++ tarafından açılamayacak kadar büyük."/>
@@ -1071,6 +1096,11 @@ Notepad++ı Yönetici olarak başlatmak ister misiniz?"/>
             <OpenInAdminModeWithoutCloseCurrent title="Kayıt Başarısız" message="Dosya kaydedilemedi, korumalı olabilir.
 Notepad++ı Yönetici olarak başlatmak ister misiniz?"/>
             <OpenInAdminModeFailed title="Yönetici Olarak Başlatma Başarısız" message="Notepad++ Yönetici olarak başlatılamaz."/>
+            <ViewInBrowser title="Şimdiki Dosyayı Tarayıcıda GÖrüntüle" message="Sisteminizde uygulama bulunamadı."/>
+            <ExitToUpdatePlugins title="Notepad++ kapanmak üzere" message="Eğer EVET düğmesine basarsanız, Notepad++ kapanacak ve işlemler devam edecek.
+Notepad++ tüm işlemler bitince yeniden başlatılacak.
+Devam edilsin mi?"/>
+            <NeedToRestartToLoadPlugins title="Notepad++ yeniden başlatılmalı" message="Kurduğunuz eklentilerin yüklenmesi için Notepad++ yeniden başlatılmalı."/>
 		</MessageBox>
 		<ClipboardHistory>
 			<PanelTitle name="Pano Geçmişi"/>
@@ -1086,10 +1116,12 @@ Notepad++ı Yönetici olarak başlatmak ister misiniz?"/>
             <ColumnType name="Tür"/>
         </WindowsDlg>
 		<AsciiInsertion>
-			<PanelTitle name="ASCII Ekleme Paneli"/>
+			<PanelTitle name="ASCII Kodu Ekleme Paneli"/>
 			<ColumnVal name="Değer"/>
 			<ColumnHex name="On Altılı"/>
 			<ColumnChar name="Karakter"/>
+			<ColumnHtmlNumber name="HTML Numarası"/>
+			<ColumnHtmlName name="HTML Kodu"/>
 		</AsciiInsertion>
 		<DocumentMap>
 			<PanelTitle name="Belge Haritası"/>
@@ -1112,6 +1144,7 @@ Notepad++ı Yönetici olarak başlatmak ister misiniz?"/>
                 <Item id="3517" name="Dosyalarda bul..."/>
                 <Item id="3518" name="Explorer buraya"/>
                 <Item id="3519" name="CMD buraya"/>
+                <Item id="3520" name="Dosya Adını Kopyala"/>
             </Menus>
 		</FolderAsWorkspace>
 		<ProjectManager>
@@ -1173,6 +1206,11 @@ Notepad++ı Yönetici olarak başlatmak ister misiniz?"/>
 			<cloud-select-folder value="Notepad++'ın ayarlarını yazıp okuyabileceği bir klasör seçin"/>
 			<shift-change-direction-tip value="Shift+Enter ile diğer yönde arama yapın."/>
 			<two-find-buttons-tip value="İkili Bulma Düğmesi Modu"/>
+			<find-in-files-filter-tip value="Şunların içinde Bul cpp, cxx, h, hxx &amp;&amp; hpp:
+*.cpp *.cxx *.h *.hxx *.hpp
+
+Şunlar hariç tüm dosyaların içinde bul exe, obj &amp;&amp; log:
+*.* !*.exe !*.obj !*.log"/>
 			<find-status-top-reached value="Bulma: Sondan 1. eşleşme bulundu. Dosyanın başına ulaşıldı."/>
 			<find-status-end-reached value="Bulma: Baştan 1. eşleşme bulundu. Dosyanın sonuna ulaşıldı."/>
 			<find-status-replaceinfiles-1-replaced value="Dosyalarda Değiştir: 1 eşleşme değiştirildi"/>
@@ -1218,6 +1256,17 @@ Notepad++ı Yönetici olarak başlatmak ister misiniz?"/>
 			<userdefined-title-rename value="Şimdiki Dil İsmini Yeniden Adlandır"/>
 			<autocomplete-nb-char value="Karakter Sayısı: "/>
 			<edit-verticaledge-nb-col value="Sütun Sayısı:"/>
+			<summary value="Özet"/>
+			<summary-filepath value="Tam dosya yolu: "/>
+			<summary-filecreatetime value="Oluşturuldu: "/>
+			<summary-filemodifytime value="Düzenlendi: "/>
+			<summary-nbchar value="Karakterler (satır sonu olmadan): "/>
+			<summary-nbword value="Kelimeler: "/>
+			<summary-nbline value="Satırlar: "/>
+			<summary-nbbyte value="Dosya uzunluğu: "/>
+			<summary-nbsel1 value=" seçili karakterler ("/>
+			<summary-nbsel2 value=" bayt) içinde "/>
+			<summary-nbrange value=" mesafe"/>
 		</MiscStrings>
 	</Native-Langue>
 </NotepadPlus>

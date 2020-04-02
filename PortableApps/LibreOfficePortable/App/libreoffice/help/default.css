@@ -278,10 +278,6 @@ h6 {
 .wide {
     width: 100%;
 }
-.topalign {
-    vertical-align: top;
-    border: 1px;
-}
 .bug {
     color: red;
 }
@@ -294,22 +290,13 @@ h6 {
     text-align: left;
 }
 
+.pycode,
 .bascode {
-    margin-top:15px;
+    border: solid 5px transparent;
+    margin-top: 15px;
     margin-bottom: 15px;
 }
 
-.infopage {
-    color: green;
-    font-size: 1.33rem;
-    font-weight: bold;
-}
-.topmenu {
-    font-size: 1rem;
-    font-weight: bold;
-    padding: 1px;
-    border: solid 1px #148603;
-}
 #DisplayArea {
     background-color: #FCFCFC;
     overflow: auto;
@@ -328,6 +315,18 @@ h6 {
     display:inline-block;
     border:none;
 }
+.screenshot, .genericimage {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border-style:none;
+    display:block;
+    box-shadow: 10px 10px 5px grey;
+}
+.iconimage {}
+
 .switch,
 .switchinline {}
 
@@ -346,11 +345,11 @@ h6 {
     grid-area: header;
     position: sticky;
     top: 0px;
-    background-color: #18A303;
-    z-index: 1000;
+    z-index: 100;
 }
-header {    
+header {
     color: #fff;
+    background-color: #18A303;
     height: 64px;
     padding: 8px 8px 8px 16px;
 }
@@ -374,7 +373,11 @@ header {
     height: 60px;
     margin-right: 10px;
 }
-.lang nav, .modules nav {
+[aria-hidden='true'],
+[data-a11y-toggle]:not([aria-controls]) {
+  display: none;
+}
+#langs-nav:not([aria-hidden='true']), #modules-nav:not([aria-hidden='true']) {
     z-index: 100;
     /* line them up horizontally */
     display: flex;
@@ -385,7 +388,7 @@ header {
     /* make it smooth on iOS */
     -webkit-overflow-scrolling: touch;
 }
-.lang nav a, .modules nav a {
+#langs-nav a, #modules-nav a {
     color: #fff;
     background-color: #233336;
     display: block;
@@ -405,15 +408,17 @@ footer {
 footer p {
     font-size: 0.98rem;
 }
-.gsc-control-cse {
-    border-color: transparent !important;
-    background-color: transparent !important;
-    padding: 3px 0 0 0 !important;
-}
-.modules input[type=checkbox], .lang input[type=checkbox],
 .contents-treeview input[type=checkbox], aside input[type=checkbox] {
+    /* from .visuallyhidden class of html5-boilerplate */
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
     position: absolute;
-    opacity: 0;
+    width: 1px;
+    white-space: nowrap;
 }
 label[for=accordion-1] {
     color: #148603;
@@ -449,6 +454,10 @@ aside input[type=checkbox]:checked ~ .contents-treeview {
 }
 .index a {
     font-size: 16px;
+    display: block;
+}
+.index .hidden {
+    display: none;
 }
 #Bookmarks {
     padding: 0 20px;
@@ -532,12 +541,6 @@ aside input[type=checkbox]:checked ~ .contents-treeview {
 .pagination a {
     text-decoration: none;
 }
-.index a {
-    display: block;
-}
-.index .hidden {
-    display: none;
-}
 li.active {
     background-color: #0379BC;
 }
@@ -565,17 +568,22 @@ li.disabled a {
 #search-bar::placeholder {
     font-style: italic;
 }
-.google-donation {
+.xapian-donation {
     border-top: 2px solid #148603;
     background-color: #FCFCFC;
     box-shadow: 0 2px 8px 0 rgba(0,0,0,.05);
 }
-.donation {
+.donation-frame {
+    background: #18A303;
+    position: sticky;
+    top: 0px;
+}
+.donation{
     background: #0379BC;
     background-image: linear-gradient(to bottom, #3498db, #2980b9);
     border-radius: 8px;
     padding: 5px 10px 5px 10px;
-    margin: 20px auto 0 auto;
+    margin: auto;
     max-width: 200px;
     color: #ffffff;
     text-decoration: none;
@@ -595,15 +603,20 @@ li.disabled a {
     font-size:1.2rem;
     text-align: center;
 }
-.google-search {
-    max-width: 300px;
-    margin: 40px auto 0 auto;
+.search-frame {
+    background: #18A303;
+    top: 0px;
+    position: sticky;
+}
+.xapian-omega-search {
+    margin: auto;
 }
 .modules {
     border-bottom: 2px solid #f3f3f3;
     background-color: #233336;
+    z-index: 100;
 }
-.modules label:after, .lang label:after {
+#modules:after, #langs:after {
     font-size: 30px;
     color: #fff;
     content:"⌄";
@@ -611,15 +624,16 @@ li.disabled a {
 .lang {
     background-color: #233336;
 }
-.lang label, .modules label {
+#langs, #modules {
     display: none;
 }
-.modules nav div {
+#modules-nav div {
     background-repeat: no-repeat;
     background-size: contain;
     float: left;
     display: none;
 }
+
 .calc-icon,
 .chart-icon,
 .writer-icon,
@@ -737,24 +751,30 @@ li.disabled a {
     }
 }
 @media screen and (min-width: 960px) {
-    .lang nav {
+    #langs-nav {
         display: none;
     }
-    .lang nav a {
+    #langs-nav a {
         font-size: 19px;
         white-space: normal;
     }
-    .lang label, .modules label {
+    /* these are buttons, so also reset some default stylings */
+    #langs, #modules {
         cursor: pointer;
         color: #fff;
         font-size: 19px;
         position: relative;
         top: 40px;
         display: block;
+        background: transparent;
+        border: none;
+        text-transform: none;
+        padding:0;
+        line-height: normal;
     }
-    /* change the menu direction to stacked */
 
-    .lang input[type="checkbox"]:checked ~ nav, .modules input[type="checkbox"]:checked ~ nav {
+    /* change the menu direction to stacked */
+    #langs-nav:not([aria-hidden='true']), #modules-nav:not([aria-hidden='true']) {
         display: flex;
         flex-direction: column;
         max-width: 120px;
@@ -764,17 +784,14 @@ li.disabled a {
         position: absolute;
         top: 80px;
     }
-    .modules input[type="checkbox"]:checked ~ nav {
+    #modules-nav {
         background-color: #101820;
         text-align: left;
     }
-    .modules nav {
-        display: none;
-    }
-    .modules nav div {
+    #modules-nav div {
         display: block;
     }
-    .modules nav a {
+    #modules-nav a {
         font-size: 19px;
     }
     aside {
@@ -787,15 +804,11 @@ li.disabled a {
     .rightside {
         grid-area: rightside;
     }
-    .google-donation {
-        grid-area: google;
-        position: sticky;
-        top: 0px;
-        background-color: #FCFCFC;
-        box-shadow: none;
+    .donation-frame {
+        grid-area: donation;
     }
-    .donation {
-        max-width: 400px;
+    .search-frame {
+        grid-area: search;
     }
     footer {
         grid-area: footer;
@@ -840,27 +853,26 @@ li.disabled a {
 /* Use @supports to sneak these rules past IE */
 @supports (grid-area: auto) {
     @media screen and (min-width: 960px) {
-        .google-donation {
+        .search-frame {
+            grid-area: search;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: #18A303;
-            border-top: none;
         }
-        .google-search {
-            margin: 0;
-        }
-        .donation {
-            margin: 0 auto;
+        .donation-frame {
+            grid-area: donation;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
         footer {
             border-top: 2px solid #148603;
         }
         body {
             display: grid;
-            grid-template-columns: 320px 80px 1fr;
+            grid-template-columns: 360px 80px 1fr;
             grid-template-rows: minmax(1em, auto) minmax(1em, auto) 1fr minmax(1em, auto);
-            grid-template-areas: "header header google"
+            grid-template-areas: "header search donation"
                                  "rightside main main"
                                  "leftside main main"
                                  ". footer footer"
@@ -869,11 +881,14 @@ li.disabled a {
     @media screen and (min-width: 1440px) {
         body {
             display: grid;
-            grid-template-columns: 320px 450px 450px 1fr;
+            grid-template-columns: 360px 450px 450px 1fr;
             grid-template-rows: 1fr minmax(1em, auto) minmax(1em, auto);
-            grid-template-areas: "header header google google"
+            grid-template-areas: "header search search donation"
                                  "leftside main main rightside"
                                  ". footer footer ."
+        }
+        .donation {
+            max-width: 300px;
         }
         .rightside {
             width: auto;

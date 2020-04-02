@@ -1,6 +1,6 @@
 
 ======================================================================
-ملف LibreOffice 6.2 المعلوماتيّ
+ملف LibreOffice 6.4 المعلوماتيّ
 ======================================================================
 
 
@@ -85,7 +85,7 @@ sudo dpkg -i *.deb
 
 ينبغي أن يكون تنزيل LibreOffice ممكنا بسهولة على توزيعات لينكس الأخرى التي لم تغطى بالتحديد في تعليمات التثبيت هذه. الجانب الرئيسي في الاختلافات ربما يواجه في التكامل مع سطح المكتب.
 
-The RPMS (or DEBS, respectively) directory also contains a package named libreoffice6.2-freedesktop-menus-6.2.0.1-1.noarch.rpm (or libreoffice6.2-debian-menus_6.2.0.1-1_all.deb, respectively, or similar). This is a package for all Linux distributions that support the Freedesktop.org specifications/recommendations (https://en.wikipedia.org/wiki/Freedesktop.org), and is provided for installation on other Linux distributions not covered in the aforementioned instructions.
+The RPMS (or DEBS, respectively) directory also contains a package named libreoffice6.4-freedesktop-menus-6.4.0.1-1.noarch.rpm (or libreoffice6.4-debian-menus_6.4.0.1-1_all.deb, respectively, or similar). This is a package for all Linux distributions that support the Freedesktop.org specifications/recommendations (https://en.wikipedia.org/wiki/Freedesktop.org), and is provided for installation on other Linux distributions not covered in the aforementioned instructions.
 
 تنزيل حزمة لغة
 ----------------------------------------------------------------------
@@ -198,7 +198,7 @@ Here are a few of the mailing lists to which you can subscribe at https://www.li
 
 يمكنك عمل مساهمات كبيرة بمشروع المصدر المفتوح المهم هذا حتى لو كانت خبرتك بتصميم البرنامج أو الترميز محدودة. نعم، أنت!
 
-نأمل أن تستمتع بالعمل على LibreOffice 6.2 الجديد وأن تنضم إلينا عبر الشابكة.
+نأمل أن تستمتع بالعمل على LibreOffice 6.4 الجديد وأن تنضم إلينا عبر الشابكة.
 
 مجتمع ليبرأوفيس
 

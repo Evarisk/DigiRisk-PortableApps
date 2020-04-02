@@ -131,6 +131,7 @@
         	<value xml:lang="st">The operation &apos;Send to MediaWiki&apos; could not be completed successfully.</value>
         	<value xml:lang="sv">Åtgärden Skicka till MediaWiki kunde inte slutföras.</value>
         	<value xml:lang="sw-TZ">The operation &apos;Send to MediaWiki&apos; could not be completed successfully.</value>
+        	<value xml:lang="szl">Niy szło wykōnać ôperacyje &apos;Wyślij do MediaWiki&apos;.</value>
         	<value xml:lang="ta">&apos;MediaWiki க்கு அனுப்பு&apos; செயல்பாட்டை வெற்றிகரமாக முடிக்க முடியவில்லை.</value>
         	<value xml:lang="te">&apos;MediaWikiకు పంపుము&apos; అను కార్యముసమర్థవంతంగా పూర్తికాలేక పోయింది.</value>
         	<value xml:lang="tg">The operation &apos;Send to MediaWiki&apos; could not be completed successfully.</value>
@@ -152,7 +153,7 @@
         </prop>
         <prop oor:name="NoWikiFilter">
             <value xml:lang="en-US">The MediaWiki export filter cannot be found. Choose 'Tools-XML Filter Settings' to install the filter, or use the setup to install the component.</value>
-        	<value xml:lang="af">Die MediaWiki-uitvoerfilter kan nie gevind word nie. Kies &apos;Nuts-XML-filterinstellings&apos; om die filter te installeer, of gebruik die opsteller om die komponent te installeer.</value>
+        	<value xml:lang="af">Die MediaWiki-uitvoerfilter kan nie gevind word nie. Kies &apos;Nutsgoed - XML-filterinstellings&apos; om die filter te installeer, of gebruik die opsteller om die komponent te installeer.</value>
         	<value xml:lang="am">የሜዲያ ዊኪ መላኪያ ማጣሪያ አልተገኘም ፡ ይምረጡ &apos;Tools-XML ማጣሪያ ማሰናጃዎች&apos; ማጣሪያውን ለመግጠም ፡ ወይም አካላቱን ለመግጠም</value>
         	<value xml:lang="ar">تعذر إيجاد مرشّح تصدير ميدياويكي. اختر ”أدوات - إعدادات ترشيح XML“ لتثبيت المرشّح، أو استخدم برنامج الإعداد لتثبيت المكون.</value>
         	<value xml:lang="as">MediaWiki export filter পোৱা ন&apos;গ&apos;ল । ফিল্টাৰ সংস্থাপন কৰিবলৈ &apos;Tools-XML Filter Settings&apos; নিৰ্ব্বাচন কৰক, বা অংশ সংস্থাপন কৰিবলৈ প্ৰতিষ্ঠা কাৰ্য্যক্ৰম ব্যৱহাৰ কৰক ।</value>
@@ -167,10 +168,10 @@
         	<value xml:lang="bs">Ovaj MediaWiki filter za izvoz ne može biti pronađen. Biraj &apos;Alati-XML Filter Postavke&apos; za instalaciju filtera, ili koristi postavke za instalaciju komponenti.</value>
         	<value xml:lang="ca">No s&apos;ha pogut trobar el filtre d&apos;exportació a MediaWiki. Trieu «Eines ▸ Paràmetres del filtre XML» per a instal·lar el filtre, o utilitzeu l&apos;instal·lador per a afegir el component.</value>
         	<value xml:lang="ca-valencia">No s&apos;ha pogut trobar el filtre d&apos;exportació a MediaWiki. Trieu &apos;Eines - Paràmetres del filtre XML&apos; per instal·lar el filtre, o utilitzeu l&apos;instal·lador per afegir el component.</value>
-        	<value xml:lang="cs">Nebyl nalezen filtr pro export do MediaWiki. Nainstalujte filtr pomocí &apos;Nástroje-Nastavení XML filtru&apos; nebo pomocí instalátoru přidejte potřebnou součást.</value>
+        	<value xml:lang="cs">Nebyl nalezen filtr pro export do MediaWiki. Nainstalujte filtr pomocí &apos;Nástroje-Nastavení XML filtrů&apos; nebo pomocí instalátoru přidejte potřebnou součást.</value>
         	<value xml:lang="cy">Nid oedd modd canfo hidl allforio MediaWiki. Dewiswch &apos;Offer-Gosodiadau Hidl XML&apos; i osod yr hidl, neu ddefnyddio gosod i osod y cydran.</value>
         	<value xml:lang="da">MediaWiki-eksportfilter kan ikke findes. Vælg &apos;Funktioner - Indstillinger for XML-filter&apos; for at installere filteret, eller brug installationsprogrammet for at installere komponenten.</value>
-        	<value xml:lang="de">Der MediaWiki-Exportfilter kann nicht gefunden werden. Wählen Sie im Menü &apos;Extras - XML-Filter-Einstellungen&apos;, um den Filter zu installieren, oder führen Sie die Installation erneut aus, um die Komponente zu installieren.</value>
+        	<value xml:lang="de">Der MediaWiki-Exportfilter kann nicht gefunden werden. Wählen Sie »Extras – XML-Filter-Einstellungen«, um den Filter zu installieren, oder führen Sie die Installation erneut aus, um die Komponente zu installieren.</value>
         	<value xml:lang="dgo">मीडिया विकी बरामद पूनी नेईं लब्भी सकी. पूनी प्रस्थापत करने लेई  &apos;उपकरण-XML पूनी सैट्टिंगां&apos; तालो जां अंश प्रस्थापत करने लेई सैट-अप बरतो.</value>
         	<value xml:lang="dsb">Eksportowy filter MediaWiki njedajo se namakaś. Wubjeŕśo &apos;Rědy - Filtrowe nastajenja XML&apos;, aby filter instalěrował, abo instalěrujśo komponentu.</value>
         	<value xml:lang="dz">The MediaWiki export filter cannot be found. Choose &apos;Tools-XML Filter Settings&apos; to install the filter, or use the setup to install the component.</value>
@@ -236,7 +237,7 @@
         	<value xml:lang="pt">O filtro de exportação MediaWiki não foi encontrado. Escolha &quot;Ferramentas - Definições de filtro XML&quot; ou utilize o programa de configuração para instalar o componente.</value>
         	<value xml:lang="pt-BR">Não foi possível encontrar o filtro de exportação para o MediaWiki. Selecione &apos;Ferramentas - Filtros XML&apos; para instalar o filtro, ou utilize o setup para instalar o componente.</value>
         	<value xml:lang="ro">Filtrul de export în format MediaWiki nu poate fi găsit. Accesați „Unelte-Setări pentru filtrul XML” pentru a instala acest filtru sau folosiți programul de instalare pentru a instala această componentă.</value>
-        	<value xml:lang="ru">Фильтра экспорта MediaWiki не обнаружен. Выберите «Сервис - Настройка фильтров XML» для установки фильтра или используйте программу установки и выберите соответствующий компонент.</value>
+        	<value xml:lang="ru">Фильтр экспорта MediaWiki не обнаружен. Выберите «Сервис - Настройка фильтров XML» для установки фильтра или используйте программу установки и выберите соответствующий компонент.</value>
         	<value xml:lang="rw">The MediaWiki export filter cannot be found. Choose &apos;Tools-XML Filter Settings&apos; to install the filter, or use the setup to install the component.</value>
         	<value xml:lang="sa-IN">मीडियाविकि निर्याणनियन्दकं न दृष्टम्।निष्यन्दकं संस्थापयितुं &apos;टूल्स्-XML निष्यन्दकनिर्धारणानि&apos; वृणु, अथवा घटकं संस्थापयितुं सेटेप् उपयोजय।</value>
         	<value xml:lang="sat">मिडिया विकी कुल छा़नियाक् बाङ ञाम दाड़ेयाक् आ. छा़नियाक् बो़हाल ला़गित् हार-XML छा़नियाक् साजाव को बाछाव मे, आर बाङ जोड़ान बो़हाल ला़गित् भितिर थापोन बेभार मे.</value>
@@ -252,6 +253,7 @@
         	<value xml:lang="st">The MediaWiki export filter cannot be found. Choose &apos;Tools-XML Filter Settings&apos; to install the filter, or use the setup to install the component.</value>
         	<value xml:lang="sv">Det går inte att hitta MediaWikis exportfilter. Välj Verktyg - XML - Filterinställningar för att installera filtret, eller använd inställningarna för att installera komponenten.</value>
         	<value xml:lang="sw-TZ">The MediaWiki export filter cannot be found. Choose &apos;Tools-XML Filter Settings&apos; to install the filter, or use the setup to install the component.</value>
+        	<value xml:lang="szl">Niy szło znojś filtra eksportu MediaWiki. Ôbier ôpcyjo &apos;Noczynie - Sztelōnki filtrōw XML&apos;, coby zainstalować filter, abo zainstaluj kōmpōnynt ze pōmocōm kōnfiguracyje.</value>
         	<value xml:lang="ta">MediaWiki ஏற்றுமதி வடிகட்டியைக் காணவில்லை. வடிகட்டியை நிறுவ &apos;கருவிகள்-XML வடிகட்டி அமைவுகள்&apos; ஐத் தேர்வு செய்யவும் அல்லது கூறை நிறுவ அமைவைப் பயன்படுத்தவும்.</value>
         	<value xml:lang="te">మీడియావికీ ఎగుమతి ఫిల్టర్ కనుగొనబడలేదు. ఫల్టర్‌ను స్థాపించుటకు &apos;Tools-XML Filter Settings&apos; ను యెంచుకొనుము, లేదా మూలకంను స్థాపించుటకు అమర్పు(సెటప్) వుపయోగించుము.</value>
         	<value xml:lang="tg">The MediaWiki export filter cannot be found. Choose &apos;Tools-XML Filter Settings&apos; to install the filter, or use the setup to install the component.</value>
@@ -261,7 +263,7 @@
         	<value xml:lang="ts">The MediaWiki export filter cannot be found. Choose &apos;Tools-XML Filter Settings&apos; to install the filter, or use the setup to install the component.</value>
         	<value xml:lang="tt">The MediaWiki export filter cannot be found. Choose &apos;Tools-XML Filter Settings&apos; to install the filter, or use the setup to install the component.</value>
         	<value xml:lang="ug">MediaWiki چىقىرىش سۈزگۈچى تېپىلمىدى. «قورال - XML سۈزگۈچ تەڭشىكى»نى تاللاپ سۈزگۈچنى قاچىلاڭ، ياكى قاچىلاش پروگراممىسىنى ئىشلىتىپ مەزكۇر بۆلەكنى قاچىلاڭ.</value>
-        	<value xml:lang="uk">Фільтр експорту MediaWiki не знайдено. Виберіть Засоби - Налаштування фільтрів XML для встановлення фільтру чи запустіть програму встановлення та відмітьте відповідний компонент.</value>
+        	<value xml:lang="uk">Фільтр експорту MediaWiki не знайдено. Виберіть &apos;Засоби - Налаштування фільтрів XML&apos; для встановлення фільтру чи запустіть програму встановлення та відмітьте відповідний компонент.</value>
         	<value xml:lang="uz">MediaWiki eksport filtri topilmadi. Filtrni oʻrnatish uchun &apos;Vositalar-XML filtrining moslamalari&apos; bandini tanlang yoki komponentni oʻrnatish uchun yordamchidan foydalaning.</value>
         	<value xml:lang="ve">The MediaWiki export filter cannot be found. Choose &apos;Tools-XML Filter Settings&apos; to install the filter, or use the setup to install the component.</value>
         	<value xml:lang="vec">A no ze mìa posìbiłe catar el filtro de esportasion MediaWiki. Par instałar el filtro faghe click so &apos;Inpostasion filtro strumenti-XML&apos; o dòpara el programa de instałasion.</value>
@@ -370,6 +372,7 @@
         	<value xml:lang="st">A connection to the MediaWiki system at &apos;$ARG1&apos; could not be created.</value>
         	<value xml:lang="sv">Det gick inte att skapa en anslutning till MediaWiki-systemet på $ARG1.</value>
         	<value xml:lang="sw-TZ">A connection to the MediaWiki system at &apos;$ARG1&apos; could not be created.</value>
+        	<value xml:lang="szl">Tworzynie połōnczynio z systymym MediaWiki &apos;$ARG1&apos; niy podarziło sie.</value>
         	<value xml:lang="ta">&apos;$ARG1&apos; இலுள்ள MediaWiki முறைமைக்கான இணைப்பை உருவாக்க முடியவில்லை.</value>
         	<value xml:lang="te">&apos;$ARG1&apos; వద్ద మీడియోవికి సిస్టమ్‌కు అనుసంధానము సృష్టించబడలేక పోయింది.</value>
         	<value xml:lang="tg">A connection to the MediaWiki system at &apos;$ARG1&apos; could not be created.</value>
@@ -411,7 +414,7 @@
         	<value xml:lang="da">Brugernavn eller adgangskode er forkert. Prøv venligst igen eller efterlad felterne tomme for en anonym forbindelse.</value>
         	<value xml:lang="de">Nutzername oder Kennwort sind nicht korrekt. Versuchen Sie es erneut oder lassen Sie die Felder leer, um eine anonyme Verbindung herzustellen.</value>
         	<value xml:lang="dgo">बरतूनी नांऽ जां पासवर्ड नादुरुस्त ऐ. कृपा करियै दोबारा कोशश करो जां  बेनाम कनैक्शन लेई खेतर खाल्ली छोड़ी देओ.</value>
-        	<value xml:lang="dsb">Wužywarske mě abo gronidło jo wopacne. Wopytajśo pšosym hyšći raz abo wóstajśo póla prozne za anonymny zwisk.</value>
+        	<value xml:lang="dsb">Wužywaŕske mě abo gronidło jo wopacne. Wopytajśo pšosym hyšći raz abo wóstajśo póla prozne za anonymny zwisk.</value>
         	<value xml:lang="dz">User name or password is incorrect. Please try again, or leave the fields blank for an anonymous connection.</value>
         	<value xml:lang="el">Το όνομα χρήστη ή ο κωδικός δεν είναι έγκυρα. Παρακαλώ προσπαθήστε ξανά, ή αφήστε τα πεδία κενά για μια ανώνυμη σύνδεση.</value>
         	<value xml:lang="en-GB">User name or password is incorrect. Please try again, or leave the fields blank for an anonymous connection.</value>
@@ -425,7 +428,7 @@
         	<value xml:lang="fr">Nom d&apos;utilisateur ou mot de passe incorrect. Veuillez essayer de nouveau ou laisser les champs vides pour une connexion anonyme.</value>
         	<value xml:lang="fy">Brûkersnamme of wachtwurd is ynkorrekt. Besykje nochris of lit de fjilden leech foar in anonime ferbining.</value>
         	<value xml:lang="ga">Tá an t-ainm úsáideora nó an focal faire mícheart. Déan iarracht eile, nó fág na réimsí bán le haghaidh ceangail gan ainm.</value>
-        	<value xml:lang="gd">Tha an t-ainm no am facal-faire cearr. Feuch ris a-rithist no fàg na raointean seo bàn airson ceangal gun urra.</value>
+        	<value xml:lang="gd">Tha an t-ainm no am facal-faire ceàrr. Feuch ris a-rithist no fàg na raointean seo bàn airson ceangal gun urra.</value>
         	<value xml:lang="gl">Nome de usuario ou contrasinal incorrectos. Ténteo de novo ou deixe estes campos baleiros para unha conexión anónima.</value>
         	<value xml:lang="gu">વપરાશકર્તાનામ અને પાસવર્ડ એ અયોગ્ય છે. મહેરબાની કરીને ફરીથી પ્રયત્ન કરો, અથવા નામ વગરનાં જોડાણ માટે ક્ષેત્રોને ખાલી છોડો.</value>
         	<value xml:lang="gug">User name or password is incorrect. Please try again, or leave the fields blank for an anonymous connection.</value>
@@ -469,7 +472,7 @@
         	<value xml:lang="oc">Nom de l&apos;utilizaire o senhal incorrècte. Se vos plai, ensajatz tornamai o daissatz lo camp void per una connexion anonima.</value>
         	<value xml:lang="om">Maqaan fayyadamaa ykn iggitni sirri miti. Maaloo lammata yaali, ykn waliindhaa maqadhableef dirreewwan duwwaa dhiisi.</value>
         	<value xml:lang="or">ଚାଳକ ନାମ କିମ୍ବା ପ୍ରବେଶ ସଂକେତ ଭୁଲ ଅଛି। ଦୟାକରି ପୁଣିଥରେ ଚେଷ୍ଟାକରନ୍ତୁ, କିମ୍ବା ସେହି କ୍ଷେତ୍ରଟିକୁ ଅଜଣା ସଂଯୋଗ ପାଇଁ ଖାଲି ଛାଡ଼ିଦିଅନ୍ତୁ।</value>
-        	<value xml:lang="pa-IN">ਯੂਜ਼ਰ ਨਾਂ ਜਾਂ ਪਾਸਵਰਡ ਗਲਤ ਹੈ। ਮੁੜ-ਟਰਾਈ ਕਰੋ, ਜਾਂ ਅਗਿਆਤ ਕੁਨੈਕਸ਼ਣ ਲਈ ਖੇਤਰ ਖਾਲੀ ਛੱਡ ਦਿਓ।</value>
+        	<value xml:lang="pa-IN">ਵਰਤੋਂਕਾਰ ਨਾਂ ਜਾਂ ਪਾਸਵਰਡ ਗਲਤ ਹੈ। ਮੁੜ-ਟਰਾਈ ਕਰੋ, ਜਾਂ ਅਗਿਆਤ ਕੁਨੈਕਸ਼ਣ ਲਈ ਖੇਤਰ ਖਾਲੀ ਛੱਡ ਦਿਓ।</value>
         	<value xml:lang="pl">Niepoprawna nazwa użytkownika lub hasło. Spróbuj ponownie albo pozostaw pola puste, aby spróbować nawiązać połączenie anonimowe.</value>
         	<value xml:lang="pt">Palavra-passe ou nome de utilizador incorreta(o). Tente novamente ou deixe os campos em branco para estabelecer uma ligação anónima.</value>
         	<value xml:lang="pt-BR">O nome de usuário ou a senha estão incorretos. Tente novamente, ou deixe os campos em branco para uma conexão anônima.</value>
@@ -490,6 +493,7 @@
         	<value xml:lang="st">User name or password is incorrect. Please try again, or leave the fields blank for an anonymous connection.</value>
         	<value xml:lang="sv">Användarnamnet eller lösenordet är felaktigt. Försök igen eller lämna fälten tomma för en anonym anslutning.</value>
         	<value xml:lang="sw-TZ">User name or password is incorrect. Please try again, or leave the fields blank for an anonymous connection.</value>
+        	<value xml:lang="szl">Niynoleżne miano używocza abo hasło. Sprōbuj zaś abo ôstow pola prōzne, coby sprōbować nawiōnzać połōnczynie anōnimowe.</value>
         	<value xml:lang="ta">பயனர்பெயர் அல்லது கடவுச்சொல் தவறு. மீண்டும் முயற்சிக்கவும், அல்லது அநாமதேய இணைப்புக்கு புலங்களைக் காலியாக விடவும்.</value>
         	<value xml:lang="te">వాడుకరిపేరు లేదా సంకేతపదము సరికానిది. దయచేసి మరలా ప్రయత్నించుము, లేదా పేరులేని అనుసంధానము కొరకు క్షేత్రములను ఖాళీగా వదిలివేయుము.</value>
         	<value xml:lang="tg">User name or password is incorrect. Please try again, or leave the fields blank for an anonymous connection.</value>
@@ -499,7 +503,7 @@
         	<value xml:lang="ts">User name or password is incorrect. Please try again, or leave the fields blank for an anonymous connection.</value>
         	<value xml:lang="tt">User name or password is incorrect. Please try again, or leave the fields blank for an anonymous connection.</value>
         	<value xml:lang="ug">ئىشلەتكۈچى ئاتى ياكى ئىم ناتوغرا. قايتا سىناڭ ياكى بۇ سۆز بۆلەكلىرىنى بوش قالدۇرۇپ، ئاتسىز ئۇلىنىڭ.</value>
-        	<value xml:lang="uk">Ім&apos;я користувача чи пароль неправильні. Спробуйте ще раз або залишет вказані поля порожніми для анонімного з&apos;єднання.</value>
+        	<value xml:lang="uk">Ім&apos;я користувача чи пароль неправильні. Спробуйте ще раз або залиште вказані поля порожніми для анонімного з&apos;єднання.</value>
         	<value xml:lang="uz">Foydalanuvchi yoki maxfiy soʻz xato. Boshqatdan urinib koʻring yoki anonim ulanish uchun maydonlarni boʻsh qoldiring.</value>
         	<value xml:lang="ve">User name or password is incorrect. Please try again, or leave the fields blank for an anonymous connection.</value>
         	<value xml:lang="vec">El nome utente o ła password i ze zbajài. Proa danovo o łasa i canpi vodi par na conesion anònema.</value>
@@ -608,6 +612,7 @@
         	<value xml:lang="st">A connection could not be created because the URL is invalid.</value>
         	<value xml:lang="sv">Det gick inte att skapa en anslutning eftersom URL:en är ogiltig.</value>
         	<value xml:lang="sw-TZ">A connection could not be created because the URL is invalid.</value>
+        	<value xml:lang="szl">Niy podarziło sie stworzić połōnczynio, bo wkludzōno adresa URL je niynoleżno.</value>
         	<value xml:lang="ta">URL செல்லுபடியாகாதது, எனவே இணைப்பை உருவாக்க முடியவில்லை.</value>
         	<value xml:lang="te">URL చెల్లనిది అగుటవలన అనుసంధానము సృష్టించబడలేక పోయింది.</value>
         	<value xml:lang="tg">A connection could not be created because the URL is invalid.</value>
@@ -617,7 +622,7 @@
         	<value xml:lang="ts">A connection could not be created because the URL is invalid.</value>
         	<value xml:lang="tt">A connection could not be created because the URL is invalid.</value>
         	<value xml:lang="ug">ئۇلىنىش قۇرالمىدى، چۈنكى URL ئىناۋەتسىز.</value>
-        	<value xml:lang="uk">Неможливо встановити з&apos;єднання внаслідок некоректного URL.</value>
+        	<value xml:lang="uk">Неможливо встановити з&apos;єднання через некоректність URL.</value>
         	<value xml:lang="uz">Aloqa oʻrnatib boʻlmadi, chunki URL xato.</value>
         	<value xml:lang="ve">A connection could not be created because the URL is invalid.</value>
         	<value xml:lang="vec">A no ze mìa posìbiłe crear na conesion parché l&apos;URL no&apos;l ze mìa vàłido.</value>
@@ -726,6 +731,7 @@
         	<value xml:lang="st">Specify a MediaWiki server by providing a URL.</value>
         	<value xml:lang="sv">Ange en MediaWiki-server genom att ange en URL.</value>
         	<value xml:lang="sw-TZ">Specify a MediaWiki server by providing a URL.</value>
+        	<value xml:lang="szl">Ôkryśl serwer MediaWiki bez wkludzynie jego adresy URL.</value>
         	<value xml:lang="ta">URL ஐ வழங்கி ஒரு MediaWiki சேவையகத்தைக் குறிப்பிடவும்.</value>
         	<value xml:lang="te">URLను అందించుట ద్వారా మీడియోవికి సేవికను తెలుపుము.</value>
         	<value xml:lang="tg">Specify a MediaWiki server by providing a URL.</value>
@@ -815,7 +821,7 @@
         	<value xml:lang="mni">The transfer has been interrupted. Please check the integrity of the wiki article.</value>
         	<value xml:lang="mr">स्थलांतर व्यतयित करण्यात आले आहे. कृपया विकी लेखाचे संकलन तपासा.</value>
         	<value xml:lang="my">ပေးပို့မှုတွင် ကြားဝင်နှောက်ယှက်မှုရှိသည်။ ဝီကီဆောင်းပါး၏ စုစည်းမှုများကို စစ်ဆေးပါ။</value>
-        	<value xml:lang="nb">Overføringa ble avbrutt. Kontroller helheten i wikiartikkelen.</value>
+        	<value xml:lang="nb">Overføringen ble avbrutt. Kontroller helheten i wikiartikkelen.</value>
         	<value xml:lang="ne">The transfer has been interrupted. Please check the integrity of the wiki article.</value>
         	<value xml:lang="nl">De overdracht is onderbroken. Controleer de integriteit van het wiki-artikel.</value>
         	<value xml:lang="nn">Overføringa vart avbrote. Kontroller heilskapen i wikiartikkelen.</value>
@@ -825,7 +831,7 @@
         	<value xml:lang="om">Daddabarsi gufatee jira. Maaloo amanama barreeffama wikichaa mirkaneeffadhu.</value>
         	<value xml:lang="or">ସ୍ଥାନାନ୍ତରଣଟି ବାଧାପ୍ରାପ୍ତ ହୋଇଛି। ଦୟାକରି ୱିକି ନିବନ୍ଧର ସଂଯୋଗତାକୁ ଯାଞ୍ଚ କରନ୍ତୁ।</value>
         	<value xml:lang="pa-IN">ਟਰਾਂਸਫਰ ਲਈ ਦਖ਼ਲ। ਵਿਕਿ ਲੇਖ ਦੀ ਐਂਟਰੀਗਰੇਟੀ ਚੈੱਕ ਕਰੋ ਜੀ।</value>
-        	<value xml:lang="pl">Przerwano przesyłanie. Należy sprawdzić spójność artykułu Wiki.</value>
+        	<value xml:lang="pl">Przerwano przesyłanie. Należy sprawdzić spójność artykułu wiki.</value>
         	<value xml:lang="pt">A transferência foi interrompida. Verifique a integridade do seu artigo wiki.</value>
         	<value xml:lang="pt-BR">A transferência foi interrompida. Verifique a integridade do artigo wiki.</value>
         	<value xml:lang="ro">Transferul a fost întrerupt. Verificați integritatea articolului wiki.</value>
@@ -845,6 +851,7 @@
         	<value xml:lang="st">The transfer has been interrupted. Please check the integrity of the wiki article.</value>
         	<value xml:lang="sv">Överföringen avbröts. Kontrollera integriteten för wikiartikeln.</value>
         	<value xml:lang="sw-TZ">The transfer has been interrupted. Please check the integrity of the wiki article.</value>
+        	<value xml:lang="szl">Przesyłanie było przerwano. Trzeba wybadać spōjność artykułu Wiki.</value>
         	<value xml:lang="ta">பரிமாற்றத்தில் குறுக்கீடு ஏற்பட்டது. wiki கட்டுரையின் முழுமைத் தன்மையை சரிபார்த்துக்கொள்ளவும்.</value>
         	<value xml:lang="te">బదిలీకరణ ఆటకపరచబడింది. దయచేసి వికి ప్రకరనము యొక్క యధార్ధతను పరిశీలించుము.</value>
         	<value xml:lang="tg">The transfer has been interrupted. Please check the integrity of the wiki article.</value>
@@ -933,7 +940,7 @@
         	<value xml:lang="mni">U~RL</value>
         	<value xml:lang="mr">URL (~R)</value>
         	<value xml:lang="my">U~RL</value>
-        	<value xml:lang="nb">~Nettadresse</value>
+        	<value xml:lang="nb">Nettadresse</value>
         	<value xml:lang="ne">URL</value>
         	<value xml:lang="nl">U~RL</value>
         	<value xml:lang="nn">~Nettadresse</value>
@@ -943,7 +950,7 @@
         	<value xml:lang="om">URL</value>
         	<value xml:lang="or">URL (~R)</value>
         	<value xml:lang="pa-IN">U~RL</value>
-        	<value xml:lang="pl">U~RL</value>
+        	<value xml:lang="pl">Adres U~RL</value>
         	<value xml:lang="pt">U~RL</value>
         	<value xml:lang="pt-BR">U~RL</value>
         	<value xml:lang="ro">U~RL</value>
@@ -963,6 +970,7 @@
         	<value xml:lang="st">U~RL</value>
         	<value xml:lang="sv">U~RL</value>
         	<value xml:lang="sw-TZ">U~RL</value>
+        	<value xml:lang="szl">U~RL</value>
         	<value xml:lang="ta">U~RL</value>
         	<value xml:lang="te">U~RL</value>
         	<value xml:lang="tg">U~RL</value>
@@ -1051,7 +1059,7 @@
         	<value xml:lang="mni">~Username</value>
         	<value xml:lang="mr">वापरकर्त्याचे नाव (~U)</value>
         	<value xml:lang="my">~အသုံးပြုသူအမည်</value>
-        	<value xml:lang="nb">~Brukernavn</value>
+        	<value xml:lang="nb">Brukernavn</value>
         	<value xml:lang="ne">प्रयोगकर्ता नाम</value>
         	<value xml:lang="nl">~Gebruikersnaam</value>
         	<value xml:lang="nn">~Brukarnamn</value>
@@ -1060,7 +1068,7 @@
         	<value xml:lang="oc">Nom de l&apos;~utilizaire</value>
         	<value xml:lang="om">Maqaa Fayyadamaa</value>
         	<value xml:lang="or">ଚାଳକ ନାମ (~U)</value>
-        	<value xml:lang="pa-IN">ਯੂਜ਼ਰ ਨਾਂ(~U)</value>
+        	<value xml:lang="pa-IN">ਵਰਤੋਂਕਾਰ ਨਾਂ(~U)</value>
         	<value xml:lang="pl">Nazwa ~użytkownika</value>
         	<value xml:lang="pt">~Utilizador</value>
         	<value xml:lang="pt-BR">Nome de ~usuário</value>
@@ -1081,6 +1089,7 @@
         	<value xml:lang="st">~Username</value>
         	<value xml:lang="sv">~Användarnamn</value>
         	<value xml:lang="sw-TZ">~Username</value>
+        	<value xml:lang="szl">Miano ~używocza</value>
         	<value xml:lang="ta">பயனர்பெயர்</value>
         	<value xml:lang="te">వాడుకరిపేరు(~U)</value>
         	<value xml:lang="tg">~Username</value>
@@ -1169,7 +1178,7 @@
         	<value xml:lang="mni">~Password</value>
         	<value xml:lang="mr">पासवर्ड (~P)</value>
         	<value xml:lang="my">~စကားဝှက်</value>
-        	<value xml:lang="nb">~Passord</value>
+        	<value xml:lang="nb">Passord</value>
         	<value xml:lang="ne">पासवर्ड</value>
         	<value xml:lang="nl">~Wachtwoord</value>
         	<value xml:lang="nn">~Passord</value>
@@ -1199,6 +1208,7 @@
         	<value xml:lang="st">~Password</value>
         	<value xml:lang="sv">~Lösenord</value>
         	<value xml:lang="sw-TZ">Nywila</value>
+        	<value xml:lang="szl">~Hasło</value>
         	<value xml:lang="ta">பயனர்பெயர்</value>
         	<value xml:lang="te">సంకేతపదము(~P)</value>
         	<value xml:lang="tg">Ниҳонвожа</value>
@@ -1317,6 +1327,7 @@
         	<value xml:lang="st">Send to MediaWiki</value>
         	<value xml:lang="sv">Skicka till MediaWiki</value>
         	<value xml:lang="sw-TZ">Send to MediaWiki</value>
+        	<value xml:lang="szl">Wyślij do MediaWiki</value>
         	<value xml:lang="ta">MediaWikiக்கு அனுப்பு</value>
         	<value xml:lang="te">MediaWikiకు పంపుము</value>
         	<value xml:lang="tg">Send to MediaWiki</value>
@@ -1415,7 +1426,7 @@
         	<value xml:lang="om">Barreeffama Wiki</value>
         	<value xml:lang="or">ୱିକି ନିବନ୍ଧ</value>
         	<value xml:lang="pa-IN">ਵਿਕਿ ਲੇਖ</value>
-        	<value xml:lang="pl">Artykuł Wiki</value>
+        	<value xml:lang="pl">Artykuł wiki</value>
         	<value xml:lang="pt">Artigo Wiki</value>
         	<value xml:lang="pt-BR">Artigo wiki</value>
         	<value xml:lang="ro">Articol wiki</value>
@@ -1435,6 +1446,7 @@
         	<value xml:lang="st">Wiki article</value>
         	<value xml:lang="sv">Wikiartikel</value>
         	<value xml:lang="sw-TZ">Wiki article</value>
+        	<value xml:lang="szl">Artykuł Wiki</value>
         	<value xml:lang="ta">விக்கி கட்டுரை</value>
         	<value xml:lang="te">Wiki ప్రకరణము</value>
         	<value xml:lang="tg">Wiki article</value>
@@ -1553,6 +1565,7 @@
         	<value xml:lang="st">Tjhe</value>
         	<value xml:lang="sv">Nej</value>
         	<value xml:lang="sw-TZ">Hapana</value>
+        	<value xml:lang="szl">Niy</value>
         	<value xml:lang="ta">இல்லை</value>
         	<value xml:lang="te">కాదు</value>
         	<value xml:lang="tg">Не</value>
@@ -1671,6 +1684,7 @@
         	<value xml:lang="st">Lokile</value>
         	<value xml:lang="sv">OK</value>
         	<value xml:lang="sw-TZ">SAWA</value>
+        	<value xml:lang="szl">OK</value>
         	<value xml:lang="ta">சரி</value>
         	<value xml:lang="te">సరే</value>
         	<value xml:lang="tg">ОК</value>
@@ -1789,6 +1803,7 @@
         	<value xml:lang="st">Yes</value>
         	<value xml:lang="sv">Ja</value>
         	<value xml:lang="sw-TZ">Yes</value>
+        	<value xml:lang="szl">Ja</value>
         	<value xml:lang="ta">ஆம்</value>
         	<value xml:lang="te">అవును</value>
         	<value xml:lang="tg">Ҳа</value>
@@ -1828,7 +1843,7 @@
         	<value xml:lang="cs">~Přidat...</value>
         	<value xml:lang="cy">~Ychwanegu...</value>
         	<value xml:lang="da">Ti~lføj...</value>
-        	<value xml:lang="de">~Hinzufügen...</value>
+        	<value xml:lang="de">~Hinzufügen…</value>
         	<value xml:lang="dgo">~Add...</value>
         	<value xml:lang="dsb">~Pśidaś...</value>
         	<value xml:lang="dz">~Add...</value>
@@ -1877,7 +1892,7 @@
         	<value xml:lang="mni">~Add...</value>
         	<value xml:lang="mr">समाविष्ट करा (~A)...</value>
         	<value xml:lang="my">~ပေါင်းထည့်ပါ...</value>
-        	<value xml:lang="nb">~Legg til …</value>
+        	<value xml:lang="nb">Legg til …</value>
         	<value xml:lang="ne">~Add...</value>
         	<value xml:lang="nl">~Toevoegen...</value>
         	<value xml:lang="nn">~Legg til …</value>
@@ -1907,6 +1922,7 @@
         	<value xml:lang="st">~Eketsa...</value>
         	<value xml:lang="sv">~Lägg till ...</value>
         	<value xml:lang="sw-TZ">Ongeza...</value>
+        	<value xml:lang="szl">Dod~ej...</value>
         	<value xml:lang="ta">சேர்...</value>
         	<value xml:lang="te">జతచేయి...(~A)</value>
         	<value xml:lang="tg">Иловакунӣ...</value>
@@ -1946,7 +1962,7 @@
         	<value xml:lang="cs">~Upravit...</value>
         	<value xml:lang="cy">~Golygu...</value>
         	<value xml:lang="da">~Rediger...</value>
-        	<value xml:lang="de">~Bearbeiten...</value>
+        	<value xml:lang="de">~Bearbeiten…</value>
         	<value xml:lang="dgo">संपादत करो	</value>
         	<value xml:lang="dsb">Wo~bźěłaś...</value>
         	<value xml:lang="dz">ཞུན་དག་་་་(~E)</value>
@@ -1995,7 +2011,7 @@
         	<value xml:lang="mni">শেমদোক-শাদোকপা...</value>
         	<value xml:lang="mr">संपादीत करा (~E)...</value>
         	<value xml:lang="my">~တည်းဖြတ်ပါ...</value>
-        	<value xml:lang="nb">~Rediger …</value>
+        	<value xml:lang="nb">Rediger …</value>
         	<value xml:lang="ne">~Edit...</value>
         	<value xml:lang="nl">~Bewerken...</value>
         	<value xml:lang="nn">~Rediger …</value>
@@ -2025,6 +2041,7 @@
         	<value xml:lang="st">~Edit...</value>
         	<value xml:lang="sv">~Redigera ...</value>
         	<value xml:lang="sw-TZ">Hariri...</value>
+        	<value xml:lang="szl">~Edycyjo...</value>
         	<value xml:lang="ta">தொகு...</value>
         	<value xml:lang="te">సరిచేయు...(~E)</value>
         	<value xml:lang="tg">~Ислоҳкунӣ...</value>
@@ -2113,7 +2130,7 @@
         	<value xml:lang="mni">~Send</value>
         	<value xml:lang="mr">पाठवा (~S)</value>
         	<value xml:lang="my">~ပို့ပါ</value>
-        	<value xml:lang="nb">~Send</value>
+        	<value xml:lang="nb">Send</value>
         	<value xml:lang="ne">पठाउनुहोस्</value>
         	<value xml:lang="nl">~Verzenden</value>
         	<value xml:lang="nn">~Send</value>
@@ -2143,6 +2160,7 @@
         	<value xml:lang="st">~Romela</value>
         	<value xml:lang="sv">Ö~verför</value>
         	<value xml:lang="sw-TZ">~Send</value>
+        	<value xml:lang="szl">~Wyślij</value>
         	<value xml:lang="ta">அனுப்பு</value>
         	<value xml:lang="te">పంపుము(~S)</value>
         	<value xml:lang="tg">~Send</value>
@@ -2231,7 +2249,7 @@
         	<value xml:lang="mni">~Remove</value>
         	<value xml:lang="mr">काढून टाका (~R)</value>
         	<value xml:lang="my">~ဖယ်ရှားပါ</value>
-        	<value xml:lang="nb">~Fjern</value>
+        	<value xml:lang="nb">Fjern</value>
         	<value xml:lang="ne">हटाउनुहोस्</value>
         	<value xml:lang="nl">Ve~rwijderen</value>
         	<value xml:lang="nn">~Fjern</value>
@@ -2261,6 +2279,7 @@
         	<value xml:lang="st">~Tlosa</value>
         	<value xml:lang="sv">~Ta bort</value>
         	<value xml:lang="sw-TZ">Ondoa</value>
+        	<value xml:lang="szl">~Skasuj</value>
         	<value xml:lang="ta">அகற்று</value>
         	<value xml:lang="te">తీసివేయు(~R)</value>
         	<value xml:lang="tg">Кӯркунӣ</value>
@@ -2343,7 +2362,7 @@
         	<value xml:lang="lb">A wiki article with the title &apos;$ARG1&apos; does not exist yet. Do you want to create a new article with that name?</value>
         	<value xml:lang="lo">A wiki article with the title &apos;$ARG1&apos; does not exist yet. Do you want to create a new article with that name?</value>
         	<value xml:lang="lt">Vikio straipsnio pavadinimu „$ARG1“ kol kas nėra. Ar sukurti naują straipsnį su tokiu pavadinimu?</value>
-        	<value xml:lang="lv">Viki raksts ar nosaukumu &apos;$ARG1&apos; vēl neeksistē. Vai vēlaties izveidot jaunu rakstu ar šādu nosaukumu?</value>
+        	<value xml:lang="lv">Viki raksts ar nosaukumu &apos;$ARG1&apos; vēl nepastāv. Vai vēlaties izveidot jaunu rakstu ar šādu nosaukumu?</value>
         	<value xml:lang="mai">A wiki article with the title &apos;$ARG1&apos; does not exist yet. Do you want to create a new article with that name?</value>
         	<value xml:lang="mk">Вики статија со наслов &apos;$ARG1&apos; сеуште не постои. Дали сакате да создадете нова статија со тоа име?</value>
         	<value xml:lang="ml">&apos;$ARG1&apos; എന്ന പേരില്‍ ഒരു വിക്കി ലേഖനം ലഭ്യമല്ല. ഈ പേരില്‍ നിങ്ങള്‍ക്കു് ഒരു പുതിയ ലേഖനം ഉണ്ടാക്കണമോ?</value>
@@ -2361,7 +2380,7 @@
         	<value xml:lang="om">Barreeffamni wiki hanga ammaa mataduree &apos;$ARG1&apos; n hin jiru. Barreeffamaa haaraa mataduree kanaan uumuu barbaaddaa?</value>
         	<value xml:lang="or">ଶୀର୍ଷକ &apos;$ARG1&apos; ବିଶିଷ୍ଟ ଗୋଟିଏ ୱିକି ନିବନ୍ଧ ଏପର୍ଯ୍ୟନ୍ତ ଅବସ୍ଥିତ ନାହିଁ। ଆପଣ ସେହି ନାମରେ ଗୋଟିଏ ନୂତନ ନିବନ୍ଧ ରଚନା କରିବାକୁ ଚାହୁଁଛନ୍ତି କି?</value>
         	<value xml:lang="pa-IN">ਇੱਕ ਵਿਕਿ ਲੇਖ ਟਾਈਟਲ $ARG1&apos; ਨਾਲ ਹਾਲੇ ਮੌਜੂਦ ਨਹੀਂ ਹੈ। ਕੀ ਤੁਸੀਂ ਉਸ ਨਾਂ ਨਾਲ ਨਵਾਂ ਲੇਖ ਬਣਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ?</value>
-        	<value xml:lang="pl">Artykuł Wiki o zatytułowany &apos;$ARG1&apos; jeszcze nie istnieje. Czy chcesz utworzyć nowy artykuł o takiej nazwie?</value>
+        	<value xml:lang="pl">Artykuł wiki o zatytułowany &apos;$ARG1&apos; jeszcze nie istnieje. Czy chcesz utworzyć nowy artykuł o takiej nazwie?</value>
         	<value xml:lang="pt">Ainda não existe um artigo do Wiki com o título &quot;$ARG1&quot;. Deseja criar um novo artigo com esse nome?</value>
         	<value xml:lang="pt-BR">Não existe ainda um artigo wiki com o título &apos;$ARG1&apos;. Deseja criar um novo artigo com esse nome?</value>
         	<value xml:lang="ro">Încă nu există un articol wiki cu titlul „$ARG1”. Doriți să creați un articol nou cu acest nume?</value>
@@ -2381,6 +2400,7 @@
         	<value xml:lang="st">A wiki article with the title &apos;$ARG1&apos; does not exist yet. Do you want to create a new article with that name?</value>
         	<value xml:lang="sv">Det finns inte någon wikiartikel med rubriken $ARG1 ännu. Vill du skapa en ny artikel med det namnet?</value>
         	<value xml:lang="sw-TZ">A wiki article with the title &apos;$ARG1&apos; does not exist yet. Do you want to create a new article with that name?</value>
+        	<value xml:lang="szl">Artykuł Wiki zatytułowany &apos;$ARG1&apos; jeszcze niy istniyje. Chcesz stworzić nowy artykuł ze takim mianym?</value>
         	<value xml:lang="ta">&apos;$ARG1&apos; என்ற தலைப்பில் விகி கட்டுரை இதுவரை இல்லை. இப்பெயரில் ஒரு புதிய கட்டுரையை உருவாக்க வேண்டுகிறீரா?</value>
         	<value xml:lang="te">శీర్షిక &apos;$ARG1&apos; తో వికీ ప్రకరణము యింతవరకు లేదు. మీరు ఆ పేరుతో కొత్త ప్రకరణము సృష్టించుదామని అనుకొనుచున్నారా?</value>
         	<value xml:lang="tg">A wiki article with the title &apos;$ARG1&apos; does not exist yet. Do you want to create a new article with that name?</value>
@@ -2390,7 +2410,7 @@
         	<value xml:lang="ts">A wiki article with the title &apos;$ARG1&apos; does not exist yet. Do you want to create a new article with that name?</value>
         	<value xml:lang="tt">A wiki article with the title &apos;$ARG1&apos; does not exist yet. Do you want to create a new article with that name?</value>
         	<value xml:lang="ug">ماۋزۇسى &apos;$ARG1&apos; بولغان wiki ھۆججىتى يوق. مۇشۇ ماۋزۇدا يېڭى ھۆججەت قۇرامسىز؟</value>
-        	<value xml:lang="uk">Стаття wiki з назвою &apos;$ARG1&apos; ще не існує. Створити статтю з вказаною назвою?</value>
+        	<value xml:lang="uk">Стаття wiki з назвою &apos;$ARG1&apos; ще не існує. Створити статтю з такою назвою?</value>
         	<value xml:lang="uz">&apos;$ARG1&apos; nomli wiki maqolasi mavjud emas. Shundan nomli yangi bir maqola yaratishni istaysizmi?</value>
         	<value xml:lang="ve">A wiki article with the title &apos;$ARG1&apos; does not exist yet. Do you want to create a new article with that name?</value>
         	<value xml:lang="vec">Un artìgoło wiki co&apos;l nome &apos;$ARG1&apos; no l&apos;eziste njancora. Vuto creàrghene uno co &apos;sto nome?</value>
@@ -2469,7 +2489,7 @@
         	<value xml:lang="mni">Media~Wiki Server</value>
         	<value xml:lang="mr">MediaWiki सर्व्हरकडे पाठवा (~W)</value>
         	<value xml:lang="my">Media~Wiki ဆာဗာ</value>
-        	<value xml:lang="nb">~MediaWiki-tjener</value>
+        	<value xml:lang="nb">MediaWiki-tjener</value>
         	<value xml:lang="ne">Media~Wiki Server</value>
         	<value xml:lang="nl">Media~Wiki-server</value>
         	<value xml:lang="nn">~MediaWiki-tenar</value>
@@ -2499,6 +2519,7 @@
         	<value xml:lang="st">Media~Wiki Server</value>
         	<value xml:lang="sv">Media~Wiki-server</value>
         	<value xml:lang="sw-TZ">Media~Wiki Server</value>
+        	<value xml:lang="szl">Serwer Media~Wiki</value>
         	<value xml:lang="ta">MediaWiki சேவையகம்</value>
         	<value xml:lang="te">Media~Wiki సేవిక</value>
         	<value xml:lang="tg">Media~Wiki Server</value>
@@ -2587,7 +2608,7 @@
         	<value xml:lang="mni">~মিংথোল</value>
         	<value xml:lang="mr">शीर्षक (~T)</value>
         	<value xml:lang="my">~ခေါင်းစဉ်</value>
-        	<value xml:lang="nb">~Tittel</value>
+        	<value xml:lang="nb">Tittel</value>
         	<value xml:lang="ne">शीर्षक</value>
         	<value xml:lang="nl">~Titel</value>
         	<value xml:lang="nn">~Tittel</value>
@@ -2617,6 +2638,7 @@
         	<value xml:lang="st">~Sehlooho</value>
         	<value xml:lang="sv">Rubr~ik</value>
         	<value xml:lang="sw-TZ">~Title</value>
+        	<value xml:lang="szl">~Tytuł</value>
         	<value xml:lang="ta">தலைப்பு</value>
         	<value xml:lang="te">శీర్షిక(~T)</value>
         	<value xml:lang="tg">~Сарлавҳа</value>
@@ -2705,7 +2727,7 @@
         	<value xml:lang="mni">S~ummary</value>
         	<value xml:lang="mr">सारांश (~u)</value>
         	<value xml:lang="my">အကျဉ်းချုပ်</value>
-        	<value xml:lang="nb">~Sammendrag</value>
+        	<value xml:lang="nb">Sammendrag</value>
         	<value xml:lang="ne">सारांश</value>
         	<value xml:lang="nl">S~amenvatting</value>
         	<value xml:lang="nn">S~amandrag</value>
@@ -2735,6 +2757,7 @@
         	<value xml:lang="st">S~ummary</value>
         	<value xml:lang="sv">S~ammanfattning</value>
         	<value xml:lang="sw-TZ">S~ummary</value>
+        	<value xml:lang="szl">Pods~umowanie</value>
         	<value xml:lang="ta">சுருக்கம்</value>
         	<value xml:lang="te">సంక్షిప్తసమాచారము(~u)</value>
         	<value xml:lang="tg">S~ummary</value>
@@ -2756,7 +2779,7 @@
         </prop>
         <prop oor:name="Dlg_SendToMediaWiki_MinorCheck">
             <value xml:lang="en-US">This is a ~minor edit</value>
-        	<value xml:lang="af">Dit is &apos;n ~klein redigering</value>
+        	<value xml:lang="af">Dit is &apos;n ~klein wysiging</value>
         	<value xml:lang="am">ይህ ~አነስተኛ እርማት ነው</value>
         	<value xml:lang="ar">هذا التعديل ب~سيط</value>
         	<value xml:lang="as">এইটো এটা সৰু সম্পাদন (~m)</value>
@@ -2786,7 +2809,7 @@
         	<value xml:lang="et">See on väike muudatus</value>
         	<value xml:lang="eu">Hau edizio ~lagungarria da</value>
         	<value xml:lang="fa">این یک ویرایش ~جزئی است</value>
-        	<value xml:lang="fi">Tämä on täydennys</value>
+        	<value xml:lang="fi">Tämä on pieni muutos</value>
         	<value xml:lang="fr">C&apos;est une édition ~mineure</value>
         	<value xml:lang="fy">Dit is in ~lytse bewurking</value>
         	<value xml:lang="ga">~Mionathrú é seo</value>
@@ -2823,7 +2846,7 @@
         	<value xml:lang="mni">This is a ~minor edit</value>
         	<value xml:lang="mr">हे किर्कोळ संपादन आहे (~m)</value>
         	<value xml:lang="my">အသေးစားတည်းဖြတ်မှုဖြစ်သည်</value>
-        	<value xml:lang="nb">~Dette er en liten endring</value>
+        	<value xml:lang="nb">Dette er en liten endring</value>
         	<value xml:lang="ne">This is a ~minor edit</value>
         	<value xml:lang="nl">Dit is een ~kleine bewerking</value>
         	<value xml:lang="nn">Dette er ~småplukk</value>
@@ -2853,6 +2876,7 @@
         	<value xml:lang="st">This is a ~minor edit</value>
         	<value xml:lang="sv">Det här är en ~mindre redigering</value>
         	<value xml:lang="sw-TZ">This is a ~minor edit</value>
+        	<value xml:lang="szl">Wkludzōne były drobne z~miany</value>
         	<value xml:lang="ta">இது ஒரு சிறு தொகுப்பு</value>
         	<value xml:lang="te">ఇది చిన్న సరికూర్పు(~m)</value>
         	<value xml:lang="tg">This is a ~minor edit</value>
@@ -2941,7 +2965,7 @@
         	<value xml:lang="mni">Show in web ~browser</value>
         	<value xml:lang="mr">वेब ब्राऊजर मध्ये दाखवा (~b)</value>
         	<value xml:lang="my">ကွန်ယက်ဘရောက်ဇာတွင်ပြသသည်</value>
-        	<value xml:lang="nb">Vis i ~nettleser</value>
+        	<value xml:lang="nb">Vis i nettleser</value>
         	<value xml:lang="ne">ब्राउजर</value>
         	<value xml:lang="nl">In web~browser weergeven</value>
         	<value xml:lang="nn">Vis i ~nettlesar</value>
@@ -2971,6 +2995,7 @@
         	<value xml:lang="st">Show in web ~browser</value>
         	<value xml:lang="sv">V~isa i webbläsare</value>
         	<value xml:lang="sw-TZ">Show in web ~browser</value>
+        	<value xml:lang="szl">Pokoż w przeglōndarce internetowyj</value>
         	<value xml:lang="ta">வலை உலாவியில் காட்டு</value>
         	<value xml:lang="te">కనబర్చు వెబ్ బ్రౌజర్ లోపల(~b)</value>
         	<value xml:lang="tg">Show in web ~browser</value>
@@ -2980,7 +3005,7 @@
         	<value xml:lang="ts">Show in web ~browser</value>
         	<value xml:lang="tt">Show in web ~browser</value>
         	<value xml:lang="ug">تور كۆرگۈدە كۆرسەت(~B)</value>
-        	<value xml:lang="uk">Показати ~в переглядачі тенет</value>
+        	<value xml:lang="uk">Показати ~у вебпереглядачі</value>
         	<value xml:lang="uz">Veb ~brauzerda koʻrsatish</value>
         	<value xml:lang="ve">Show in web ~browser</value>
         	<value xml:lang="vec">Mostra inte&apos;l navigador we~b</value>
@@ -2992,7 +3017,7 @@
         </prop>
         <prop oor:name="UnknownCert">
             <value xml:lang="en-US">The certificate of the selected site is unknown.</value>
-        	<value xml:lang="af">Die sertifikaat van die gemerkte werf is onbekend.</value>
+        	<value xml:lang="af">Die sertifikaat van die gekose werf is onbekend.</value>
         	<value xml:lang="am">የተመረጠው ዌብ ሳይት የምስክር ወረቀቱ ያልታወቀ ነው</value>
         	<value xml:lang="ar">شهادة الموقع المحدد مجهولة.</value>
         	<value xml:lang="as">নিৰ্বাচিত ছাইটৰ প্ৰমাণপত্ৰ অজ্ঞাত ।</value>
@@ -3089,6 +3114,7 @@
         	<value xml:lang="st">The certificate of the selected site is unknown.</value>
         	<value xml:lang="sv">Certifikatet för den valda platsen är okänt.</value>
         	<value xml:lang="sw-TZ">The certificate of the selected site is unknown.</value>
+        	<value xml:lang="szl">Strōna posiado niyznōmy certyfikat.</value>
         	<value xml:lang="ta">தேர்ந்தெடுத்த தளத்தின் சான்றிதழ் பற்றித் தெரியவில்லை.</value>
         	<value xml:lang="te">ఎంపికచేసిన సైటు యొక్క ధృవీకరణపత్రము తెలియనిది.</value>
         	<value xml:lang="tg">The certificate of the selected site is unknown.</value>
@@ -3207,6 +3233,7 @@
         	<value xml:lang="st">MediaWiki</value>
         	<value xml:lang="sv">MediaWiki</value>
         	<value xml:lang="sw-TZ">MediaWiki</value>
+        	<value xml:lang="szl">MediaWiki</value>
         	<value xml:lang="ta">MediaWiki</value>
         	<value xml:lang="te">మీడియావికీ</value>
         	<value xml:lang="tg">MediaWiki</value>
@@ -3325,6 +3352,7 @@
         	<value xml:lang="st">Account</value>
         	<value xml:lang="sv">Konto</value>
         	<value xml:lang="sw-TZ">Account</value>
+        	<value xml:lang="szl">Kōnto</value>
         	<value xml:lang="ta">கணக்கு</value>
         	<value xml:lang="te">ఖాతా</value>
         	<value xml:lang="tg">Account</value>
@@ -3350,7 +3378,7 @@
         	<value xml:lang="am">የ Media~Wiki ሰርቨር</value>
         	<value xml:lang="ar">خادوم ميدياويكي</value>
         	<value xml:lang="as">MediaWiki সেৱক</value>
-        	<value xml:lang="ast">Sirvidor mediawiki</value>
+        	<value xml:lang="ast">Sirvidor MediaWiki</value>
         	<value xml:lang="be">Сервер MediaWiki</value>
         	<value xml:lang="bg">MediaWiki сървър</value>
         	<value xml:lang="bn">মিডিয়া-উইকি সার্ভার</value>
@@ -3443,6 +3471,7 @@
         	<value xml:lang="st">MediaWiki Server</value>
         	<value xml:lang="sv">MediaWiki-server</value>
         	<value xml:lang="sw-TZ">MediaWiki Server</value>
+        	<value xml:lang="szl">Serwer MediaWiki</value>
         	<value xml:lang="ta">MediaWiki சேவையகம்</value>
         	<value xml:lang="te">MediaWiki సేవిక</value>
         	<value xml:lang="tg">MediaWiki Server</value>
@@ -3531,7 +3560,7 @@
         	<value xml:lang="mni">~Save password</value>
         	<value xml:lang="mr">पासवर्ड साठवा (~S)</value>
         	<value xml:lang="my">~စကားဝှက် သိမ်းပါ</value>
-        	<value xml:lang="nb">~Lagre passord</value>
+        	<value xml:lang="nb">Lagre passord</value>
         	<value xml:lang="ne">~Save password</value>
         	<value xml:lang="nl">~Wachtwoord opslaan</value>
         	<value xml:lang="nn">~Lagra passord</value>
@@ -3561,6 +3590,7 @@
         	<value xml:lang="st">~Save password</value>
         	<value xml:lang="sv">~Spara lösenord</value>
         	<value xml:lang="sw-TZ">~Save password</value>
+        	<value xml:lang="szl">~Spamiyntej hasło</value>
         	<value xml:lang="ta">கடவுச்சொல்லைச் சேமி</value>
         	<value xml:lang="te">సంకేతపదమును దాచు(~S)</value>
         	<value xml:lang="tg">~Save password</value>
@@ -3582,11 +3612,11 @@
         </prop>
         <prop oor:name="Dlg_MediaWiki_Extension_String">
             <value xml:lang="en-US">Wiki Publisher</value>
-        	<value xml:lang="af">Wiki Publisher</value>
+        	<value xml:lang="af">Wiki-publiseerder</value>
         	<value xml:lang="am">ዊኪ አታሚ</value>
         	<value xml:lang="ar">ناشر الويكي</value>
         	<value xml:lang="as">Wiki Publisher</value>
-        	<value xml:lang="ast">Wiki Publisher</value>
+        	<value xml:lang="ast">Espublizador pa wikis</value>
         	<value xml:lang="be">Wiki Publisher</value>
         	<value xml:lang="bg">Wiki Publisher</value>
         	<value xml:lang="bn">Wiki Publisher</value>
@@ -3617,7 +3647,7 @@
         	<value xml:lang="fy">Wiki útjouwer</value>
         	<value xml:lang="ga">Foilsitheoir Vicí</value>
         	<value xml:lang="gd">Wiki Publisher</value>
-        	<value xml:lang="gl">Wiki Publisher</value>
+        	<value xml:lang="gl">Editor de Wiki</value>
         	<value xml:lang="gu">Wiki Publisher</value>
         	<value xml:lang="gug">Porombokuaapy Wiki peguarã</value>
         	<value xml:lang="he">מוציא לאור ויקי</value>
@@ -3625,7 +3655,7 @@
         	<value xml:lang="hr">Wiki Publisher</value>
         	<value xml:lang="hsb">Wiki Publisher</value>
         	<value xml:lang="hu">Wiki Publisher</value>
-        	<value xml:lang="id">Wiki Publisher</value>
+        	<value xml:lang="id">Penerbit Wiki</value>
         	<value xml:lang="is">Wiki útgáfustjórn</value>
         	<value xml:lang="it">Wiki Publisher</value>
         	<value xml:lang="ja">Wiki Publisher</value>
@@ -3679,6 +3709,7 @@
         	<value xml:lang="st">Wiki Publisher</value>
         	<value xml:lang="sv">Wiki Publisher</value>
         	<value xml:lang="sw-TZ">Wiki Publisher</value>
+        	<value xml:lang="szl">Wiki Publisher</value>
         	<value xml:lang="ta">Wiki Publisher</value>
         	<value xml:lang="te">Wiki Publisher</value>
         	<value xml:lang="tg">Wiki Publisher</value>
@@ -3700,7 +3731,7 @@
         </prop>
         <prop oor:name="Dlg_WikiPageExists_Label1">
             <value xml:lang="en-US">A wiki article with the title '$ARG1' already exists.&#13;&#13;Do you want to replace the current article with your article?&#13;&#13;</value>
-        	<value xml:lang="af">&apos;n Wikiartikel met die titel &apos;$ARG1&apos; bestaan reeds.&amp;#13;&amp;#13;Wil jy die huidige artikel met jou artikel vervang?&amp;#13;&amp;#13;</value>
+        	<value xml:lang="af">&apos;n Wikiartikel met die titel &apos;$ARG1&apos; bestaan reeds.&amp;#13;&amp;#13;Wil u die huidige artikel met hierdie artikel vervang?&amp;#13;&amp;#13;</value>
         	<value xml:lang="am">የ wiki ጽሁፍ በዚህ አርእስት &apos;$ARG1&apos; ቀደም ሲል ነበር .&amp;#13;&amp;#13;ይህን ጽሁፍ በእርስዎ አዲስ ጽሁፍ ሊቀይሩት ይፈልጋሉ?&amp;#13;&amp;#13;</value>
         	<value xml:lang="ar">توجد مقالة ويكي بالعنوان ”$ARG1“ بالفعل.&amp;#13;&amp;#13;أتريد استبدال المقالة الحالية بمقالتك؟&amp;#13;&amp;#13;</value>
         	<value xml:lang="as">শীৰ্ষক &apos;$ARG1&apos; -ৰ সৈতে এটা wiki অধ্যায় ইতিমধ্যে আছে।&amp;#13;&amp;#13; আপুনি বৰ্তমান অধ্যায়ক আপোনাৰ অধ্যায়ৰে প্ৰতিস্থাপন কৰিব বিচাৰে নেকি?&amp;#13;&amp;#13;</value>
@@ -3740,7 +3771,7 @@
         	<value xml:lang="gug">A wiki article with the title &apos;$ARG1&apos; already exists.&amp;#13;&amp;#13;Do you want to replace the current article with your article?&amp;#13;&amp;#13;</value>
         	<value xml:lang="he">כבר קיים ערך בוויקי בשם &apos;$ARG1&apos;.#13;&amp;#13;האם ברצונך להחליף את הערך הנוכחי בערך שלך?&amp;#13;&amp;#13;</value>
         	<value xml:lang="hi">&apos;$ARG1&apos; शीर्षक से एक विकी आलेख पहले से मौजूद है.&amp;#13;&amp;#13;क्या आप मौजूदा आलेख को बदलना चाहते हैं अपने इस आलेख से?&amp;#13;&amp;#13;</value>
-        	<value xml:lang="hr">Već postoji wiki članak naziva &apos;$ARG1&apos;.&amp;#13;&amp;#13;Želite li zamijeniti trenutni članak s vašim člankom?&amp;#13;&amp;#13;</value>
+        	<value xml:lang="hr">Već postoji wiki članak naziva &apos;$ARG1&apos;.&amp;#13;&amp;#13;Želite li zamijeniti trenutačni članak s vašim člankom?&amp;#13;&amp;#13;</value>
         	<value xml:lang="hsb">Wikinastawk z titulom &apos;$ARG1&apos; hižo eksistuje.&amp;#13;&amp;#13;Chceće aktualny nastawk přez swój nastawk wuměnić&amp;#13;&amp;#13;</value>
         	<value xml:lang="hu">Már létezik „$ARG1” című wikicikk.&amp;#13;&amp;#13;Szeretné a létező cikket az aktuális cikkel lecserélni?&amp;#13;&amp;#13;</value>
         	<value xml:lang="id">Artikel Wiki dengan judul &apos;$ARG1&apos; sudah ada.&amp;#13;&amp;#13;Apakah Anda hendak mengganti artikel yang sudah ada tersebut dengan milik Anda sekarang?&amp;#13;&amp;#13;</value>
@@ -3762,7 +3793,7 @@
         	<value xml:lang="lb">A wiki article with the title &apos;$ARG1&apos; already exists.&amp;#13;&amp;#13;Do you want to replace the current article with your article?&amp;#13;&amp;#13;</value>
         	<value xml:lang="lo">A wiki article with the title &apos;$ARG1&apos; already exists.&amp;#13;&amp;#13;Do you want to replace the current article with your article?&amp;#13;&amp;#13;</value>
         	<value xml:lang="lt">Vikio straipsnis pavadinimu „$ARG1“ jau yra.&amp;#13;&amp;#13;Ar pakeisti esamą straipsnį jūsų straipsniu?&amp;#13;&amp;#13;</value>
-        	<value xml:lang="lv">Viki raksts ar nosaukumu &apos;$ARG1&apos; jau eksistē.&amp;#13;&amp;#13;Vai vēlaties aizstāt esošo rakstu ar savu rakstu?&amp;#13;&amp;#13;</value>
+        	<value xml:lang="lv">Viki raksts ar nosaukumu &apos;$ARG1&apos; jau pastāv.&amp;#13;&amp;#13;Vai vēlaties aizstāt esošo rakstu ar savu rakstu?&amp;#13;&amp;#13;</value>
         	<value xml:lang="mai">A wiki article with the title &apos;$ARG1&apos; already exists.&amp;#13;&amp;#13;Do you want to replace the current article with your article?&amp;#13;&amp;#13;</value>
         	<value xml:lang="mk">A wiki article with the title &apos;$ARG1&apos; already exists.&amp;#13;&amp;#13;Do you want to replace the current article with your article?&amp;#13;&amp;#13;</value>
         	<value xml:lang="ml">&apos;$ARG1&apos; എന്ന പേരില്‍ ഒരു വിക്കി ലേഖനം നിലവിലുണ്ടു്.&amp;#13;&amp;#13;ഈ ലേഖനത്തിനു് പകരം നിങ്ങളുടെ ലേഖനം നല്‍കണമോ?&amp;#13;&amp;#13;</value>
@@ -3801,6 +3832,7 @@
         	<value xml:lang="st">A wiki article with the title &apos;$ARG1&apos; already exists.&amp;#13;&amp;#13;Do you want to replace the current article with your article?&amp;#13;&amp;#13;</value>
         	<value xml:lang="sv">En wikiartikel med namnet $ARG1 finns redan.&amp;#13;&amp;#13;Vill du ersätta den befintliga artikeln med din artikel?&amp;#13;&amp;#13;</value>
         	<value xml:lang="sw-TZ">A wiki article with the title &apos;$ARG1&apos; already exists.&amp;#13;&amp;#13;Do you want to replace the current article with your article?&amp;#13;&amp;#13;</value>
+        	<value xml:lang="szl">Artykuł wiki zatytułowany &apos;$ARG1&apos; już istniyje.&amp;#13;&amp;#13;Chcesz zastōmpić istniyjōncy artikel nowym?&amp;#13;&amp;#13;</value>
         	<value xml:lang="ta">&apos;$ARG1&apos; என்ற பெயரில் ஏற்கனவே ஒரு விகி கட்டுரை உள்ளது.&amp;#13;&amp;#13;நடப்பு கட்டுரையை உங்கள் கட்டுரையைக் கொண்டு மாற்றிவைக்கவா?&amp;#13;&amp;#13;</value>
         	<value xml:lang="te">శీర్షిక &apos;$ARG1&apos;తో వొక వికి ప్రకరనము యిప్పటికే వుంది. &amp;#13;&amp;#13;మీరు ప్రస్తుత ప్రకరనమును మీ ప్రకరనముతో పునఃస్థాపించాలని అనుకొనుచున్నారా?&amp;#13;&amp;#13;</value>
         	<value xml:lang="tg">A wiki article with the title &apos;$ARG1&apos; already exists.&amp;#13;&amp;#13;Do you want to replace the current article with your article?&amp;#13;&amp;#13;</value>

@@ -1,6 +1,6 @@
 
 ======================================================================
-LibreOffice 6.2 ReadMe
+LibreOffice 6.4 ReadMe
 ======================================================================
 
 
@@ -85,7 +85,7 @@ Mandrivaベースのシステム向け: sudo urpmi *.rpm
 
 これらのインストールの説明で明示的に扱っていない他の Linux ディストリビューションで LibreOffice をインストールするのは簡単にできるはずです。違いが見つかる主な面はデスクトップインテグレーションです。
 
-RPM (やDEBSなど) のディレクトリには libreoffice6.2-freedesktop-menus-6.2.0.1-1.noarch.rpm (あるいは libreoffice6.2-debian-menus_6.2.0.1-1_all.debなど) というパッケージもあります。これは Freedesktop.org specifications/recommendations (https://en.wikipedia.org/wiki/Freedesktop.org)に対応している全ての Linux ディストリビューションのためのパッケージで、上で述べた説明で扱っていない他の Linux ディストリビューションでのインストールのために提供されています。
+RPM (やDEBSなど) のディレクトリには libreoffice6.4-freedesktop-menus-6.4.0.1-1.noarch.rpm (あるいは libreoffice6.4-debian-menus_6.4.0.1-1_all.debなど) というパッケージもあります。これは Freedesktop.org specifications/recommendations (https://en.wikipedia.org/wiki/Freedesktop.org)に対応している全ての Linux ディストリビューションのためのパッケージで、上で述べた説明で扱っていない他の Linux ディストリビューションでのインストールのために提供されています。
 
 言語パックのインストール
 ----------------------------------------------------------------------
@@ -168,7 +168,7 @@ LibreOffice でのアクセシビリティの機能についてのさらなる�
 バグと問題の報告
 ----------------------------------------------------------------------
 
-Our system for reporting, tracking and solving bugs is currently Bugzilla, hosted at https://bugs.documentfoundation.org/. We encourage all users to feel entitled and welcome to report bugs that may arise on your particular platform. Energetic reporting of bugs is one of the most important contributions that the user community can make to the ongoing development and improvement of LibreOffice.
+バグを報告し追跡し解決するための私たちのシステムは現在 Bugzilla であり、https://bugs.documentfoundation.org/ でホストされています。全てのユーザーに対し個別のプラットフォームで生じるバグを報告する資格があり歓迎されているとお考えください。バグの精力的な報告はユーザーコミュニティが LibreOffice の進行中の開発や改善に対してできる最も重要な貢献の1つです。
 
 ----------------------------------------------------------------------
 コミュニティへの参加
@@ -198,7 +198,7 @@ LibreOffice コミュニティでは、この重要なオープンソースプ�
 
 ソフトウェアの設計やコーディングの経験が少なくても、この重要なオープンソースプロジェクトに貢献する方法はあります。
 
-新しい LibreOffice 6.2 をどうぞお楽しみください。そして、オンラインコミュニティに参加していただけることを願っています。
+新しい LibreOffice 6.4 をどうぞお楽しみください。そして、オンラインコミュニティに参加していただけることを願っています。
 
 LibreOffice コミュニティ
 

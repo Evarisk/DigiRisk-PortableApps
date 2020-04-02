@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <NotepadPlus>
-    <Native-Langue name="简体中文" filename="chineseSimplified.xml" version="7.6.5">
+    <Native-Langue name="简体中文" filename="chineseSimplified.xml" version="7.8.3">
         <Menu>
             <Main>
                 <!-- Main Menu Entries -->
@@ -63,9 +63,10 @@
                     <Item subMenuId="encoding-turkish" name="土耳其语"/>
                     <Item subMenuId="encoding-westernEuropean" name="西欧语系"/>
                     <Item subMenuId="encoding-vietnamese" name="越南文"/>
+                    <Item subMenuId="language-userDefinedLanguage" name="自定义语言"/>
                     <Item subMenuId="settings-import" name="导入"/>
                     <Item subMenuId="tools-md5" name="MD5"/>
-                    <Item subMenuId="tools-sha256"  name="SHA-256"/>
+                    <Item subMenuId="tools-sha256" name="SHA-256"/>
                 </SubEntries>
 
                 <!-- all menu item -->
@@ -281,6 +282,7 @@
 
                     <Item id="46001" name="语言格式设置..."/>
                     <Item id="46250" name="自定义语言格式..."/>
+                    <Item id="46300" name="打开用户自定义语言文件夹..."/>
                     <Item id="46180" name="用户自定义"/>
                     <Item id="47000" name="关于 Notepad++"/>
                     <Item id="47010" name="命令行参数..."/>
@@ -311,6 +313,9 @@
                     <Item id="50000" name="函数自动完成"/>
                     <Item id="50001" name="单词自动完成"/>
                     <Item id="50002" name="函数参数提示"/>
+                    <Item id="50003" name="切换到上一个文档"/>
+                    <Item id="50004" name="切换到下一个文档"/>
+                    <Item id="50005" name="启动/停止宏录制"/>
                     <Item id="50006" name="路径补全"/>
                     <Item id="44042" name="隐藏行"/>
                     <Item id="42040" name="打开文件列表"/>
@@ -384,6 +389,8 @@
                 <Item id="1641" name="在当前文件中查找"/>
                 <Item id="1686" name="透明度(&amp;Y)"/>
                 <Item id="1703" name="&amp;. 匹配新行"/>
+                <Item id="1721" name="▲"/>
+                <Item id="1723" name="▼ 查找下一个"/>
             </Find>
 
             <FindCharsInRange title="查找范围内的字符...">
@@ -771,6 +778,7 @@
                 </DefaultDir>
 
                 <FileAssoc title="文件关联">
+                    <Item id="4008" name="请退出并在管理员模式重新打开Notepad++，以使用此功能。"/>
                     <Item id="4009" name="支持的扩展名:"/>
                     <Item id="4010" name="注册的扩展名:"/>
                 </FileAssoc>
@@ -783,6 +791,7 @@
                     <Item id="6302" name="替换为空格"/>
                     <Item id="6303" name="制表符宽度: "/>
                     <Item id="6510" name="使用默认值"/>
+                    <Item id="6335" name="视反斜杠为 SQL 转义字符"/>
                 </Language>
 
                 <Highlighting title="高亮">
@@ -855,6 +864,7 @@
                 </Backup>
 
                 <AutoCompletion title="自动完成">
+                    <Item id="6115" name="自动缩进"/>
                     <Item id="6807" name="自动完成"/>
                     <Item id="6808" name="所有输入均启用自动完成"/>
                     <Item id="6809" name="函数自动完成"/>
@@ -928,14 +938,14 @@
                     <Item id="6324" name="文档切换 (Ctrl+TAB)"/>
                     <Item id="6331" name="在标题栏仅显示文件名"/>
                     <Item id="6334" name="自动检测字符编码"/>
-                    <Item id="6335" name="视反斜杠为 SQL 转义字符"/>
+                    <Item id="6314" name="在查找对话框中使用等宽字体（需要重启Notepad++）"/>
                     <Item id="6337" name="工作区文件扩展名:"/>
                     <Item id="6114" name="启用"/>
-                    <Item id="6115" name="自动缩进"/>
                     <Item id="6117" name="按最近使用顺序切换"/>
                     <Item id="6344" name="文档速览图"/>
                     <Item id="6345" name="在标签中启用速览"/>
                     <Item id="6346" name="在文档结构图中启用速览"/>
+                    <Item id="6348" name="不要用所选单词填充“查找”对话框中的“查找”字段"/>
                 </MISC>
             </Preference>
             <MultiMacro title="重复运行宏">
@@ -981,6 +991,14 @@
                 <Item id="1718" name="扩展(&amp;X) (\n, \r, \t, \0, \x...)"/>
                 <Item id="1720" name="&amp;. 匹配新行"/>
             </FindInFinder>
+            <DoSaveOrNot title="保存"> 
+                <Item id="1761" name="保存文件 &quot;$STR_REPLACE$&quot; ?"/>
+                <Item id="6" name="是(&amp;Y)"/>
+                <Item id="7" name="否(&amp;N)"/>
+                <Item id="2" name="取消(&amp;C)"/>
+                <Item id="4" name="全选是(&amp;A)"/>
+                <Item id="5" name="全选否(&amp;O)"/>
+            </DoSaveOrNot>
         </Dialog>
         <MessageBox> <!-- $INT_REPLACE$ is a place holder, don't translate it -->
             <ContextMenuXmlEditWarning title="编辑快捷菜单" message="您可以通过编辑contextMenu.xml文件来修改Notepad++的快捷菜单。
@@ -1001,8 +1019,8 @@
             <FileAlreadyOpenedInNpp title="" message="此文件已经在Notepad++中打开。"/>
             <DeleteFileFailed title="删除文件" message="文件删除失败"/>
 
-            <NbFileToOpenImportantWarning title="即将打开的文件过多" message="$INT_REPLACE$ 文件即将打开。
-确定吗？"/>
+            <NbFileToOpenImportantWarning title="即将打开的文件过多" message="即将打开 $INT_REPLACE$ 个文件。
+确定要打开吗？"/>
             <SettingsOnCloudError title="云同步设置" message="云同步路径疑似设于只读存储器，或未给予写入权限的文件夹，
 云同步设置将取消。
 请在首选项中重设相应值。"/>
@@ -1013,7 +1031,6 @@
             <SortingError title="排序错误" message="由于第$INT_REPLACE$行的问题，无法执行数字排序。"/>
             <ColumnModeTip title="列块模式提示" message="请使用“ALT+鼠标点选” or “Alt+Shift+箭头键”切换列块模式。"/>
             <BufferInvalidWarning title="保存失败" message="无法保存：缓冲区无效。"/>
-            <DoSaveOrNot title="保存" message="是否保存文件“$STR_REPLACE$” ？"/>
             <DoCloseOrNot title="保留文件" message="文件“$STR_REPLACE$”不在了。
 是否在编辑器里保留它？"/>
             <DoDeleteOrNot title="删除文件" message="此文件“$STR_REPLACE$”
@@ -1033,6 +1050,7 @@
             <PrehistoricSystemDetected title="检测到上古系统" message="您的系统好像过于古老了。很抱歉，这个功能只能在现代系统当中使用。"/>
             <XpUpdaterProblem title="Notepad++升级工具" message="Notepad++升级工具不兼容XP，由于XP的安全层过于陈旧。
 是否前往Notepad++官网下载最新版？"/>
+            <GUpProxyConfNeedAdminMode title="代理设置" message="请在管理员模式下重新启动Notepad++以配置代理。"/>
             <DocTooDirtyToMonitor title="监视问题" message="文档没有保存，请先保存修改再监视它。"/>
             <DocNoExistToMonitor title="监视问题" message="文件需要存在才能监视。"/>
             <FileTooBigToOpen title="文件大小问题" message="文件太大，Notepad++打不开。"/>
@@ -1072,6 +1090,10 @@
 是否要用管理员模式启动Notepad++？"/>
             <OpenInAdminModeFailed title="管理员模式开启失败" message="Notepad++不能用管理员模式打开。"/>
             <ViewInBrowser title="在浏览器查看当前文件" message="在您的系统未找到该应用程序。"/>
+            <ExitToUpdatePlugins title="Notepad++将要退出" message="如果您点击确定，Notepad++将退出以执行后续安装操作。
+Notepad++会在所有安装结束后重新启动。
+是否继续？"/>
+            <NeedToRestartToLoadPlugins title="Notepad++需要重启" message="您必须重启Notepad++才能加载安装好的插件。"/>
         </MessageBox>
         <ClipboardHistory>
             <PanelTitle name="剪贴板历史记录"/>
@@ -1087,10 +1109,12 @@
             <ColumnType name="类型"/>
         </WindowsDlg>
         <AsciiInsertion>
-            <PanelTitle name="ASCII输入面板"/>
+            <PanelTitle name="ASCII编码输入面板"/>
             <ColumnVal name="数值"/>
             <ColumnHex name="16进制码"/>
             <ColumnChar name="字符"/>
+            <ColumnHtmlNumber name="HTML数值"/>
+            <ColumnHtmlName name="HTML编码"/>
         </AsciiInsertion>
         <DocumentMap>
             <PanelTitle name="文档结构图"/>
@@ -1113,6 +1137,7 @@
                 <Item id="3517" name="在文件中查找..."/>
                 <Item id="3518" name="文件管理器打开"/>
                 <Item id="3519" name="命令行打开"/>
+                <Item id="3520" name="复制文件名"/>
             </Menus>
         </FolderAsWorkspace>
         <ProjectManager>
@@ -1173,6 +1198,11 @@
             <cloud-select-folder value="请选择一个供Notepad++读写设置的文件夹"/>
             <shift-change-direction-tip value="使用Shift+Enter反向查找"/>
             <two-find-buttons-tip value="双按钮查找模式"/>
+            <find-in-files-filter-tip value="在 cpp，cxx，h，hxx &amp;&amp; hpp 中查找：
+*.cpp *.cxx *.h *.hxx *.hpp
+
+查找除exe，obj &amp;&amp; log以外的所有文件:
+*.* !*.exe !*.obj !*.log"/>
             <find-status-top-reached value="查找：查找到从下到上的首个匹配项。已查找至文档最顶部。"/>
             <find-status-end-reached value="查找：查找到从上到下的首个匹配项。已查找至文档最底部。"/>
             <find-status-replaceinfiles-1-replaced value="在文件中替换：已替换1个匹配项。"/>
@@ -1218,6 +1248,17 @@
             <userdefined-title-rename value="重命名当前语言"/>
             <autocomplete-nb-char value="字符数: "/>
             <edit-verticaledge-nb-col value="边界宽度值:"/>
+            <summary value="统计信息"/>
+            <summary-filepath value="完整文件路径："/>
+            <summary-filecreatetime value="创建时间："/>
+            <summary-filemodifytime value="修改时间："/>
+            <summary-nbchar value="字符数（不含换行符）："/>
+            <summary-nbword value="字数："/>
+            <summary-nbline value="行数："/>
+            <summary-nbbyte value="文档长度："/>
+            <summary-nbsel1 value=" 个选中字符（"/>
+            <summary-nbsel2 value=" 字节）在"/>
+            <summary-nbrange value=" 个选取范围中"/>
         </MiscStrings>
     </Native-Langue>
 </NotepadPlus>

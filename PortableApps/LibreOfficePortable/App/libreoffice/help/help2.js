@@ -7,21 +7,21 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 // Used to set Application in caseinline=APP
-function setApplSpan(SpanID) {
+function setApplSpan(spanZ) {
     var module = getParameterByName("DbPAR");
     if (module === null) {
         module = "WRITER";
     }
-    var y = document.getElementById(SpanID).getElementsByTagName("SPAN");
+    var y = spanZ.getElementsByTagName("SPAN");
     var n = y.length;
-    var foundSystem = false;
+    var foundAppl = false;
     for (i = 0; i < n; i++) {
         if (y[i].getAttribute("id") === null){
             continue;
         }
         else if( y[i].getAttribute("id").startsWith(module)){
             y[i].removeAttribute("hidden");
-            foundSystem=true;
+            foundAppl=true;
         }
     }
     for (i = 0; i < n; i++) {
@@ -29,20 +29,20 @@ function setApplSpan(SpanID) {
             continue;
         }
         else if( y[i].getAttribute("id").startsWith("default")){
-            if(!foundSystem){
+            if(!foundAppl){
                 y[i].removeAttribute("hidden");
             }
         }
     }
 }
 // Used to set system in case, caseinline=SYSTEM
-function setSystemSpan(spanID) {
-    var system = getParameterByName("System");
+function setSystemSpan(spanZ) {
     // if no System in URL, get browser system
+    var system = getParameterByName("System");
     if (system === null) {
         system = getSystem();
     }
-    var y = document.getElementById(spanID).getElementsByTagName("SPAN");
+    var y = spanZ.getElementsByTagName("SPAN");
     var n = y.length;
     var foundSystem = false;
     for (i = 0; i < n; i++) {
@@ -65,6 +65,7 @@ function setSystemSpan(spanID) {
         }
     }
 }
+
 // Find spans that need the switch treatment and give it to them
 var spans = document.querySelectorAll("[class^=switch]");
 var n = spans.length;
@@ -74,21 +75,22 @@ for (z = 0; z < n; z++) {
         continue;
     }
     else if (id.startsWith("swlnsys")) {
-        setSystemSpan(id);
+        setSystemSpan(spans[z]);
     } else {
-        setApplSpan(id);
+        setApplSpan(spans[z]);
     }
 }
 /* add &DbPAR= and &System= to the links in DisplayArea div */
 /* skip for object files */
 function fixURL(module, system) {
-    var itemlink = document.getElementById("DisplayArea").getElementsByTagName("a");
+    if ((DisplayArea = document.getElementById("DisplayArea")) === null) return;
+    var itemlink = DisplayArea.getElementsByTagName("a");
     var pSystem = (system === null) ? getSystem() : system;
     var pAppl = (module === null) ? "WRITER" : module;
     var n = itemlink.length;
     for (var i = 0; i < n; i++) {
-        if (itemlink[i].getAttribute("class") != "objectfiles"){
-        setURLParam(itemlink[i], pSystem, pAppl);
+        if (itemlink[i].getAttribute("class") != "objectfiles") {
+            setURLParam(itemlink[i], pSystem, pAppl);
         }
     }
 }
@@ -203,19 +205,29 @@ if (document.body.getElementsByTagName('meta')) {
 var module = getParameterByName("DbPAR");
 var helpID = getParameterByName("HID");
 fixURL(module,system);
-var dbg = getParameterByName("Debug");
-if (dbg == null) { dbg=0; }
-document.getElementById("DEBUG").style.display = (dbg == 0) ? "none":"block";
-document.getElementById("bm_module").innerHTML ="Module is: "+module;
-document.getElementById("bm_system").innerHTML ="System is: "+system;
-document.getElementById("bm_HID").innerHTML ="HID is: "+helpID;
+
+function debugInfo(dbg) {
+    if (dbg == null) return;
+    document.getElementById("DEBUG").style.display = "block";
+    document.getElementById("bm_module").innerHTML = "Module is: "+module;
+    document.getElementById("bm_system").innerHTML = "System is: "+system;
+    document.getElementById("bm_HID").innerHTML = "HID is: "+helpID;
+}
+
+debugInfo(getParameterByName("Debug"));
 
 // Mobile devices need the modules and langs on page load
 if (Math.max(document.documentElement.clientWidth, window.innerWidth || 0) < 960) {
-    var e = new Event('change');
-    var modules = document.getElementById('modules');
-    var langs = document.getElementById('langs');
-    modules.dispatchEvent(e);
-    langs.dispatchEvent(e);
+    var e = new Event('click');
+    var modulesBtn = document.getElementById('modules');
+    var langsBtn = document.getElementById('langs');
+    var modules = document.getElementById('modules-nav');
+    var langs = document.getElementById('langs-nav');
+    modules.setAttribute('data-a11y-toggle-open', '');
+    modulesBtn.dispatchEvent(e);
+    if (langs) {
+        langs.setAttribute('data-a11y-toggle-open', '');
+        langsBtn.dispatchEvent(e);
+    }
 }
 /* vim:set shiftwidth=4 softtabstop=4 expandtab cinoptions=b1,g0,N-s cinkeys+=0=break: */

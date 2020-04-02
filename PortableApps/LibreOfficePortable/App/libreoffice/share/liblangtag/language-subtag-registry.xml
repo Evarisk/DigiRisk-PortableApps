@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<registry date="2019-04-03">
+<registry date="2019-09-16">
   <language>
     <subtag>aa</subtag>
     <description>Afar</description>
@@ -2095,6 +2095,8 @@
     <subtag>ais</subtag>
     <description>Nataoran Amis</description>
     <added>2009-07-29</added>
+    <deprecated>2019-04-16</deprecated>
+    <comments>see ami, szy</comments>
   </language>
   <language>
     <subtag>ait</subtag>
@@ -2632,6 +2634,7 @@
   <language>
     <subtag>ant</subtag>
     <description>Antakarinya</description>
+    <description>Antikarinya</description>
     <added>2009-07-29</added>
   </language>
   <language>
@@ -3093,6 +3096,8 @@
     <subtag>asd</subtag>
     <description>Asas</description>
     <added>2009-07-29</added>
+    <deprecated>2019-04-16</deprecated>
+    <preferred-value>snz</preferred-value>
   </language>
   <language>
     <subtag>ase</subtag>
@@ -4134,7 +4139,7 @@
   </language>
   <language>
     <subtag>bck</subtag>
-    <description>Bunaba</description>
+    <description>Bunuba</description>
     <added>2009-07-29</added>
   </language>
   <language>
@@ -6929,7 +6934,7 @@
   </language>
   <language>
     <subtag>bym</subtag>
-    <description>Bidyara</description>
+    <description>Bidjara</description>
     <added>2009-07-29</added>
   </language>
   <language>
@@ -7561,6 +7566,11 @@
     <subtag>cet</subtag>
     <description>Centúúm</description>
     <added>2009-07-29</added>
+  </language>
+  <language>
+    <subtag>cey</subtag>
+    <description>Ekai Chin</description>
+    <added>2019-04-16</added>
   </language>
   <language>
     <subtag>cfa</subtag>
@@ -9438,6 +9448,7 @@
   <language>
     <subtag>dif</subtag>
     <description>Dieri</description>
+    <description>Diyari</description>
     <added>2009-07-29</added>
   </language>
   <language>
@@ -9514,6 +9525,8 @@
     <subtag>dit</subtag>
     <description>Dirari</description>
     <added>2009-07-29</added>
+    <deprecated>2019-04-29</deprecated>
+    <preferred-value>dif</preferred-value>
   </language>
   <language>
     <subtag>diu</subtag>
@@ -9559,6 +9572,7 @@
   <language>
     <subtag>djd</subtag>
     <description>Djamindjung</description>
+    <description>Ngaliwurru</description>
     <added>2009-07-29</added>
   </language>
   <language>
@@ -9602,6 +9616,7 @@
   </language>
   <language>
     <subtag>djn</subtag>
+    <description>Jawoyn</description>
     <description>Djauan</description>
     <added>2009-07-29</added>
   </language>
@@ -10190,6 +10205,8 @@
     <subtag>dud</subtag>
     <description>Hun-Saare</description>
     <added>2009-07-29</added>
+    <deprecated>2019-04-16</deprecated>
+    <comments>see uth, uss</comments>
   </language>
   <language>
     <subtag>due</subtag>
@@ -10381,6 +10398,7 @@
   <language>
     <subtag>dyn</subtag>
     <description>Dyangadi</description>
+    <description>Dhanggatti</description>
     <added>2009-07-29</added>
   </language>
   <language>
@@ -10395,6 +10413,7 @@
   </language>
   <language>
     <subtag>dyy</subtag>
+    <description>Djabugay</description>
     <description>Dyaabugay</description>
     <added>2009-07-29</added>
   </language>
@@ -11671,7 +11690,7 @@
   </language>
   <language>
     <subtag>gbd</subtag>
-    <description>Karadjeri</description>
+    <description>Karajarri</description>
     <added>2009-07-29</added>
   </language>
   <language>
@@ -12055,7 +12074,7 @@
   </language>
   <language>
     <subtag>gge</subtag>
-    <description>Guragone</description>
+    <description>Gurr-goni</description>
     <added>2009-07-29</added>
   </language>
   <language>
@@ -12168,7 +12187,7 @@
   </language>
   <language>
     <subtag>gia</subtag>
-    <description>Kitja</description>
+    <description>Kija</description>
     <added>2009-07-29</added>
   </language>
   <language>
@@ -12954,7 +12973,7 @@
   </language>
   <language>
     <subtag>gue</subtag>
-    <description>Gurinji</description>
+    <description>Gurindji</description>
     <added>2009-07-29</added>
   </language>
   <language>
@@ -15291,6 +15310,7 @@
   <language>
     <subtag>jay</subtag>
     <description>Yan-nhangu</description>
+    <description>Nhangu</description>
     <added>2009-07-29</added>
   </language>
   <language>
@@ -15487,6 +15507,7 @@
   </language>
   <language>
     <subtag>jig</subtag>
+    <description>Jingulu</description>
     <description>Djingili</description>
     <added>2009-07-29</added>
   </language>
@@ -17220,6 +17241,7 @@
   <language>
     <subtag>kkp</subtag>
     <description>Gugubera</description>
+    <description>Koko-Bera</description>
     <added>2009-07-29</added>
   </language>
   <language>
@@ -17264,6 +17286,7 @@
   </language>
   <language>
     <subtag>kky</subtag>
+    <description>Guugu Yimidhirr</description>
     <description>Guguyimidjir</description>
     <added>2009-07-29</added>
   </language>
@@ -18318,6 +18341,7 @@
   <language>
     <subtag>ktd</subtag>
     <description>Kokata</description>
+    <description>Kukatha</description>
     <added>2009-07-29</added>
   </language>
   <language>
@@ -19339,6 +19363,7 @@
     <subtag>lba</subtag>
     <description>Lui</description>
     <added>2009-07-29</added>
+    <deprecated>2019-04-16</deprecated>
   </language>
   <language>
     <subtag>lbb</subtag>
@@ -19394,7 +19419,7 @@
   </language>
   <language>
     <subtag>lbn</subtag>
-    <description>Lamet</description>
+    <description>Rmeet</description>
     <added>2009-07-29</added>
   </language>
   <language>
@@ -19444,6 +19469,7 @@
   </language>
   <language>
     <subtag>lby</subtag>
+    <description>Lamalama</description>
     <description>Lamu-Lamu</description>
     <added>2009-07-29</added>
   </language>
@@ -20160,6 +20186,8 @@
     <subtag>llo</subtag>
     <description>Khlor</description>
     <added>2009-07-29</added>
+    <deprecated>2019-04-16</deprecated>
+    <preferred-value>ngt</preferred-value>
   </language>
   <language>
     <subtag>llp</subtag>
@@ -20652,6 +20680,11 @@
     <macrolanguage>luy</macrolanguage>
   </language>
   <language>
+    <subtag>lsn</subtag>
+    <description>Tibetan Sign Language</description>
+    <added>2019-04-16</added>
+  </language>
+  <language>
     <subtag>lso</subtag>
     <description>Laos Sign Language</description>
     <added>2009-07-29</added>
@@ -20676,6 +20709,11 @@
     <subtag>lst</subtag>
     <description>Trinidad and Tobago Sign Language</description>
     <added>2009-07-29</added>
+  </language>
+  <language>
+    <subtag>lsv</subtag>
+    <description>Sivia Sign Language</description>
+    <added>2019-04-16</added>
   </language>
   <language>
     <subtag>lsy</subtag>
@@ -20844,6 +20882,11 @@
     <subtag>lva</subtag>
     <description>Maku'a</description>
     <added>2009-07-29</added>
+  </language>
+  <language>
+    <subtag>lvi</subtag>
+    <description>Lavi</description>
+    <added>2019-04-16</added>
   </language>
   <language>
     <subtag>lvk</subtag>
@@ -21452,7 +21495,7 @@
   </language>
   <language>
     <subtag>mec</subtag>
-    <description>Mara</description>
+    <description>Marra</description>
     <added>2009-07-29</added>
   </language>
   <language>
@@ -21521,7 +21564,7 @@
   </language>
   <language>
     <subtag>mep</subtag>
-    <description>Miriwung</description>
+    <description>Miriwoong</description>
     <added>2009-07-29</added>
   </language>
   <language>
@@ -21658,7 +21701,7 @@
   </language>
   <language>
     <subtag>mfr</subtag>
-    <description>Marithiel</description>
+    <description>Marrithiyel</description>
     <added>2009-07-29</added>
   </language>
   <language>
@@ -22851,12 +22894,13 @@
   </language>
   <language>
     <subtag>mpb</subtag>
+    <description>Malak Malak</description>
     <description>Mullukmulluk</description>
     <added>2009-07-29</added>
   </language>
   <language>
     <subtag>mpc</subtag>
-    <description>Mangarayi</description>
+    <description>Mangarrayi</description>
     <added>2009-07-29</added>
   </language>
   <language>
@@ -22887,6 +22931,7 @@
   <language>
     <subtag>mpj</subtag>
     <description>Martu Wangka</description>
+    <description>Wangkajunga</description>
     <added>2009-07-29</added>
   </language>
   <language>
@@ -24013,6 +24058,8 @@
     <subtag>myd</subtag>
     <description>Maramba</description>
     <added>2009-07-29</added>
+    <deprecated>2019-04-16</deprecated>
+    <preferred-value>aog</preferred-value>
   </language>
   <language>
     <subtag>mye</subtag>
@@ -24038,6 +24085,7 @@
     <subtag>myi</subtag>
     <description>Mina (India)</description>
     <added>2009-07-29</added>
+    <deprecated>2019-04-16</deprecated>
   </language>
   <language>
     <subtag>myj</subtag>
@@ -24373,7 +24421,7 @@
   </language>
   <language>
     <subtag>nay</subtag>
-    <description>Narrinyeri</description>
+    <description>Ngarrindjeri</description>
     <added>2009-07-29</added>
   </language>
   <language>
@@ -24430,7 +24478,7 @@
   </language>
   <language>
     <subtag>nbj</subtag>
-    <description>Ngarinman</description>
+    <description>Ngarinyman</description>
     <added>2009-07-29</added>
   </language>
   <language>
@@ -24465,7 +24513,7 @@
   </language>
   <language>
     <subtag>nbr</subtag>
-    <description>Numana-Nunku-Gbantu-Numbu</description>
+    <description>Numana</description>
     <added>2009-07-29</added>
   </language>
   <language>
@@ -24557,7 +24605,7 @@
   </language>
   <language>
     <subtag>nck</subtag>
-    <description>Nakara</description>
+    <description>Na-kara</description>
     <added>2009-07-29</added>
   </language>
   <language>
@@ -24929,7 +24977,7 @@
   </language>
   <language>
     <subtag>ngh</subtag>
-    <description>Nǀu</description>
+    <description>Nǁng</description>
     <added>2009-07-29</added>
   </language>
   <language>
@@ -25174,7 +25222,7 @@
   </language>
   <language>
     <subtag>nig</subtag>
-    <description>Ngalakan</description>
+    <description>Ngalakgan</description>
     <added>2009-07-29</added>
   </language>
   <language>
@@ -25796,6 +25844,8 @@
     <subtag>nns</subtag>
     <description>Ningye</description>
     <added>2009-07-29</added>
+    <deprecated>2019-04-16</deprecated>
+    <preferred-value>nbr</preferred-value>
   </language>
   <language>
     <subtag>nnt</subtag>
@@ -26656,7 +26706,7 @@
   </language>
   <language>
     <subtag>nyh</subtag>
-    <description>Nyigina</description>
+    <description>Nyikina</description>
     <added>2009-07-29</added>
   </language>
   <language>
@@ -26711,7 +26761,7 @@
   </language>
   <language>
     <subtag>nys</subtag>
-    <description>Nyunga</description>
+    <description>Nyungar</description>
     <added>2009-07-29</added>
   </language>
   <language>
@@ -28705,6 +28755,11 @@
     <added>2009-07-29</added>
   </language>
   <language>
+    <subtag>pnd</subtag>
+    <description>Mpinda</description>
+    <added>2019-04-16</added>
+  </language>
+  <language>
     <subtag>pne</subtag>
     <description>Western Penan</description>
     <added>2009-07-29</added>
@@ -28792,6 +28847,7 @@
   </language>
   <language>
     <subtag>pnw</subtag>
+    <description>Banyjima</description>
     <description>Panytyima</description>
     <added>2009-07-29</added>
   </language>
@@ -29248,7 +29304,8 @@
   </language>
   <language>
     <subtag>pti</subtag>
-    <description>Pintiini</description>
+    <description>Pindiini</description>
+    <description>Wangkatha</description>
     <added>2009-07-29</added>
   </language>
   <language>
@@ -33244,6 +33301,7 @@
   </language>
   <language>
     <subtag>ril</subtag>
+    <description>Riang Lang</description>
     <description>Riang (Myanmar)</description>
     <added>2009-07-29</added>
   </language>
@@ -33264,7 +33322,7 @@
   </language>
   <language>
     <subtag>rit</subtag>
-    <description>Ritarungo</description>
+    <description>Ritharrngu</description>
     <added>2009-07-29</added>
   </language>
   <language>
@@ -33330,7 +33388,7 @@
   </language>
   <language>
     <subtag>rmb</subtag>
-    <description>Rembarunga</description>
+    <description>Rembarrnga</description>
     <added>2009-07-29</added>
   </language>
   <language>
@@ -33752,6 +33810,7 @@
   <language>
     <subtag>rxw</subtag>
     <description>Karuwali</description>
+    <description>Garuwali</description>
     <added>2013-09-10</added>
   </language>
   <language>
@@ -35317,7 +35376,7 @@
   </language>
   <language>
     <subtag>snz</subtag>
-    <description>Sinsauru</description>
+    <description>Kou</description>
     <added>2009-07-29</added>
   </language>
   <language>
@@ -35994,6 +36053,7 @@
     <subtag>suj</subtag>
     <description>Shubi</description>
     <added>2009-07-29</added>
+    <comments>see also xsj</comments>
   </language>
   <language>
     <subtag>suk</subtag>
@@ -36423,6 +36483,11 @@
     <added>2009-07-29</added>
   </language>
   <language>
+    <subtag>szy</subtag>
+    <description>Sakizaya</description>
+    <added>2019-04-16</added>
+  </language>
+  <language>
     <subtag>taa</subtag>
     <description>Lower Tanana</description>
     <added>2009-07-29</added>
@@ -36576,6 +36641,7 @@
   </language>
   <language>
     <subtag>tbh</subtag>
+    <description>Dharawal</description>
     <description>Thurawal</description>
     <added>2009-07-29</added>
   </language>
@@ -36755,6 +36821,7 @@
   <language>
     <subtag>tcs</subtag>
     <description>Torres Strait Creole</description>
+    <description>Yumplatok</description>
     <added>2009-07-29</added>
   </language>
   <language>
@@ -37178,6 +37245,7 @@
   </language>
   <language>
     <subtag>thd</subtag>
+    <description>Kuuk Thaayorre</description>
     <description>Thayore</description>
     <added>2009-07-29</added>
   </language>
@@ -37421,6 +37489,11 @@
     <added>2009-07-29</added>
   </language>
   <language>
+    <subtag>tjj</subtag>
+    <description>Tjungundji</description>
+    <added>2019-04-16</added>
+  </language>
+  <language>
     <subtag>tjl</subtag>
     <description>Tai Laing</description>
     <added>2012-08-12</added>
@@ -37439,6 +37512,11 @@
     <subtag>tjo</subtag>
     <description>Temacine Tamazight</description>
     <added>2009-07-29</added>
+  </language>
+  <language>
+    <subtag>tjp</subtag>
+    <description>Tjupany</description>
+    <added>2019-04-16</added>
   </language>
   <language>
     <subtag>tjs</subtag>
@@ -38790,6 +38868,11 @@
     <added>2009-07-29</added>
   </language>
   <language>
+    <subtag>tvx</subtag>
+    <description>Taivoan</description>
+    <added>2019-04-16</added>
+  </language>
+  <language>
     <subtag>tvy</subtag>
     <description>Timor Pidgin</description>
     <added>2009-07-29</added>
@@ -39341,7 +39424,7 @@
   </language>
   <language>
     <subtag>ulk</subtag>
-    <description>Meriam</description>
+    <description>Meriam Mir</description>
     <added>2009-07-29</added>
   </language>
   <language>
@@ -39391,6 +39474,7 @@
   </language>
   <language>
     <subtag>umg</subtag>
+    <description>Morrobalama</description>
     <description>Umbuygamu</description>
     <added>2009-07-29</added>
   </language>
@@ -39661,6 +39745,11 @@
     <added>2009-07-29</added>
   </language>
   <language>
+    <subtag>uss</subtag>
+    <description>us-Saare</description>
+    <added>2019-04-16</added>
+  </language>
+  <language>
     <subtag>usu</subtag>
     <description>Uya</description>
     <added>2009-07-29</added>
@@ -39674,6 +39763,11 @@
     <subtag>ute</subtag>
     <description>Ute-Southern Paiute</description>
     <added>2009-07-29</added>
+  </language>
+  <language>
+    <subtag>uth</subtag>
+    <description>ut-Hun</description>
+    <added>2019-04-16</added>
   </language>
   <language>
     <subtag>utp</subtag>
@@ -40289,7 +40383,7 @@
   </language>
   <language>
     <subtag>waq</subtag>
-    <description>Wageman</description>
+    <description>Wagiman</description>
     <added>2009-07-29</added>
   </language>
   <language>
@@ -40412,7 +40506,7 @@
   </language>
   <language>
     <subtag>wbt</subtag>
-    <description>Wanman</description>
+    <description>Warnman</description>
     <added>2009-07-29</added>
   </language>
   <language>
@@ -40559,6 +40653,7 @@
   </language>
   <language>
     <subtag>wgg</subtag>
+    <description>Wangkangurru</description>
     <description>Wangganguru</description>
     <added>2009-07-29</added>
   </language>
@@ -40632,7 +40727,7 @@
   </language>
   <language>
     <subtag>wig</subtag>
-    <description>Wik-Ngathana</description>
+    <description>Wik Ngathan</description>
     <added>2009-07-29</added>
   </language>
   <language>
@@ -40734,6 +40829,11 @@
     <subtag>wkl</subtag>
     <description>Kalanadi</description>
     <added>2009-07-29</added>
+  </language>
+  <language>
+    <subtag>wkr</subtag>
+    <description>Keerray-Woorroong</description>
+    <added>2019-04-16</added>
   </language>
   <language>
     <subtag>wku</subtag>
@@ -40968,10 +41068,12 @@
   <language>
     <subtag>wny</subtag>
     <description>Wanyi</description>
+    <description>Waanyi</description>
     <added>2012-08-12</added>
   </language>
   <language>
     <subtag>woa</subtag>
+    <description>Kuwema</description>
     <description>Tyaraity</description>
     <added>2009-07-29</added>
   </language>
@@ -41062,6 +41164,7 @@
   </language>
   <language>
     <subtag>wrb</subtag>
+    <description>Waluwarra</description>
     <description>Warluwara</description>
     <added>2009-07-29</added>
   </language>
@@ -41073,11 +41176,12 @@
   <language>
     <subtag>wrg</subtag>
     <description>Warungu</description>
+    <description>Gudjal</description>
     <added>2009-07-29</added>
   </language>
   <language>
     <subtag>wrh</subtag>
-    <description>Wiradhuri</description>
+    <description>Wiradjuri</description>
     <added>2009-07-29</added>
   </language>
   <language>
@@ -41550,6 +41654,7 @@
   </language>
   <language>
     <subtag>xby</subtag>
+    <description>Batjala</description>
     <description>Batyala</description>
     <added>2013-09-10</added>
   </language>
@@ -42109,7 +42214,7 @@
   </language>
   <language>
     <subtag>xmh</subtag>
-    <description>Kuku-Muminh</description>
+    <description>Kugu-Muminh</description>
     <added>2009-07-29</added>
   </language>
   <language>
@@ -42534,8 +42639,7 @@
     <subtag>xsj</subtag>
     <description>Subi</description>
     <added>2009-07-29</added>
-    <deprecated>2015-02-12</deprecated>
-    <preferred-value>suj</preferred-value>
+    <comments>see also suj</comments>
   </language>
   <language>
     <subtag>xsl</subtag>
@@ -43369,6 +43473,7 @@
   </language>
   <language>
     <subtag>yin</subtag>
+    <description>Riang Lai</description>
     <description>Yinchia</description>
     <added>2009-07-29</added>
   </language>
@@ -44673,12 +44778,13 @@
   </language>
   <language>
     <subtag>zml</subtag>
-    <description>Madngele</description>
+    <description>Matngala</description>
     <added>2009-07-29</added>
   </language>
   <language>
     <subtag>zmm</subtag>
     <description>Marimanindji</description>
+    <description>Marramaninyshi</description>
     <added>2009-07-29</added>
   </language>
   <language>
@@ -46130,6 +46236,13 @@
     <prefix>sgn</prefix>
   </extlang>
   <extlang>
+    <subtag>lsn</subtag>
+    <description>Tibetan Sign Language</description>
+    <added>2019-04-16</added>
+    <preferred-value>lsn</preferred-value>
+    <prefix>sgn</prefix>
+  </extlang>
+  <extlang>
     <subtag>lso</subtag>
     <description>Laos Sign Language</description>
     <added>2009-07-29</added>
@@ -46149,6 +46262,13 @@
     <description>Trinidad and Tobago Sign Language</description>
     <added>2009-07-29</added>
     <preferred-value>lst</preferred-value>
+    <prefix>sgn</prefix>
+  </extlang>
+  <extlang>
+    <subtag>lsv</subtag>
+    <description>Sivia Sign Language</description>
+    <added>2019-04-16</added>
+    <preferred-value>lsv</preferred-value>
     <prefix>sgn</prefix>
   </extlang>
   <extlang>
@@ -47077,6 +47197,11 @@
     <added>2005-10-16</added>
   </script>
   <script>
+    <subtag>Chrs</subtag>
+    <description>Chorasmian</description>
+    <added>2019-09-11</added>
+  </script>
+  <script>
     <subtag>Cirt</subtag>
     <description>Cirth</description>
     <added>2005-10-16</added>
@@ -47111,6 +47236,11 @@
     <description>Devanagari</description>
     <description>Nagari</description>
     <added>2005-10-16</added>
+  </script>
+  <script>
+    <subtag>Diak</subtag>
+    <description>Dives Akuru</description>
+    <added>2019-09-11</added>
   </script>
   <script>
     <subtag>Dogr</subtag>
@@ -48195,6 +48325,11 @@
     <added>2005-10-16</added>
   </script>
   <script>
+    <subtag>Yezi</subtag>
+    <description>Yezidi</description>
+    <added>2019-09-11</added>
+  </script>
+  <script>
     <subtag>Yiii</subtag>
     <description>Yi</description>
     <added>2005-10-16</added>
@@ -49038,7 +49173,7 @@
   </region>
   <region>
     <subtag>MK</subtag>
-    <description>The Former Yugoslav Republic of Macedonia</description>
+    <description>North Macedonia</description>
     <added>2005-10-16</added>
   </region>
   <region>

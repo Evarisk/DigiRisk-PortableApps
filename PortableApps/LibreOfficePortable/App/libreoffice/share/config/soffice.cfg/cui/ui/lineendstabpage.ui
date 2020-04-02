@@ -20,7 +20,7 @@
       <column type="gchararray"/>
       <!-- column-name image -->
       <column type="GdkPixbuf"/>
-       <!-- column-name surface -->
+      <!-- column-name surface -->
       <column type="CairoSurface"/>
     </columns>
   </object>
@@ -40,6 +40,7 @@
         <property name="vexpand">True</property>
         <property name="top_padding">6</property>
         <property name="left_padding">12</property>
+        <property name="right_padding">12</property>
         <child>
           <object class="GtkBox" id="box1">
             <property name="visible">True</property>
@@ -95,7 +96,6 @@
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="halign">start</property>
-                        <property name="hexpand">True</property>
                         <property name="width_chars">30</property>
                       </object>
                       <packing>
@@ -107,7 +107,6 @@
                       <object class="GtkComboBox" id="LB_LINEENDS">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="halign">start</property>
                         <property name="model">liststore4</property>
                         <property name="entry_text_column">0</property>
                         <property name="id_column">1</property>

@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Generated with glade 3.18.3 -->
+<!-- Generated with glade 3.22.1 -->
 <interface domain="pcr">
   <requires lib="gtk+" version="3.18"/>
   <object class="GtkDialog" id="MappingDialog">
     <property name="can_focus">False</property>
     <property name="border_width">6</property>
     <property name="title" translatable="yes" context="mappingdialog|MappingDialog">Column Layout for Table “%1”</property>
+    <property name="modal">True</property>
+    <property name="default_width">0</property>
+    <property name="default_height">0</property>
     <property name="type_hint">dialog</property>
+    <child>
+      <placeholder/>
+    </child>
     <child internal-child="vbox">
       <object class="GtkBox" id="dialog-vbox1">
         <property name="can_focus">False</property>
@@ -99,8 +105,7 @@
                       <object class="GtkLabel" id="label2">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="halign">start</property>
-                        <property name="vexpand">True</property>
+                        <property name="halign">end</property>
                         <property name="label" translatable="yes" context="mappingdialog|label2">_Short name</property>
                         <property name="use_underline">True</property>
                         <property name="mnemonic_widget">identifierCombobox</property>
@@ -114,8 +119,7 @@
                       <object class="GtkLabel" id="label3">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="halign">start</property>
-                        <property name="vexpand">True</property>
+                        <property name="halign">end</property>
                         <property name="label" translatable="yes" context="mappingdialog|label3">_Author(s)</property>
                         <property name="use_underline">True</property>
                         <property name="mnemonic_widget">authorCombobox</property>
@@ -129,8 +133,7 @@
                       <object class="GtkLabel" id="label4">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="halign">start</property>
-                        <property name="vexpand">True</property>
+                        <property name="halign">end</property>
                         <property name="label" translatable="yes" context="mappingdialog|label4">_Publisher</property>
                         <property name="use_underline">True</property>
                         <property name="mnemonic_widget">publisherCombobox</property>
@@ -144,8 +147,7 @@
                       <object class="GtkLabel" id="label5">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="halign">start</property>
-                        <property name="vexpand">True</property>
+                        <property name="halign">end</property>
                         <property name="label" translatable="yes" context="mappingdialog|label5">_Chapter</property>
                         <property name="use_underline">True</property>
                         <property name="mnemonic_widget">chapterCombobox</property>
@@ -159,17 +161,16 @@
                       <object class="GtkLabel" id="label6">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="halign">start</property>
-                        <property name="vexpand">True</property>
+                        <property name="halign">end</property>
                         <property name="label" translatable="yes" context="mappingdialog|label6">Editor</property>
                       </object>
                       <packing>
                         <property name="left_attach">0</property>
-                        <property name="top_attach">4</property>
+                        <property name="top_attach">5</property>
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkComboBox" id="authorCombobox">
+                      <object class="GtkComboBoxText" id="authorCombobox">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="valign">center</property>
@@ -181,7 +182,7 @@
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkComboBox" id="publisherCombobox">
+                      <object class="GtkComboBoxText" id="publisherCombobox">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="valign">center</property>
@@ -193,7 +194,7 @@
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkComboBox" id="chapterCombobox">
+                      <object class="GtkComboBoxText" id="chapterCombobox">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="valign">center</property>
@@ -205,7 +206,7 @@
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkComboBox" id="editorCombobox">
+                      <object class="GtkComboBoxText" id="editorCombobox">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="valign">center</property>
@@ -213,15 +214,14 @@
                       </object>
                       <packing>
                         <property name="left_attach">1</property>
-                        <property name="top_attach">4</property>
+                        <property name="top_attach">5</property>
                       </packing>
                     </child>
                     <child>
                       <object class="GtkLabel" id="label7">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="halign">start</property>
-                        <property name="vexpand">True</property>
+                        <property name="halign">end</property>
                         <property name="label" translatable="yes" context="mappingdialog|label7">_Type</property>
                         <property name="use_underline">True</property>
                         <property name="mnemonic_widget">authorityTypeCombobox</property>
@@ -235,8 +235,7 @@
                       <object class="GtkLabel" id="label8">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="halign">start</property>
-                        <property name="vexpand">True</property>
+                        <property name="halign">end</property>
                         <property name="label" translatable="yes" context="mappingdialog|label8">_Year</property>
                         <property name="use_underline">True</property>
                         <property name="mnemonic_widget">yearCombobox</property>
@@ -250,8 +249,7 @@
                       <object class="GtkLabel" id="label9">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="halign">start</property>
-                        <property name="vexpand">True</property>
+                        <property name="halign">end</property>
                         <property name="label" translatable="yes" context="mappingdialog|label9">Tit_le</property>
                         <property name="use_underline">True</property>
                         <property name="mnemonic_widget">titleCombobox</property>
@@ -262,7 +260,7 @@
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkComboBox" id="authorityTypeCombobox">
+                      <object class="GtkComboBoxText" id="authorityTypeCombobox">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="valign">center</property>
@@ -274,7 +272,7 @@
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkComboBox" id="yearCombobox">
+                      <object class="GtkComboBoxText" id="yearCombobox">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="valign">center</property>
@@ -286,7 +284,7 @@
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkComboBox" id="titleCombobox">
+                      <object class="GtkComboBoxText" id="titleCombobox">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="valign">center</property>
@@ -301,8 +299,7 @@
                       <object class="GtkLabel" id="label10">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="halign">start</property>
-                        <property name="vexpand">True</property>
+                        <property name="halign">end</property>
                         <property name="label" translatable="yes" context="mappingdialog|label10">A_ddress</property>
                         <property name="use_underline">True</property>
                         <property name="mnemonic_widget">addressCombobox</property>
@@ -316,8 +313,7 @@
                       <object class="GtkLabel" id="label11">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="halign">start</property>
-                        <property name="vexpand">True</property>
+                        <property name="halign">end</property>
                         <property name="label" translatable="yes" context="mappingdialog|label11">_ISBN</property>
                         <property name="use_underline">True</property>
                         <property name="mnemonic_widget">ISBNCombobox</property>
@@ -331,8 +327,7 @@
                       <object class="GtkLabel" id="label12">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="halign">start</property>
-                        <property name="vexpand">True</property>
+                        <property name="halign">end</property>
                         <property name="label" translatable="yes" context="mappingdialog|label12">Pa_ge(s)</property>
                         <property name="use_underline">True</property>
                         <property name="mnemonic_widget">pagesCombobox</property>
@@ -343,7 +338,7 @@
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkComboBox" id="addressCombobox">
+                      <object class="GtkComboBoxText" id="addressCombobox">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="valign">center</property>
@@ -355,7 +350,7 @@
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkComboBox" id="ISBNCombobox">
+                      <object class="GtkComboBoxText" id="ISBNCombobox">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="valign">center</property>
@@ -367,7 +362,7 @@
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkComboBox" id="pagesCombobox">
+                      <object class="GtkComboBoxText" id="pagesCombobox">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="valign">center</property>
@@ -382,19 +377,18 @@
                       <object class="GtkLabel" id="label13">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="halign">start</property>
-                        <property name="vexpand">True</property>
+                        <property name="halign">end</property>
                         <property name="label" translatable="yes" context="mappingdialog|label13">Ed_ition</property>
                         <property name="use_underline">True</property>
                         <property name="mnemonic_widget">editionCombobox</property>
                       </object>
                       <packing>
                         <property name="left_attach">2</property>
-                        <property name="top_attach">4</property>
+                        <property name="top_attach">5</property>
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkComboBox" id="editionCombobox">
+                      <object class="GtkComboBoxText" id="editionCombobox">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="valign">center</property>
@@ -402,54 +396,51 @@
                       </object>
                       <packing>
                         <property name="left_attach">3</property>
-                        <property name="top_attach">4</property>
+                        <property name="top_attach">5</property>
                       </packing>
                     </child>
                     <child>
                       <object class="GtkLabel" id="label14">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="halign">start</property>
-                        <property name="vexpand">True</property>
+                        <property name="halign">end</property>
                         <property name="label" translatable="yes" context="mappingdialog|label14">_Book title</property>
                         <property name="use_underline">True</property>
                         <property name="mnemonic_widget">bookTitleCombobox</property>
                       </object>
                       <packing>
                         <property name="left_attach">0</property>
-                        <property name="top_attach">5</property>
+                        <property name="top_attach">6</property>
                       </packing>
                     </child>
                     <child>
                       <object class="GtkLabel" id="label15">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="halign">start</property>
-                        <property name="vexpand">True</property>
+                        <property name="halign">end</property>
                         <property name="label" translatable="yes" context="mappingdialog|label15">Volume</property>
                       </object>
                       <packing>
                         <property name="left_attach">2</property>
-                        <property name="top_attach">5</property>
+                        <property name="top_attach">6</property>
                       </packing>
                     </child>
                     <child>
                       <object class="GtkLabel" id="label16">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="halign">start</property>
-                        <property name="vexpand">True</property>
+                        <property name="halign">end</property>
                         <property name="label" translatable="yes" context="mappingdialog|label16">Publication t_ype</property>
                         <property name="use_underline">True</property>
                         <property name="mnemonic_widget">howPublishedCombobox</property>
                       </object>
                       <packing>
                         <property name="left_attach">4</property>
-                        <property name="top_attach">5</property>
+                        <property name="top_attach">6</property>
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkComboBox" id="bookTitleCombobox">
+                      <object class="GtkComboBoxText" id="bookTitleCombobox">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="valign">center</property>
@@ -457,11 +448,11 @@
                       </object>
                       <packing>
                         <property name="left_attach">1</property>
-                        <property name="top_attach">5</property>
+                        <property name="top_attach">6</property>
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkComboBox" id="volumeCombobox">
+                      <object class="GtkComboBoxText" id="volumeCombobox">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="valign">center</property>
@@ -469,11 +460,11 @@
                       </object>
                       <packing>
                         <property name="left_attach">3</property>
-                        <property name="top_attach">5</property>
+                        <property name="top_attach">6</property>
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkComboBox" id="howPublishedCombobox">
+                      <object class="GtkComboBoxText" id="howPublishedCombobox">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="valign">center</property>
@@ -481,56 +472,53 @@
                       </object>
                       <packing>
                         <property name="left_attach">5</property>
-                        <property name="top_attach">5</property>
+                        <property name="top_attach">6</property>
                       </packing>
                     </child>
                     <child>
                       <object class="GtkLabel" id="label17">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="halign">start</property>
-                        <property name="vexpand">True</property>
+                        <property name="halign">end</property>
                         <property name="label" translatable="yes" context="mappingdialog|label17">Organi_zation</property>
                         <property name="use_underline">True</property>
                         <property name="mnemonic_widget">organizationCombobox</property>
                       </object>
                       <packing>
                         <property name="left_attach">0</property>
-                        <property name="top_attach">6</property>
+                        <property name="top_attach">7</property>
                       </packing>
                     </child>
                     <child>
                       <object class="GtkLabel" id="label18">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="halign">start</property>
-                        <property name="vexpand">True</property>
+                        <property name="halign">end</property>
                         <property name="label" translatable="yes" context="mappingdialog|label18">Instit_ution</property>
                         <property name="use_underline">True</property>
                         <property name="mnemonic_widget">institutionCombobox</property>
                       </object>
                       <packing>
                         <property name="left_attach">2</property>
-                        <property name="top_attach">6</property>
+                        <property name="top_attach">7</property>
                       </packing>
                     </child>
                     <child>
                       <object class="GtkLabel" id="label19">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="halign">start</property>
-                        <property name="vexpand">True</property>
+                        <property name="halign">end</property>
                         <property name="label" translatable="yes" context="mappingdialog|label19">Uni_versity</property>
                         <property name="use_underline">True</property>
                         <property name="mnemonic_widget">schoolCombobox</property>
                       </object>
                       <packing>
                         <property name="left_attach">4</property>
-                        <property name="top_attach">6</property>
+                        <property name="top_attach">7</property>
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkComboBox" id="organizationCombobox">
+                      <object class="GtkComboBoxText" id="organizationCombobox">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="valign">center</property>
@@ -538,11 +526,11 @@
                       </object>
                       <packing>
                         <property name="left_attach">1</property>
-                        <property name="top_attach">6</property>
+                        <property name="top_attach">7</property>
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkComboBox" id="institutionCombobox">
+                      <object class="GtkComboBoxText" id="institutionCombobox">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="valign">center</property>
@@ -550,11 +538,11 @@
                       </object>
                       <packing>
                         <property name="left_attach">3</property>
-                        <property name="top_attach">6</property>
+                        <property name="top_attach">7</property>
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkComboBox" id="schoolCombobox">
+                      <object class="GtkComboBoxText" id="schoolCombobox">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="valign">center</property>
@@ -562,41 +550,39 @@
                       </object>
                       <packing>
                         <property name="left_attach">5</property>
-                        <property name="top_attach">6</property>
+                        <property name="top_attach">7</property>
                       </packing>
                     </child>
                     <child>
                       <object class="GtkLabel" id="label20">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="halign">start</property>
-                        <property name="vexpand">True</property>
+                        <property name="halign">end</property>
                         <property name="label" translatable="yes" context="mappingdialog|label20">Type of re_port</property>
                         <property name="use_underline">True</property>
                         <property name="mnemonic_widget">reportTypeCombobox</property>
                       </object>
                       <packing>
                         <property name="left_attach">0</property>
-                        <property name="top_attach">7</property>
+                        <property name="top_attach">8</property>
                       </packing>
                     </child>
                     <child>
                       <object class="GtkLabel" id="label21">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="halign">start</property>
-                        <property name="vexpand">True</property>
+                        <property name="halign">end</property>
                         <property name="label" translatable="yes" context="mappingdialog|label21">_Month</property>
                         <property name="use_underline">True</property>
                         <property name="mnemonic_widget">monthCombobox</property>
                       </object>
                       <packing>
                         <property name="left_attach">2</property>
-                        <property name="top_attach">7</property>
+                        <property name="top_attach">8</property>
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkComboBox" id="reportTypeCombobox">
+                      <object class="GtkComboBoxText" id="reportTypeCombobox">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="valign">center</property>
@@ -604,11 +590,11 @@
                       </object>
                       <packing>
                         <property name="left_attach">1</property>
-                        <property name="top_attach">7</property>
+                        <property name="top_attach">8</property>
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkComboBox" id="monthCombobox">
+                      <object class="GtkComboBoxText" id="monthCombobox">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="valign">center</property>
@@ -616,56 +602,53 @@
                       </object>
                       <packing>
                         <property name="left_attach">3</property>
-                        <property name="top_attach">7</property>
+                        <property name="top_attach">8</property>
                       </packing>
                     </child>
                     <child>
                       <object class="GtkLabel" id="label22">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="halign">start</property>
-                        <property name="vexpand">True</property>
+                        <property name="halign">end</property>
                         <property name="label" translatable="yes" context="mappingdialog|label22">_Journal</property>
                         <property name="use_underline">True</property>
                         <property name="mnemonic_widget">journalCombobox</property>
                       </object>
                       <packing>
                         <property name="left_attach">0</property>
-                        <property name="top_attach">8</property>
+                        <property name="top_attach">10</property>
                       </packing>
                     </child>
                     <child>
                       <object class="GtkLabel" id="label23">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="halign">start</property>
-                        <property name="vexpand">True</property>
+                        <property name="halign">end</property>
                         <property name="label" translatable="yes" context="mappingdialog|label23">Numb_er</property>
                         <property name="use_underline">True</property>
                         <property name="mnemonic_widget">numberCombobox</property>
                       </object>
                       <packing>
                         <property name="left_attach">2</property>
-                        <property name="top_attach">8</property>
+                        <property name="top_attach">10</property>
                       </packing>
                     </child>
                     <child>
                       <object class="GtkLabel" id="label24">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="halign">start</property>
-                        <property name="vexpand">True</property>
+                        <property name="halign">end</property>
                         <property name="label" translatable="yes" context="mappingdialog|label24">Se_ries</property>
                         <property name="use_underline">True</property>
                         <property name="mnemonic_widget">seriesCombobox</property>
                       </object>
                       <packing>
                         <property name="left_attach">4</property>
-                        <property name="top_attach">8</property>
+                        <property name="top_attach">10</property>
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkComboBox" id="journalCombobox">
+                      <object class="GtkComboBoxText" id="journalCombobox">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="valign">center</property>
@@ -673,11 +656,11 @@
                       </object>
                       <packing>
                         <property name="left_attach">1</property>
-                        <property name="top_attach">8</property>
+                        <property name="top_attach">10</property>
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkComboBox" id="numberCombobox">
+                      <object class="GtkComboBoxText" id="numberCombobox">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="valign">center</property>
@@ -685,11 +668,11 @@
                       </object>
                       <packing>
                         <property name="left_attach">3</property>
-                        <property name="top_attach">8</property>
+                        <property name="top_attach">10</property>
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkComboBox" id="seriesCombobox">
+                      <object class="GtkComboBoxText" id="seriesCombobox">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="valign">center</property>
@@ -697,54 +680,51 @@
                       </object>
                       <packing>
                         <property name="left_attach">5</property>
-                        <property name="top_attach">8</property>
+                        <property name="top_attach">10</property>
                       </packing>
                     </child>
                     <child>
                       <object class="GtkLabel" id="label25">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="halign">start</property>
-                        <property name="vexpand">True</property>
+                        <property name="halign">end</property>
                         <property name="label" translatable="yes" context="mappingdialog|label25">Ann_otation</property>
                         <property name="use_underline">True</property>
                         <property name="mnemonic_widget">annoteCombobox</property>
                       </object>
                       <packing>
                         <property name="left_attach">0</property>
-                        <property name="top_attach">9</property>
+                        <property name="top_attach">11</property>
                       </packing>
                     </child>
                     <child>
                       <object class="GtkLabel" id="label26">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="halign">start</property>
-                        <property name="vexpand">True</property>
+                        <property name="halign">end</property>
                         <property name="label" translatable="yes" context="mappingdialog|label26">_Note</property>
                         <property name="use_underline">True</property>
                         <property name="mnemonic_widget">noteCombobox</property>
                       </object>
                       <packing>
                         <property name="left_attach">2</property>
-                        <property name="top_attach">9</property>
+                        <property name="top_attach">11</property>
                       </packing>
                     </child>
                     <child>
                       <object class="GtkLabel" id="label27">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="halign">start</property>
-                        <property name="vexpand">True</property>
+                        <property name="halign">end</property>
                         <property name="label" translatable="yes" context="mappingdialog|label27">URL</property>
                       </object>
                       <packing>
                         <property name="left_attach">4</property>
-                        <property name="top_attach">9</property>
+                        <property name="top_attach">11</property>
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkComboBox" id="annoteCombobox">
+                      <object class="GtkComboBoxText" id="annoteCombobox">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="valign">center</property>
@@ -752,11 +732,11 @@
                       </object>
                       <packing>
                         <property name="left_attach">1</property>
-                        <property name="top_attach">9</property>
+                        <property name="top_attach">11</property>
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkComboBox" id="noteCombobox">
+                      <object class="GtkComboBoxText" id="noteCombobox">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="valign">center</property>
@@ -764,11 +744,11 @@
                       </object>
                       <packing>
                         <property name="left_attach">3</property>
-                        <property name="top_attach">9</property>
+                        <property name="top_attach">11</property>
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkComboBox" id="URLCombobox">
+                      <object class="GtkComboBoxText" id="URLCombobox">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="valign">center</property>
@@ -776,86 +756,81 @@
                       </object>
                       <packing>
                         <property name="left_attach">5</property>
-                        <property name="top_attach">9</property>
+                        <property name="top_attach">11</property>
                       </packing>
                     </child>
                     <child>
                       <object class="GtkLabel" id="label28">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="halign">start</property>
-                        <property name="vexpand">True</property>
+                        <property name="halign">end</property>
                         <property name="label" translatable="yes" context="mappingdialog|label28">User-defined field _1</property>
                         <property name="use_underline">True</property>
                         <property name="mnemonic_widget">custom1Combobox</property>
                       </object>
                       <packing>
                         <property name="left_attach">0</property>
-                        <property name="top_attach">10</property>
+                        <property name="top_attach">13</property>
                       </packing>
                     </child>
                     <child>
                       <object class="GtkLabel" id="label29">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="halign">start</property>
-                        <property name="vexpand">True</property>
+                        <property name="halign">end</property>
                         <property name="label" translatable="yes" context="mappingdialog|label29">User-defined field _2</property>
                         <property name="use_underline">True</property>
                         <property name="mnemonic_widget">custom2Combobox</property>
                       </object>
                       <packing>
                         <property name="left_attach">2</property>
-                        <property name="top_attach">10</property>
+                        <property name="top_attach">13</property>
                       </packing>
                     </child>
                     <child>
                       <object class="GtkLabel" id="label30">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="halign">start</property>
-                        <property name="vexpand">True</property>
+                        <property name="halign">end</property>
                         <property name="label" translatable="yes" context="mappingdialog|label30">User-defined field _3</property>
                         <property name="use_underline">True</property>
                         <property name="mnemonic_widget">custom3Combobox</property>
                       </object>
                       <packing>
                         <property name="left_attach">4</property>
-                        <property name="top_attach">10</property>
+                        <property name="top_attach">13</property>
                       </packing>
                     </child>
                     <child>
                       <object class="GtkLabel" id="label31">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="halign">start</property>
-                        <property name="vexpand">True</property>
+                        <property name="halign">end</property>
                         <property name="label" translatable="yes" context="mappingdialog|label31">User-defined field _4</property>
                         <property name="use_underline">True</property>
                         <property name="mnemonic_widget">custom4Combobox</property>
                       </object>
                       <packing>
                         <property name="left_attach">0</property>
-                        <property name="top_attach">11</property>
+                        <property name="top_attach">14</property>
                       </packing>
                     </child>
                     <child>
                       <object class="GtkLabel" id="label32">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="halign">start</property>
-                        <property name="vexpand">True</property>
+                        <property name="halign">end</property>
                         <property name="label" translatable="yes" context="mappingdialog|label32">User-defined field _5</property>
                         <property name="use_underline">True</property>
                         <property name="mnemonic_widget">custom5Combobox</property>
                       </object>
                       <packing>
                         <property name="left_attach">2</property>
-                        <property name="top_attach">11</property>
+                        <property name="top_attach">14</property>
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkComboBox" id="custom1Combobox">
+                      <object class="GtkComboBoxText" id="custom1Combobox">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="valign">center</property>
@@ -863,11 +838,11 @@
                       </object>
                       <packing>
                         <property name="left_attach">1</property>
-                        <property name="top_attach">10</property>
+                        <property name="top_attach">13</property>
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkComboBox" id="custom2Combobox">
+                      <object class="GtkComboBoxText" id="custom2Combobox">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="valign">center</property>
@@ -875,11 +850,11 @@
                       </object>
                       <packing>
                         <property name="left_attach">3</property>
-                        <property name="top_attach">10</property>
+                        <property name="top_attach">13</property>
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkComboBox" id="custom3Combobox">
+                      <object class="GtkComboBoxText" id="custom3Combobox">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="valign">center</property>
@@ -887,11 +862,11 @@
                       </object>
                       <packing>
                         <property name="left_attach">5</property>
-                        <property name="top_attach">10</property>
+                        <property name="top_attach">13</property>
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkComboBox" id="custom4Combobox">
+                      <object class="GtkComboBoxText" id="custom4Combobox">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="valign">center</property>
@@ -899,11 +874,11 @@
                       </object>
                       <packing>
                         <property name="left_attach">1</property>
-                        <property name="top_attach">11</property>
+                        <property name="top_attach">14</property>
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkComboBox" id="custom5Combobox">
+                      <object class="GtkComboBoxText" id="custom5Combobox">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="valign">center</property>
@@ -911,11 +886,11 @@
                       </object>
                       <packing>
                         <property name="left_attach">3</property>
-                        <property name="top_attach">11</property>
+                        <property name="top_attach">14</property>
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkComboBox" id="identifierCombobox">
+                      <object class="GtkComboBoxText" id="identifierCombobox">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="valign">center</property>
@@ -925,6 +900,99 @@
                         <property name="left_attach">1</property>
                         <property name="top_attach">0</property>
                       </packing>
+                    </child>
+                    <child>
+                      <object class="GtkBox" id="box3">
+                        <property name="width_request">12</property>
+                        <property name="height_request">12</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="orientation">vertical</property>
+                        <child>
+                          <placeholder/>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="left_attach">0</property>
+                        <property name="top_attach">12</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkBox" id="box2">
+                        <property name="width_request">12</property>
+                        <property name="height_request">12</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="orientation">vertical</property>
+                        <child>
+                          <placeholder/>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="left_attach">0</property>
+                        <property name="top_attach">9</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkBox" id="box1">
+                        <property name="width_request">12</property>
+                        <property name="height_request">12</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="orientation">vertical</property>
+                        <child>
+                          <placeholder/>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="left_attach">0</property>
+                        <property name="top_attach">4</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <placeholder/>
+                    </child>
+                    <child>
+                      <placeholder/>
+                    </child>
+                    <child>
+                      <placeholder/>
+                    </child>
+                    <child>
+                      <placeholder/>
+                    </child>
+                    <child>
+                      <placeholder/>
+                    </child>
+                    <child>
+                      <placeholder/>
+                    </child>
+                    <child>
+                      <placeholder/>
+                    </child>
+                    <child>
+                      <placeholder/>
+                    </child>
+                    <child>
+                      <placeholder/>
+                    </child>
+                    <child>
+                      <placeholder/>
+                    </child>
+                    <child>
+                      <placeholder/>
+                    </child>
+                    <child>
+                      <placeholder/>
+                    </child>
+                    <child>
+                      <placeholder/>
+                    </child>
+                    <child>
+                      <placeholder/>
+                    </child>
+                    <child>
+                      <placeholder/>
                     </child>
                     <child>
                       <placeholder/>

@@ -403,4 +403,4 @@ NULL
 /* 201 - hostControl */
 NULL
 /* 202 - textBox */
-<v:shapetype id="_x005F_x0000_t202" coordsize="21600,21600" o:spt="202" path="m,l,21600l21600,21600l21600,xe"><v:stroke joinstyle="miter"/><v:path gradientshapeok="t" o:connecttype="rect"/></v:shapetype>
+<v:shapetype id="_x0000_t202" coordsize="21600,21600" o:spt="202" path="m,l,21600l21600,21600l21600,xe"><v:stroke joinstyle="miter"/><v:path gradientshapeok="t" o:connecttype="rect"/></v:shapetype>

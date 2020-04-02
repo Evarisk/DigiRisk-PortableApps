@@ -7,6 +7,7 @@
     <property name="border_width">6</property>
     <property name="title" translatable="yes" context="tableproperties|TablePropertiesDialog">Table Properties</property>
     <property name="resizable">False</property>
+    <property name="modal">True</property>
     <property name="type_hint">dialog</property>
     <child>
       <placeholder/>
@@ -336,7 +337,7 @@
       </object>
     </child>
     <action-widgets>
-      <action-widget response="0">reset</action-widget>
+      <action-widget response="101">reset</action-widget>
       <action-widget response="-5">ok</action-widget>
       <action-widget response="-6">cancel</action-widget>
       <action-widget response="-11">help</action-widget>

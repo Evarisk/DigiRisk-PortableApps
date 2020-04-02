@@ -788,6 +788,7 @@
                     <Item id="6302" name="Înlocuire cu spațiu"/>
                     <Item id="6303" name="Mărime Tab: "/>
                     <Item id="6510" name="Aplicare valoare implicită" />
+                    <Item id="6335" name="Consideră '\' ca și caracter escape pentru SQL"/>
                 </Language>
 
                 <Highlighting title="Evidențiere">
@@ -860,6 +861,7 @@
                 </Backup>
 
                 <AutoCompletion title="Autocompletare">
+                    <Item id="6115" name="Autoindentare"/>
                     <Item id="6807" name="Autocompletare"/>
                     <Item id="6808" name="Activare autocompletare la tastare"/>
                     <Item id="6809" name="Completare funcții"/>
@@ -932,10 +934,8 @@
                     <Item id="6324" name="Comutare documente (Ctrl+Tab)"/>
                     <Item id="6331" name="Afișare doar nume fișier în bara de titlu"/>
                     <Item id="6334" name="Autodetectare codificare caractere"/>
-                    <Item id="6335" name="Consideră '\' ca și caracter escape pentru SQL"/>
                     <Item id="6337" name="Extensie fișier spațiu de lucru:" />
                     <Item id="6114" name="Activare"/>
-                    <Item id="6115" name="Autoindentare"/>
                     <Item id="6117" name="În ordinea utilizării"/>             
                     <Item id="6344" name="Previzualizare document"/>
                     <Item id="6345" name="Previzualizare pe filă"/>

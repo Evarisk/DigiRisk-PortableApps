@@ -120,7 +120,7 @@
                         </xsl:choose>
                     </xsl:when>
                     <xsl:otherwise>
-                        <!-- automatic styles are implicit inherting from a style called 'Default',
+                        <!-- automatic styles are implicit inheriting from a style called 'Default',
                         furthermore nor in spreadsheetml nor in OpenDocument automatic styles are able to inherit from each other -->
                         <xsl:choose>
                             <xsl:when test="@style:parent-style-name and not(@style:parent-style-name = 'Default')">
@@ -291,7 +291,7 @@
                                     <xsl:when test="contains($numberStyle/number:text, '$')">
                                         <xsl:text>Currency</xsl:text>
                                     </xsl:when>
-                                    <!-- OASIS XML adapation -->
+                                    <!-- OASIS XML adaptation -->
                                     <xsl:otherwise>
                                         <xsl:text>General</xsl:text>
                                     </xsl:otherwise>
@@ -351,13 +351,13 @@
                                                     $numberStyle/number:year/@number:style='long'">
                                         <xsl:text>Short Date</xsl:text>
                                     </xsl:when>
-                                    <!-- OASIS XML adapation -->
+                                    <!-- OASIS XML adaptation -->
                                     <xsl:otherwise>
                                         <xsl:text>Short Date</xsl:text>
                                     </xsl:otherwise>
                                 </xsl:choose>
                             </xsl:when>
-                            <!-- OASIS XML adapation -->
+                            <!-- OASIS XML adaptation -->
                             <xsl:otherwise>
                                 <xsl:text>General</xsl:text>
                             </xsl:otherwise>

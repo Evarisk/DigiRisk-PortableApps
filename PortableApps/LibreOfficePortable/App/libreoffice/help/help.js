@@ -17,12 +17,17 @@ var currentModule = null;
 if(url.indexOf('explorer/database/') !== -1) {
     currentModule = 'BASE';
 } else {
-    currentModule = regexArray[1].toUpperCase().substring(1);
+    if (null === regexArray){// comes from search or elsewhere, no defined module in URL
+        currentModule = 'HARED'
+    }else{
+        currentModule = regexArray[1].toUpperCase().substring(1);
+    }
 }
 var results = null;
 var fullLinkified = '';
 var modules = ['CALC', 'WRITER', 'IMPRESS', 'DRAW', 'BASE', 'MATH', 'CHART', 'BASIC', 'SHARED'];
-var indexkids = function() { document.getElementsByClassName("index")[0].children; };
+var index = document.getElementsByClassName("index")[0];
+var indexkids = index.children;
 // if user is not on a shared category page, limit the index to the current module + shared
 if(currentModule !== 'HARED') {
     bookmarks = bookmarks.filter(function(obj) {
@@ -33,9 +38,9 @@ bookmarks.forEach(function(obj) {
             fullLinkified += '<a href="' + obj['url'] + '" class="' + obj['app'] + '">' + obj['text'] + '</a>';
         });
 function fullList() {
-    document.getElementsByClassName("index")[0].innerHTML = fullLinkified;
+    index.innerHTML = fullLinkified;
     addIds();
-    Paginator(document.getElementsByClassName("index")[0]);
+    Paginator(index);
 }
 // add id to the first items of each category in the index. CSS ::before rule adds the heading text
 function addIds() {
@@ -43,7 +48,7 @@ function addIds() {
         indexkids[i].removeAttribute("id");
     }
     modules.forEach(function(module) {
-        var moduleHeader = document.getElementsByClassName(module)[0];
+        var moduleHeader = index.getElementsByClassName(module)[0];
         if (typeof moduleHeader !== 'undefined') {
             // let's wrap the header in a span, so the ::before element will not become a link
             moduleHeader.outerHTML = '<span id="' + module + '" class="' + module + '">' + moduleHeader.outerHTML + '</span>';
@@ -65,9 +70,9 @@ var filter = function() {
     results.forEach(function(result) {
         filtered += '<a href="' + result.obj['url'] + '" class="' + result.obj['app'] + '">' + fuzzysort.highlight(result) + '</a>';
     });
-    document.getElementsByClassName("index")[0].innerHTML = filtered;
+    index.innerHTML = filtered;
     addIds();
-    Paginator(document.getElementsByClassName("index")[0]);
+    Paginator(index);
 };
 function debounce(fn, wait) {
     var timeout;
@@ -79,6 +84,50 @@ function debounce(fn, wait) {
     };
 }
 search.addEventListener('keyup', debounce(filter, 100));
+
+// Preserve search input value during the session
+search.value = sessionStorage.getItem('searchsave');
+
+if (search.value !== undefined) {
+    filter();
+}
+
+window.addEventListener('unload', function(event) {
+    sessionStorage.setItem('searchsave', search.value);
+});
+
+// copy pycode and bascode to clipboard on mouse click
+// Show border when copy is done
+divcopyable(document.getElementsByClassName("bascode"));
+divcopyable(document.getElementsByClassName("pycode"));
+
+function divcopyable(itemcopyable){
+for (var i = 0, len = itemcopyable.length; i < len; i++) {
+    (function() {
+        var item = itemcopyable[i];
+
+        function changeBorder(item, color) {
+            var saveBorder  = item.style.border;
+            item.style.borderColor = color;
+
+            setTimeout(function() {
+                item.style.border = saveBorder;
+            }, 150);
+        }
+        item.onclick = function() {
+            document.execCommand("copy");
+            changeBorder(item, "#18A303");
+        };
+        item.addEventListener("copy", function(event) {
+            event.preventDefault();
+            if (event.clipboardData) {
+                event.clipboardData.setData("text/plain", item.textContent);
+            }
+        });
+    }());
+}
+}
+
 // copy useful content to clipboard on mouse click
 var copyable = document.getElementsByClassName("input");
 for (var i = 0, len = copyable.length; i < len; i++) {

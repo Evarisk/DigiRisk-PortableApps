@@ -1,6 +1,6 @@
 
 ======================================================================
-LibreOffice 6.2 自述文档
+LibreOffice 6.4 自述文档
 ======================================================================
 
 
@@ -47,7 +47,7 @@ LibreOffice 要求更新版本的 Java 运行时环境 (JRE) 才能提供完整�
 
 有关在安装完美国英语版本的 LibreOffice 之后如何安装语言包的说明，请阅读如下题为「安装语言包」的部分。
 
-在解压缩下载的压缩文件之后，您会看到内容已经被解压缩至一个新的子目录。打开一个文件管理其窗口，并切换至以「LibreOffice_」开头、后跟版本号和平台信息的目录。
+将下载好的压缩包解压，您会看到内容位于子目录中。打开文件管理器窗口，并进入名称以「LibreOffice_」开头、后接版本号与平台信息的目录。
 
 该目录中有一个名为「DEBS」的子目录。切换至该「DEBS」目录。
 
@@ -64,7 +64,7 @@ sudo dpkg -i *.deb
 
 有关在安装完美国英语版本的 LibreOffice 之后如何安装语言包的说明，请阅读如下题为「安装语言包」的部分。
 
-在解压缩下载的压缩文件之后，您会看到内容已经被解压缩至一个新的子目录。打开一个文件管理其窗口，并切换至以「LibreOffice_」开头、后跟版本号和平台信息的目录。
+将下载好的压缩包解压，您会看到内容位于子目录中。打开文件管理器窗口，并进入名称以「LibreOffice_」开头、后接版本号与平台信息的目录。
 
 此目录包含名为 "RPMS" 的子目录。切换至"RPMS"目录。
 
@@ -83,9 +83,9 @@ sudo dpkg -i *.deb
 对上述安装说明中未提及的Linux发行版中的桌面集成的说明
 ----------------------------------------------------------------------
 
-在本安装说明中未特地提及的其他 Linux 发行版中安装 LibreOffice 应该很简单。主要会遇到的的不同之处在桌面集成。
+对于本安装说明中未特别提及的其他 Linux 发行版，安装 LibreOffice 应该很简单。主要的差异大概在桌面集成方面。
 
-RPMS 或 DEBS 目录中分别还包含名为 libreoffice6.2-freedesktop-menus-6.2.0.1-1.noarch.rpm (或者 libreoffice6.2-debian-menus_6.2.0.1-1_all.deb 或类似的) 的软件包。该软件包可供所有支持 Freedesktop.org 规范/推荐 (https://en.wikipedia.org/wiki/Freedesktop.org) 的 Linux 发行版使用，也可在前文说明中未提及的其他 Linux 发行版中安装。
+RPMS 或 DEBS 目录中分别还包含名为 libreoffice6.4-freedesktop-menus-6.4.0.1-1.noarch.rpm (或者 libreoffice6.4-debian-menus_6.4.0.1-1_all.deb 或类似的) 的软件包。该软件包可供所有支持 Freedesktop.org 规范/推荐 (https://en.wikipedia.org/wiki/Freedesktop.org) 的 Linux 发行版使用，也可在前文说明中未提及的其他 Linux 发行版中安装。
 
 安装语言包
 ----------------------------------------------------------------------
@@ -94,17 +94,17 @@ RPMS 或 DEBS 目录中分别还包含名为 libreoffice6.2-freedesktop-menus-6.
 
 切换至您解压缩语言包所在的目录。
 
-现在切换至解压缩所创建的目录。例如，对于 32 位基于 Debian/Ubuntu 系统的法语语言包，该目录名为 LibreOffice_，附加版本信息，以及 Linux_x86_langpack-deb_fr。
+现在请进入解压得到的目录。例如，对于 32 位基于 Debian/Ubuntu 系统的法语语言包，其目录名称为「LibreOffice_」后接版本信息，后接「Linux_x86_langpack-deb_fr」。
 
-现在切换至包含有要安装的软件包的目录。对于基于Debian/Ubuntu的操作系统，该目录应为DEBS。对于Fedora，openSUSE或Mandriva系统，该目录应为RPMS。
+现在切换至要安装的软件包所在目录。对于基于 Debian/Ubuntu 的系统，该目录应为 DEBS。对于 Fedora、openSUSE 或 Mandriva 系统，该目录应为 RPMS。
 
 在 Nautilus 文件管理器中，右击该目录，并选择「在终端中打开」命令。在刚打开的终端窗口中执行安装语言包的命令 (下述各命令都将提示您输入 root 用户的密码):
 
-对于基于Debian/Ubuntu的系统: sudo dpkg -i *.deb
+对于基于 Debian/Ubuntu 的系统: sudo dpkg -i *.deb
 
-对于基于Fedora的系统: su -c 'yum install *.rpm'
+对于基于 Fedora 的系统: su -c 'yum install *.rpm'
 
-对于基于Mandriva的系统: sudo urpmi *.rpm
+对于基于 Mandriva 的系统: sudo urpmi *.rpm
 
 对于其它使用RPM的系统 (openSUSE等): rpm -Uvh *.rpm
 
@@ -198,7 +198,7 @@ LibreOffice 中以当前文档格式发送电子邮件时出现的问题
 
 您可以为这个重要的开源项目做出主要的贡献，即使您的软件设计和编码经验有限。是的，您可以！
 
-我们希望您能够愉快地使用新的 LibreOffice 6.2 并在线加入我们。
+我们希望您能够愉快地使用新的 LibreOffice 6.4 并在线加入我们。
 
 LibreOffice 社区
 

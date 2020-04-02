@@ -1,4 +1,4 @@
-﻿;Copyright 2004-2019 John T. Haller of PortableApps.com
+﻿;Copyright 2004-2020 John T. Haller of PortableApps.com
 
 ;Website: http://PortableApps.com/FirefoxPortable
 
@@ -26,7 +26,7 @@
 !define APPNAME "Firefox"
 !define NAME "FirefoxPortable"
 !define AppID "FirefoxPortable"
-!define VER "2.1.7.0"
+!define VER "2.1.999.0"
 !define WEBSITE "PortableApps.com/FirefoxPortable"
 !define DEFAULTEXE "firefox.exe"
 !define DEFAULTAPPDIR "firefox"
@@ -549,6 +549,28 @@ Section "Main"
 			${WordReplace} $3 " " "%20" "+" $3
 			${ReplaceInFile} "$PROFILEDIRECTORY\extensions.json" "$2" "$3"
 		${EndIf}
+		${If} ${FileExists} "$PROFILEDIRECTORY\extensions.json"
+			${WordReplace} $0 "\" "\\" "+" $2
+			${WordReplace} $1 "\" "\\" "+" $3
+			${ReplaceInFile} "$PROFILEDIRECTORY\extensions.json" "$2" "$3"
+		${EndIf}
+		${If} $LASTPROFILEDIRECTORY != $ORIGINALPROFILEDIRECTORY
+		${AndIf} ${FileExists} "$PROFILEDIRECTORY\addonStartup.json.lz4"
+			Delete "$PROFILEDIRECTORY\addonStartup.json.unpacked"
+			nsExec::Exec `"$EXEDIR\App\Bin\dejsonlz4.exe" "$PROFILEDIRECTORY\addonStartup.json.lz4" "$PROFILEDIRECTORY\addonStartup.json.unpacked"`
+			Delete "$PROFILEDIRECTORY\addonStartup.json.lz4"
+			${WordReplace} $0 "\" "/" "+" $2
+			${WordReplace} $1 "\" "/" "+" $3
+			${WordReplace} $2 " " "%20" "+" $2
+			${WordReplace} $3 " " "%20" "+" $3
+			${ReplaceInFile} "$PROFILEDIRECTORY\addonStartup.json.unpacked" "file:///$2" "file:///$3"
+			${WordReplace} $0 "\" "\\" "+" $2
+			${WordReplace} $1 "\" "\\" "+" $3
+			${ReplaceInFile} "$PROFILEDIRECTORY\addonStartup.json.unpacked" "$2" "$3"
+			nsExec::Exec `"$EXEDIR\App\Bin\jsonlz4.exe" "$PROFILEDIRECTORY\addonStartup.json.unpacked" "$PROFILEDIRECTORY\addonStartup.json.lz4"`
+			Delete "$PROFILEDIRECTORY\addonStartup.json.unpacked"
+		${EndIf}
+		
 		${GetParent} $LASTPROFILEDIRECTORY $0
 		${GetParent} $0 $0
 		${GetParent} $0 $0
@@ -560,14 +582,6 @@ Section "Main"
 		StrCmp $0 $1 RunProgram
 		${If} ${FileExists} "$PROFILEDIRECTORY\mimeTypes.rdf"
 			${ReplaceInFile} "$PROFILEDIRECTORY\mimeTypes.rdf" $0 $1
-		${EndIf}
-		${If} ${FileExists} "$PROFILEDIRECTORY\extensions.json"
-			${WordReplace} $0 "\" "\\" "+" $2
-			${WordReplace} $1 "\" "\\" "+" $3
-			${ReplaceInFile} "$PROFILEDIRECTORY\extensions.json" "$2" "$3"
-		${EndIf}
-		${If} $LASTPROFILEDIRECTORY != $ORIGINALPROFILEDIRECTORY
-			Delete "$PROFILEDIRECTORY\addonStartup.json.lz4"
 		${EndIf}
 
 	RunProgram:

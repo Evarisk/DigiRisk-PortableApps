@@ -16,8 +16,9 @@ REM --- CLASS ROOT FIELDS 								        														---
 REM -----------------------------------------------------------------------------------------------------------------------
 
 Private	_Type					As String				&apos;	Must be RECORDSET
+Private _This					As Object				&apos;	Workaround for absence of This builtin function
+Private _Parent					As Object
 Private _Name					As String				&apos;	Unique, generated
-Private _This					As Object
 Private _Fields()				As Variant
 Private _ParentName				As String
 Private _ParentType				As String
@@ -51,8 +52,9 @@ REM --- CONSTRUCTORS / DESTRUCTORS						        														---
 REM -----------------------------------------------------------------------------------------------------------------------
 Private Sub Class_Initialize()
 	_Type = OBJRECORDSET
-	_Name = &quot;&quot;
 	Set _This = Nothing
+	Set _Parent = Nothing
+	_Name = &quot;&quot;
 	_Fields = Array()
 	_ParentName = &quot;&quot;
 	Set _ParentDatabase = Nothing
@@ -496,10 +498,9 @@ Dim i As Integer, oFields As Object, iIndex As Integer
 	&apos;	No argument, return a collection
 	If IsMissing(pvIndex) Then
 		Set oObject = New Collect
+		Set oObject._This = oObject
 		oObject._CollType = COLLFIELDS
-		oObject._ParentType = OBJRECORDSET
-		oObject._ParentName = _Name
-		Set oObject._ParentDatabase = _ParentDatabase
+		Set oObject._Parent = _This
 		oObject._Count = RowSet.getColumns().Count
 		Goto Exit_Function
 	End If
@@ -538,6 +539,7 @@ Dim i As Integer, oFields As Object, iIndex As Integer
 	&apos;	Otherwise create new field object
 	Else
 		Set oObject = New Field
+		Set oObject._This = oObject
 		oObject._Name = sObjectName
 		Set oObject.Column = oFields.getByName(sObjectName)
 		If Utils._hasUNOProperty(oObject.Column, &quot;Precision&quot;) Then oObject._Precision = oObject.Column.Precision
@@ -606,7 +608,7 @@ Dim vMatrix() As Variant, lSize As Long, iNumFields As Integer, i As Integer
 	Do While Not _EOF And lSize &lt; pvNumRows - 1
 		lSize = lSize + 1
 		For i = 0 To iNumFields
-			vMatrix(i, lSize) = _getResultSetColumnValue(RowSet, i + 1)
+			vMatrix(i, lSize) = Utils._getResultSetColumnValue(RowSet, i + 1)
 			If pbStrDate And IsDate(vMatrix(i, lSize)) Then vMatrix(i, lSize) = _CStr(vMatrix(i, lSize))
 		Next i
 		_Move(&quot;NEXT&quot;)
@@ -756,9 +758,9 @@ Dim vProperty As Variant, vPropertiesList() As Variant, sObject As String
 	vPropertiesList = _PropertiesList()
 	sObject = Utils._PCase(_Type)
 	If IsMissing(pvIndex) Then
-		vProperty = PropertiesGet._Properties(sObject, _Name, vPropertiesList)
+		vProperty = PropertiesGet._Properties(sObject, _This, vPropertiesList)
 	Else
-		vProperty = PropertiesGet._Properties(sObject, _Name, vPropertiesList, pvIndex)
+		vProperty = PropertiesGet._Properties(sObject, _This, vPropertiesList, pvIndex)
 		vProperty._Value = _PropertyGet(vPropertiesList(pvIndex))
 	End If
 	Set vProperty._ParentDatabase = _ParentDatabase

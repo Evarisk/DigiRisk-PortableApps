@@ -21,11 +21,11 @@
     <identifier value="com.sun.wiki-publisher"/>
     <display-name>
         <name lang="en-US">Wiki Publisher</name>
-        <name lang="af">Wiki Publisher</name>
+        <name lang="af">Wiki-publiseerder</name>
         <name lang="am">ዊኪ አታሚ</name>
         <name lang="ar">ناشر الويكي</name>
         <name lang="as">Wiki প্ৰকাশক</name>
-        <name lang="ast">Wiki Publisher</name>
+        <name lang="ast">Espublizador pa wikis</name>
         <name lang="be">Wiki Publisher</name>
         <name lang="bg">Wiki Publisher</name>
         <name lang="bn">Wiki Publisher</name>
@@ -64,7 +64,7 @@
         <name lang="hr">Wiki Publisher</name>
         <name lang="hsb">Wiki Publisher</name>
         <name lang="hu">Wiki Publisher</name>
-        <name lang="id">Wiki Publisher</name>
+        <name lang="id">Penerbit Wiki</name>
         <name lang="is">Wiki útgáfustjórn</name>
         <name lang="it">Wiki Publisher</name>
         <name lang="ja">Wiki Publisher</name>
@@ -118,6 +118,7 @@
         <name lang="st">Wiki Publisher</name>
         <name lang="sv">Wiki Publisher</name>
         <name lang="sw-TZ">Wiki Publisher</name>
+        <name lang="szl">Wiki Publisher</name>
         <name lang="ta">Wiki Publisher</name>
         <name lang="te">Wiki Publisher</name>
         <name lang="tg">Wiki Publisher</name>
@@ -242,6 +243,7 @@
         <src xlink:href="description-st.txt" lang="st"/>
         <src xlink:href="description-sv.txt" lang="sv"/>
         <src xlink:href="description-sw-TZ.txt" lang="sw-TZ"/>
+        <src xlink:href="description-szl.txt" lang="szl"/>
         <src xlink:href="description-ta.txt" lang="ta"/>
         <src xlink:href="description-te.txt" lang="te"/>
         <src xlink:href="description-tg.txt" lang="tg"/>

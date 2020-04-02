@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <NotepadPlus>
-    <Native-Langue name="Українська" filename="ukrainian.xml" version="7.6.5">
+    <Native-Langue name="Українська" filename="ukrainian.xml" version="7.8.3">
         <Menu>
             <Main>
                 <!-- Main Menu Entries -->
@@ -63,9 +63,10 @@
                     <Item subMenuId="encoding-turkish" name="Турецька"/>
                     <Item subMenuId="encoding-westernEuropean" name="Західноєвропейська"/>
                     <Item subMenuId="encoding-vietnamese" name="В'єтнамська"/>
-                    <Item subMenuId="settings-import"  name="Імпорт"/>
-                    <Item subMenuId="tools-md5"  name="MD5"/>
-                    <Item subMenuId="tools-sha256"  name="SHA-256"/>
+                    <Item subMenuId="language-userDefinedLanguage" name="Користувацька мова"/>
+                    <Item subMenuId="settings-import" name="Імпорт"/>
+                    <Item subMenuId="tools-md5" name="MD5"/>
+                    <Item subMenuId="tools-sha256" name="SHA-256"/>
                 </SubEntries>
 
                 <!-- all menu item -->
@@ -263,11 +264,11 @@
                     <Item id="45001" name="Windows (CR LF)"/>
                     <Item id="45002" name="Unix (LF)"/>
                     <Item id="45003" name="Macintosh (CR)"/>
-                    <Item id="45004" name="Кодувати в ANSI"/>
-                    <Item id="45005" name="Кодувати в UTF-8-BOM"/>
-                    <Item id="45006" name="Кодувати в UCS-2 BE BOM"/>
-                    <Item id="45007" name="Кодувати в UCS-2 LE BOM"/>
-                    <Item id="45008" name="Кодувати в UTF-8"/>
+                    <Item id="45004" name="ANSI"/>
+                    <Item id="45005" name="UTF-8-BOM"/>
+                    <Item id="45006" name="UCS-2 BE BOM"/>
+                    <Item id="45007" name="UCS-2 LE BOM"/>
+                    <Item id="45008" name="UTF-8"/>
                     <Item id="45009" name="Перетворити на ANSI"/>
                     <Item id="45010" name="Перетворити на UTF-8"/>
                     <Item id="45011" name="Перетворити на UTF-8-BOM"/>
@@ -281,6 +282,7 @@
 
                     <Item id="46001" name="Конфігуратор стилю..."/>
                     <Item id="46250" name="Визначити мову..."/>
+                    <Item id="46300" name="Відкрити користувацьку теку мови..."/>
                     <Item id="46180" name="Визначено користувачем"/>
                     <Item id="47000" name="Про Notepad++"/>
                     <Item id="47010" name="Аргументи командного рядка..."/>
@@ -289,7 +291,7 @@
                     <Item id="47003" name="Документація в Інтернеті"/>
                     <Item id="47004" name="Спільнота (Форум) Notepad++"/>
                     <Item id="47011" name="Технічна підтримка"/>
-                    <Item id="47012" name="Інформація налагодження..."/>
+                    <Item id="47012" name="Інформація зневадження..."/>
                     <Item id="47005" name="Отримати більше плагінів"/>
                     <Item id="47006" name="Оновити Notepad++"/>
                     <Item id="47009" name="Встановити проксі оновлення..."/>
@@ -311,12 +313,15 @@
                     <Item id="50000" name="Завершення функцій"/>
                     <Item id="50001" name="Завершення слів"/>
                     <Item id="50002" name="Підказка параметрів функцій"/>
+                    <Item id="50003" name="Перейти до попереднього документа"/>
+                    <Item id="50004" name="Перейти до наступного документа"/>
+                    <Item id="50005" name="Перемкнути запис макросу"/>
                     <Item id="50006" name="Завершення шляху"/>
                     <Item id="44042" name="Приховати рядки"/>
                     <Item id="42040" name="Відкрити всі останні файли"/>
                     <Item id="42041" name="Очистити список останніх файлів"/>
-                    <Item id="48016" name="Змінити макрос Гарячі клавіші/Видалити..."/>
-                    <Item id="48017" name="Змінити команду Гарячі клавіші/Видалити..."/>
+                    <Item id="48016" name="Змінити комб. клавіш/Видалити макрос..."/>
+                    <Item id="48017" name="Змінити комб. клавіш/Видалити команду..."/>
                 </Commands>
             </Main>
             <Splitter>
@@ -384,6 +389,8 @@
                 <Item id="1641" name="Знайти все в поточному документі"/>
                 <Item id="1686" name="Прозорість"/>
                 <Item id="1703" name="&amp;. новий рядок"/>
+				<Item id="1721" name="▲"/>
+                <Item id="1723" name="▼ Знайти далі"/>
             </Find>
 
             <FindCharsInRange title="Знайти символи в діапазоні...">
@@ -753,8 +760,8 @@
                     <Item id="6404" name="Macintosh (CR)"/>
                     <Item id="6405" name="Кодування"/>
                     <Item id="6406" name="ANSI"/>
-                    <Item id="6407" name="UTF-8 без мітки BOM"/>
-                    <Item id="6408" name="UTF-8"/>
+                    <Item id="6407" name="UTF-8"/>
+                    <Item id="6408" name="UTF-8 з BOM"/>
                     <Item id="6409" name="UCS-2 Big Endian"/>
                     <Item id="6410" name="UCS-2 Little Endian"/>
                     <Item id="6411" name="Синтаксис:"/>
@@ -771,6 +778,7 @@
                 </DefaultDir>
 
                 <FileAssoc title="Асоціації файлів">
+                    <Item id="4008" name="Щоб використовувати цю функцію, перезапустіть Notepad++ в режимі адміністратора."/>
                     <Item id="4009" name="Підтримувані:"/>
                     <Item id="4010" name="Зареєстровані:"/>
                 </FileAssoc>
@@ -783,6 +791,7 @@
                     <Item id="6302" name="Замінити пробілом"/>
                     <Item id="6303" name="Розмір табуляції: "/>
                     <Item id="6510" name="Використовувати типове значення"/>
+                    <Item id="6335" name="Зворотній слеш як символ escape для SQL"/>
                 </Language>
 
                 <Highlighting title="Підсвічування">
@@ -855,6 +864,7 @@
                 </Backup>
 
                 <AutoCompletion title="Автозавершення">
+                    <Item id="6115" name="Автовідступ"/>
                     <Item id="6807" name="Автозавершення"/>
                     <Item id="6808" name="Увімкнути автозавершення для кожного введення"/>
                     <Item id="6809" name="Завершення функцій"/>
@@ -867,8 +877,8 @@
                     <Item id="6815" name="Підказка параметрів функції при введенні"/>
                     <Item id="6851" name="Автовставлення"/>
                     <Item id="6857" name=" закр. теґ html/xml"/>
-                    <Item id="6858" name="Відкр."/>
-                    <Item id="6859" name="Закр."/>
+                    <Item id="6858" name="Відкрити"/>
+                    <Item id="6859" name="Закрити"/>
                     <Item id="6860" name="Пара збігів 1:"/>
                     <Item id="6863" name="Пара збігів 2:"/>
                     <Item id="6866" name="Пара збігів 3:"/>
@@ -927,14 +937,14 @@
                     <Item id="6324" name="Перемикання документів (Ctrl+Tab)"/>
                     <Item id="6331" name="Показувати в рядку заголовка лише назву файлу"/>
                     <Item id="6334" name="Автовизначення кодування символів"/>
-                    <Item id="6335" name="Зворотній слеш як символ escape для SQL"/>
+                    <Item id="6314" name="Моноширинний шрифт у вікні Знайти (Необхідний перезапуск Notepad++)"/>
                     <Item id="6337" name="Розш. файлу робочої області:"/>
                     <Item id="6114" name="Увімкнути"/>
-                    <Item id="6115" name="Авто-відступ"/>
                     <Item id="6117" name="Побудувати список по мірі використання"/>
                     <Item id="6344" name="Вибір документа"/>
                     <Item id="6345" name="Обрати у вкладці"/>
-                    <Item id="6346" name="Обрати в схемі документа"/>
+                    <Item id="6346" name="Обрати у схемі документа"/>
+                    <Item id="6348" name="Не заповнювати поле пошуку у вікні „Пошук“ виділеним словом"/>
                 </MISC>
             </Preference>
             <MultiMacro title="Багаторазовий запуск макросу">
@@ -980,6 +990,14 @@
                 <Item id="1718" name="Розширений (\n \r, \t, \0, \x...)"/>
                 <Item id="1720" name="&amp;. відповідає новому рядку"/>
             </FindInFinder>
+            <DoSaveOrNot title="Зберегти"> 
+                <Item id="1761" name="Зберегти файл &quot;$STR_REPLACE$&quot; ?"/>
+                <Item id="6" name="Так"/>
+                <Item id="7" name="Ні"/>
+                <Item id="2" name="Скасувати"/>
+                <Item id="4" name="Так для всіх"/>
+                <Item id="5" name="Ні для всіх"/>
+            </DoSaveOrNot>
         </Dialog>
         <MessageBox> <!-- $INT_REPLACE$ is a place holder, don't translate it -->
             <ContextMenuXmlEditWarning title="Зміна contextMenu" message="Зміна contextMenu.xml дозволяє вам змінювати випадаюче меню Notepad++.
@@ -1011,7 +1029,6 @@
             <SortingError title="Помилка впорядкування" message="Не вдається виконати впорядкування за числами, через рядок $INT_REPLACE$."/>
             <ColumnModeTip title="Порада для режиму стовпців" message="Використовуйте &quot;ALT+Вибір мишею&quot; або &quot;Alt+Shift+Клавіша стрілки&quot;, щоб перемкнутися в режим стовпців."/>
             <BufferInvalidWarning title="Не вдалося зберегти" message="Неможливо зберегти: Неправильний буфер."/>
-            <DoSaveOrNot title="Зберегти" message="Зберегти файл &quot;$STR_REPLACE$&quot; ?"/>
             <DoCloseOrNot title="Зберегти неіснуючий файл" message="Файл &quot;$STR_REPLACE$&quot; більше не існує.
 Залишити цей файл в редакторі?"/>
             <DoDeleteOrNot title="Видалити файл" message="Файл &quot;$STR_REPLACE$&quot;
@@ -1031,6 +1048,7 @@
             <PrehistoricSystemDetected title="Виявлено застарілу систему" message="Схоже, ви все ще використовуєте застарілу систему. Шкода, але ця функція працює лише на сучасній системі."/>
             <XpUpdaterProblem title="Система оновлення Notepad++" message="Система оновлення Notepad++ несумісна з XP, у зв'язку із застарілою системою безпеки XP.
 Хочете перейти на веб-сторінку Notepad++ для завантаження найновішої версії?"/>
+            <GUpProxyConfNeedAdminMode title="Параметри проксі" message="Перезапустіть Notepad++ в режимі Адміністратора для налаштування проксі."/>
             <DocTooDirtyToMonitor title="Проблема моніторингу" message="Документ змінено. Будь ласка, збережіть зміни перед його моніторингом."/>
             <DocNoExistToMonitor title="Проблема моніторингу" message="Файл повинен існувати для його моніторингу."/>
             <FileTooBigToOpen title="Проблема розміру файлу" message="Файл завеликий для відкриття в Notepad++"/>
@@ -1067,6 +1085,10 @@
 Хочете запустити Notepad++ в режимі адміністратора?"/>
             <OpenInAdminModeFailed title="Не вдалося запустити в режимі адміністратора" message="Notepad++ не може бути відкритий в режимі адміністратора."/>
             <ViewInBrowser title="Перегляд поточного файлу в браузері" message="У вашій системі не вдалося знайти програму."/>
+            <ExitToUpdatePlugins title="Ви збираєтеся закрити Notepad++" message="Якщо ви оберете ТАК, ви вийдете з Notepad++ для продовження операцій.
+Notepad++ перезапуститься після завершення всіх операцій.
+Продовжити?"/>
+            <NeedToRestartToLoadPlugins title="Необхідно перезапустити Notepad++" message="Необхідно перезапустити Notepad++ для завантаження встановлених плагінів."/>
         </MessageBox>
         <ClipboardHistory>
             <PanelTitle name="Історія буфера"/>
@@ -1086,6 +1108,8 @@
             <ColumnVal name="Значення"/>
             <ColumnHex name="Hex"/>
             <ColumnChar name="Символ"/>
+            <ColumnHtmlNumber name="HTML число"/>
+            <ColumnHtmlName name="HTML код"/>
         </AsciiInsertion>
         <DocumentMap>
             <PanelTitle name="Карта документа"/>
@@ -1108,6 +1132,7 @@
                 <Item id="3517" name="Знайти у файлах..."/>
                 <Item id="3518" name="Провідник тут"/>
                 <Item id="3519" name="CMD тут"/>
+                <Item id="3520" name="Копіювати назву файлу"/>
             </Menus>
         </FolderAsWorkspace>
         <ProjectManager>
@@ -1168,6 +1193,11 @@
             <cloud-select-folder value="Виберіть теку, звідки/куди в Notepad++ читати/записувати свої параметри"/>
             <shift-change-direction-tip value="Використовуйте Shift+Enter для пошуку у зворотному напрямку"/>
             <two-find-buttons-tip value="2-кнопковий режим пошуку"/>
+            <find-in-files-filter-tip value="Знайти в cpp, cxx, h, hxx &amp;&amp; hpp:
+*.cpp *.cxx *.h *.hxx *.hpp
+
+Знайти у всіх файлах, за винятком exe, obj &amp;&amp; log:
+*.* !*.exe !*.obj !*.log"/>
             <find-status-top-reached value="Знайти: Знайдено 1-й збіг знизу. Було досягнуто початку документа."/>
             <find-status-end-reached value="Знайти: Знайдено 1-й збіг згори. Було досягнуто кінця документа."/>
             <find-status-replaceinfiles-1-replaced value="Замінити у файлах: Виконано 1 заміну"/>
@@ -1213,6 +1243,17 @@
             <userdefined-title-rename value="Змінити назву поточної мови"/>
             <autocomplete-nb-char value="К-сть симв.: "/>
             <edit-verticaledge-nb-col value="К-сть стовп.:"/>
+            <summary value="Підсумок"/>
+            <summary-filepath value="Повний шлях до файлу: "/>
+            <summary-filecreatetime value="Створено: "/>
+            <summary-filemodifytime value="Змінено: "/>
+            <summary-nbchar value="Символи (без закінчення рядка): "/>
+            <summary-nbword value="Слова: "/>
+            <summary-nbline value="Рядки: "/>
+            <summary-nbbyte value="Довжина документа: "/>
+            <summary-nbsel1 value=" обрані символи ("/>
+            <summary-nbsel2 value=" байтів) в "/>
+            <summary-nbrange value=" діапазонах"/>
         </MiscStrings>
     </Native-Langue>
 </NotepadPlus>

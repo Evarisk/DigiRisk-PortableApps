@@ -1,6 +1,6 @@
 
 ======================================================================
-ReadMe do LibreOffice 6.2
+ReadMe do LibreOffice 6.4
 ======================================================================
 
 
@@ -35,7 +35,7 @@ Requisitos do sistema
 
 Tenha em atenção de que o processo de instalação requer direitos de administrador.
 
-Pode recusar o registo do LibreOffice como aplicação padrão dos formatos Microsoft Office, utilizando as seguintes linhas de comandos durante a instalação:
+Pode recusar ou aceitar o registo do LibreOffice como aplicação padrão dos formatos Microsoft Office, utilizando as seguintes linhas de comandos durante a instalação:
 
 * REGISTER_ALL_MSO_TYPES=1: o LibreOffice será a aplicação padrão para os formatos do Microsoft Office.
 * REGISTER_NO_MSO_TYPES=1: o LibreOffice não será a aplicação padrão para formatos do Microsoft Office.
@@ -85,7 +85,7 @@ Notas relativas à integração no ambiente de trabalho para distribuições Lin
 
 Deve ser fácil instalar o LibreOffice nos sistemas Linux que não estão abrangidos por estas instruções de instalação. As principais diferenças devem ocorrer na integração ao ambiente de trabalho.
 
-O diretório de RPMS (OU DEBS) também contém um pacote com o nome libreoffice6.2-freedesktop-menus-6.2.0.1-1.noarch.rpm (ou libreoffice6.2-debian-menus_6.2.0.1-1_all.deb, respetivamente, ou similar). Este é o pacote a utilizar para todas as distribuições Linux que cumpram as especificações/recomendações Freedesktop.org (https://en.wikipedia.org/wiki/Freedesktop.org) e é disponibilizado para a instalação em outras distribuições Linux que não estejam abrangidas pelas instruções acima mencionadas.
+O diretório de RPMS (OU DEBS) também contém um pacote com o nome libreoffice6.4-freedesktop-menus-6.4.0.1-1.noarch.rpm (ou libreoffice6.4-debian-menus_6.4.0.1-1_all.deb, respetivamente, ou similar). Este é o pacote a utilizar para todas as distribuições Linux que cumpram as especificações/recomendações Freedesktop.org (https://en.wikipedia.org/wiki/Freedesktop.org) e é disponibilizado para a instalação em outras distribuições Linux que não estejam abrangidas pelas instruções acima mencionadas.
 
 Instalar um pacote de idioma
 ----------------------------------------------------------------------
@@ -198,7 +198,7 @@ Integrar um ou mais projetos
 
 Pode contribuir de forma significativa para este importante projeto de código livre, mesmo se a sua experiência de programação seja limitada. Sim, você mesmo!
 
-Esperamos que o novo LibreOffice 6.2 corresponda às suas expectativas e aguardamos a sua integração na equipa.
+Esperamos que o novo LibreOffice 6.4 corresponda às suas expectativas e aguardamos a sua integração na equipa.
 
 A comunidade LibreOffice
 

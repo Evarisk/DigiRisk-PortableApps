@@ -194,7 +194,8 @@ Const cstByteLength = 25
 				sArg = Replace(sArg, &quot;,&quot;, &quot;.&quot;)
 			Case vbBigint			:		sArg = CStr(CLng(pvArg))
 			Case vbDate				:		sArg = Year(pvArg) &amp; &quot;-&quot; &amp; Right(&quot;0&quot; &amp; Month(pvArg), 2) &amp; &quot;-&quot; &amp; Right(&quot;0&quot; &amp; Day(pvArg), 2) _
-													&amp; &quot; &quot; &amp; Right(&quot;0&quot; &amp; Hour(pvArg), 2) &amp; &quot;:&quot; &amp; Right(&quot;0&quot; &amp; Minute(pvArg), 2)
+													&amp; &quot; &quot; &amp; Right(&quot;0&quot; &amp; Hour(pvArg), 2) &amp; &quot;:&quot; &amp; Right(&quot;0&quot; &amp; Minute(pvArg), 2) _
+													&amp; &quot;:&quot; &amp; Right(&quot;0&quot; &amp; Second(pvArg), 2)
 			Case Else				:		sArg = CStr(pvArg)
 		End Select
 	End If
@@ -208,7 +209,7 @@ End Function	&apos;	CStr			V0.9.5
 
 REM -----------------------------------------------------------------------------------------------------------------------
 Public Function _CVar(ByRef psArg As String, ByVal Optional pbStrDate As Boolean) As Variant
-&apos;	psArg is presumed an output of _CStr (stored in the mean time in a text file f.i.)
+&apos;	psArg is presumed an output of _CStr (stored in the meantime in a text file f.i.)
 &apos;	_CVar returns the corresponding original variant variable or Null/Nothing if not possible
 &apos;	Return values may of types Array, Long, Double, Date, Boolean, String, Null or Empty
 &apos;	pbStrDate = True keeps dates as strings
@@ -973,7 +974,7 @@ Dim oEvents As Object, sEvent As String, sEventName As String, oEvent As Object
 	_RegisterDialogEventScript = False
 	If Not _hasUNOMethod(poObject, &quot;getEvents&quot;) Then Exit Function
 
-&apos;	Remove existing event, if any, than store new script code
+&apos;	Remove existing event, if any, then store new script code
 	Set oEvents = poObject.getEvents()
 	sEvent = Utils._GetEventName(psEvent)
 	sEventName = &quot;com.sun.star.awt.&quot; &amp; psListener &amp; &quot;::&quot; &amp; sEvent
@@ -1040,9 +1041,11 @@ REM ----------------------------------------------------------------------------
 Public Sub _ResetCalledSub(ByVal psSub As String)
 &apos;	Called in bottom of each public function. _A2B_.CalledSub variable is used for error handling
 &apos;	Used to trace routine in/outs and to clarify error messages
-		If IsEmpty(_A2B_) Then Call Application._RootInit()	&apos;	Only is Utils module recompiled
-		If _A2B_.CalledSub = psSub Then _A2B_.CalledSub = &quot;&quot;
-		If _A2B_.MinimalTraceLevel = 1 Then TraceLog(TRACEDEBUG, _GetLabel(&quot;Exiting&quot;) &amp; &quot; &quot; &amp; psSub &amp; &quot; ...&quot;, False)
+		If IsEmpty(_A2B_) Then Call Application._RootInit()	&apos;	Only when Utils module recompiled
+		With _A2B_
+			If .CalledSub = psSub Then .CalledSub = &quot;&quot;
+			If .MinimalTraceLevel = 1 Then TraceLog(TRACEDEBUG, _GetLabel(&quot;Exiting&quot;) &amp; &quot; &quot; &amp; psSub &amp; &quot; ...&quot;, False)
+		End With
 End Sub			&apos;	ResetCalledSub
 
 REM -----------------------------------------------------------------------------------------------------------------------
@@ -1073,8 +1076,16 @@ Public Sub _SetCalledSub(ByVal psSub As String)
 &apos;	Called in top of each public function.
 &apos;	Used to trace routine in/outs and to clarify error messages
 		If IsEmpty(_A2B_) Then Call Application._RootInit()	&apos;	First use of Access2Base in current LibO/AOO session
-		If _A2B_.CalledSub = &quot;&quot; Then _A2B_.CalledSub = psSub
-		If _A2B_.MinimalTraceLevel = 1 Then TraceLog(TRACEDEBUG, _GetLabel(&quot;Entering&quot;) &amp; &quot; &quot; &amp; psSub &amp; &quot; ...&quot;, False)
+		With _A2B_
+			If .CalledSub = &quot;&quot; Then
+				.CalledSub = psSub
+				.LastErrorCode = 0
+				.LastErrorLevel = &quot;&quot;
+				.ErrorText = &quot;&quot;
+				.ErrorLongText = &quot;&quot;
+			End If
+			If .MinimalTraceLevel = 1 Then TraceLog(TRACEDEBUG, _GetLabel(&quot;Entering&quot;) &amp; &quot; &quot; &amp; psSub &amp; &quot; ...&quot;, False)
+		End With
 End Sub			&apos;	SetCalledSub
 
 REM -----------------------------------------------------------------------------------------------------------------------

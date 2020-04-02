@@ -68,7 +68,7 @@
         <name lang="mai">Solver for Nonlinear Programming</name>
         <name lang="mk">Solver for Nonlinear Programming</name>
         <name lang="ml">നോണ്‍ലിനിയര്‍ പ്രോഗ്രാമിങിനുള്ള സോള്‍വര്‍</name>
-        <name lang="mn">Solver for Nonlinear Programming</name>
+        <name lang="mn">Шийдвэрлэгчийг шугаман бус асуудалд</name>
         <name lang="mni">Solver for Nonlinear Programming</name>
         <name lang="mr">नॉनलिनिअर प्रोग्रामींगसाठी सॉल्वर</name>
         <name lang="my">Solver for Nonlinear Programming</name>
@@ -102,6 +102,7 @@
         <name lang="st">Solver for Nonlinear Programming</name>
         <name lang="sv">Problemlösare för ickelinjär programmering</name>
         <name lang="sw-TZ">Solver for Nonlinear Programming</name>
+        <name lang="szl">Solver dlo niylinijowego programowanio</name>
         <name lang="ta">பலபடித்தான நிரல்களுக்கான தீர்வி</name>
         <name lang="te">అసరళ ప్రోగ్రామింగ్ కొరకు సాల్వర్</name>
         <name lang="tg">Solver for Nonlinear Programming</name>
@@ -223,6 +224,7 @@
         <src lang="st" xlink:href="description-st.txt"/>
         <src lang="sv" xlink:href="description-sv.txt"/>
         <src lang="sw-TZ" xlink:href="description-sw-TZ.txt"/>
+        <src lang="szl" xlink:href="description-szl.txt"/>
         <src lang="ta" xlink:href="description-ta.txt"/>
         <src lang="te" xlink:href="description-te.txt"/>
         <src lang="tg" xlink:href="description-tg.txt"/>

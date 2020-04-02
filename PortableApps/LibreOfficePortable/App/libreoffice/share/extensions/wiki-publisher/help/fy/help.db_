@@ -6,8 +6,8 @@
 36 com.sun.star.wiki.MediaWiki.SendToMediaWiki.MinorCheck 53 0com.sun.wiki-publisher/wikisend.xhp#bm_id2619708help.jarFerstjoere nei MediaWiki
 38 com.sun.star.wiki.MediaWiki.SendToMediaWiki.BrowserCheck 53 0com.sun.wiki-publisher/wikisend.xhp#bm_id1293679help.jarFerstjoere nei MediaWiki
 36 com.sun.star.wiki.MediaWiki.SendToMediaWiki.SendButton 52 /com.sun.wiki-publisher/wikisend.xhp#bm_id290536help.jarFerstjoere nei MediaWiki
-28 com.sun.wiki-publisher%2Fwikiformats.xhp 46 &com.sun.wiki-publisher/wikiformats.xhphelp.jarOpmaak foar MediaWiki
-1f vnd.com.sun.star.wiki%3Aformats 53 3com.sun.wiki-publisher/wikiformats.xhp#bm_id7021088help.jarOpmaak foar MediaWiki
+28 com.sun.wiki-publisher%2Fwikiformats.xhp 49 &com.sun.wiki-publisher/wikiformats.xhphelp.jarYndieling foar MediaWiki
+1f vnd.com.sun.star.wiki%3Aformats 56 3com.sun.wiki-publisher/wikiformats.xhp#bm_id7021088help.jarYndieling foar MediaWiki
 28 com.sun.wiki-publisher%2Fwikiaccount.xhp 3a &com.sun.wiki-publisher/wikiaccount.xhphelp.jar	MediaWiki
 1f vnd.com.sun.star.wiki%3Aaccount 47 3com.sun.wiki-publisher/wikiaccount.xhp#bm_id7021088help.jar	MediaWiki
 30 com.sun.star.wiki.MediaWiki.EditSetting.UrlField 47 3com.sun.wiki-publisher/wikiaccount.xhp#bm_id4558244help.jar	MediaWiki

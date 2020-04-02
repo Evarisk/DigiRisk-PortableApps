@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <description xmlns="http://openoffice.org/extensions/description/2006" xmlns:d="http://openoffice.org/extensions/description/2006"  xmlns:xlink="http://www.w3.org/1999/xlink">
-    <version value="2018.11.01" />
+    <version value="2019.11.01" />
     <identifier value="org.openoffice.en.hunspell.dictionaries" />
     <display-name>
         <name lang="en-US">English spelling dictionaries, hyphenation rules, thesaurus, and grammar checker</name>
-        <name lang="af">English spelling dictionaries, hyphenation rules, thesaurus, and grammar checker</name>
+        <name lang="af">Engelse speltoetsers, woordafbreekreëls, tesourus en grammatikatoetser.</name>
         <name lang="am">English spelling dictionaries, hyphenation rules, thesaurus, and grammar checker</name>
         <name lang="ar">قاموس التدقيق الإملائي للُّغة الإنجليزية، قواعد الواصلة، المترادفات والمدقق النحوي</name>
         <name lang="as">ইংৰাজী বানান শব্দকোষসমূহ, হাইফেনেষণ নিয়মসমূহ, সমাৰ্থশব্দকোষ, আৰু ব্যাকৰণ নীৰিক্ষক</name>
@@ -81,7 +81,7 @@
         <name lang="om">Dikshinaari qubeessa afaan Ingiliffaa</name>
         <name lang="or">ଇଂରାଜୀ ବନାନ ଅବିଧାନ, ସମାସ ଚିହ୍ନ ନିୟମାବଳୀ, ଶବ୍ଦାକୋଷ, ଏବଂ ବ୍ୟାକରଣ ଯାଞ୍ଚ</name>
         <name lang="pa-IN">ਅੰਗਰੇਜ਼ੀ ਸਪੈਲਿੰਗ ਡਿਕਸ਼ਨਰੀ, ਹਾਈਫਨੇਸ਼ਨ ਰੂਲ, ਕੋਸ਼ ਅਤੇ ਗਰਾਮਰ ਚੈੱਕਰ</name>
-        <name lang="pl">Angielskie słowniki ortograficzny, reguły dzielenia wyrazów, słownik wyrazów bliskoznacznych i sprawdzanie gramatyki</name>
+        <name lang="pl">Angielskie słowniki ortograficzne, reguły dzielenia wyrazów, słownik wyrazów bliskoznacznych i sprawdzanie gramatyki</name>
         <name lang="pt">Dicionário ortográfico, sinónimos, regras de hifenização e verificação gramatical em inglês</name>
         <name lang="pt-BR">Dicionário ortográfico, sinônimos, regras de hifenização e verificação gramatical em inglês</name>
         <name lang="ro">Dicționar ortografic, despărțire în silabe, de sinonime și gramatical englez</name>
@@ -101,6 +101,7 @@
         <name lang="st">English spelling dictionaries, hyphenation rules, thesaurus, and grammar checker</name>
         <name lang="sv">Engelsk stavningskontroll, avstavningsregler, synonymordbok och grammatikkontroll</name>
         <name lang="sw-TZ">English spelling dictionaries, hyphenation rules, thesaurus, and grammar checker</name>
+        <name lang="szl">Angelski słownik ôrtograficzny, prawidła dzielynio słōw, słownik synōnimōw i korekta gramatyki</name>
         <name lang="ta">ஆங்கில எழுத்துக்கூட்டு அகராதிகள், நடுக்கோடு விதிகள், நிகண்டு மற்றும் இலக்கண திருத்தி</name>
         <name lang="te">ఆంగ్ల వుచ్ఛారణా నిఘంటువు, హైఫనేషన్ నియమాలు, పదకోశాలు, మరియు వ్యాకరణ పరిశీలని</name>
         <name lang="tg">English spelling dictionaries, hyphenation rules, thesaurus, and grammar checker</name>

@@ -1,6 +1,6 @@
 
 ======================================================================
-File leggimi di LibreOffice 6.2
+File leggimi di LibreOffice 6.4
 ======================================================================
 
 
@@ -85,7 +85,7 @@ Note relative l'integrazione desktop per le distribuzioni Linux non trattate nel
 
 Dovrebbe essere possibile installare facilmente LibreOffice su altre distribuzioni Linux non specificamente definite in queste istruzioni di installazione. Le principali differenze che si potrebbero riscontrare sono nell'integrazione con il desktop.
 
-La cartella RPMS (o DEBS, rispettivamente) contiene anche un pacchetto chiamato libreoffice6.2-freedesktop-menus-6.2.0.1-1.noarch.rpm (o libreoffice6.2-debian-menus_6.2.0.1-1_all.deb, rispettivamente, o simile). Questo pacchetto vale per tutte le distribuzioni Linux che supportano le specifiche/raccomandazioni Freedesktop.org (https://en.wikipedia.org/wiki/Freedesktop.org), ed è fornito per l'installazione sulle altre distribuzioni Linux non contemplate nelle istruzioni menzionate in precedenza.
+La cartella RPMS (o DEBS, rispettivamente) contiene anche un pacchetto chiamato libreoffice6.4-freedesktop-menus-6.4.0.1-1.noarch.rpm (o libreoffice6.4-debian-menus_6.4.0.1-1_all.deb, rispettivamente, o simile). Questo pacchetto vale per tutte le distribuzioni Linux che supportano le specifiche/raccomandazioni Freedesktop.org (https://en.wikipedia.org/wiki/Freedesktop.org), ed è fornito per l'installazione sulle altre distribuzioni Linux non contemplate nelle istruzioni menzionate in precedenza.
 
 Installare un pacchetto di lingua
 ----------------------------------------------------------------------
@@ -160,7 +160,7 @@ Per ulteriori informazioni sulle caratteristiche di accesso facilitato in LibreO
 Supporto utenti
 ----------------------------------------------------------------------
 
-La pagina di supporto principale offre varie soluzioni di assistenza per LibreOffice. Il tuo quesito potrebbe avere già ottenuto risposta: controlla il forum della comunità all'indirizzo https://www.documentfoundation.org/nabble/ o ricerca negli archivi della mailing list 'users@it.libreoffice.org' in https://www.libreoffice.org/lists/users/. In alternativa, puoi inviare i tuoi quesiti a users@libreoffice.org. Se vuoi iscriverti alla lista (per ottenere risposte), invia un messaggio vuoto all'indirizzo: users+subscribe@it.libreoffice.org.
+La pagina di supporto principale offre varie soluzioni di assistenza per LibreOffice. Il tuo quesito potrebbe avere già ottenuto risposta: controlla il forum della comunità all'indirizzo http://www.documentfoundation.org/nabble/ o ricerca negli archivi della mailing list 'users@it.libreoffice.org' in http://www.libreoffice.org/lists/users/. In alternativa, puoi inviare i tuoi quesiti a users@libreoffice.org. Se vuoi iscriverti alla lista (per ottenere risposte), invia un messaggio vuoto all'indirizzo: users+subscribe@it.libreoffice.org.
 
 Consulta anche la sezione FAQ nel sito web di LibreOffice.
 
@@ -198,7 +198,7 @@ Unirsi a uno o più progetti
 
 Anche se non hai grande esperienza di progettazione o programmazione di software, puoi dare un importante contributo a questo importante progetto open source. Come?
 
-Ti auguriamo buon lavoro e buon divertimento con il nuovo LibreOffice 6.2 e speriamo di incontrarti presto online.
+Ti auguriamo buon lavoro e buon divertimento con il nuovo LibreOffice 6.4 e speriamo di incontrarti presto online.
 
 La comunità di LibreOffice
 
@@ -206,4 +206,4 @@ La comunità di LibreOffice
 Codice sorgente usato / modificato
 ----------------------------------------------------------------------
 
-Portions Copyright 1998, 1999 James Clark. Portions Copyright 1996, 1998 Netscape Communications Corporation.
+Parti con copyright 1998, 1999 James Clark. Parti con copyright 1996, 1998 Netscape Communications Corporation.

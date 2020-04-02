@@ -1,6 +1,6 @@
 
 ======================================================================
-LibreOffice 6.2 ReadMe
+LibreOffice 6.4 ReadMe
 ======================================================================
 
 
@@ -18,7 +18,7 @@ LibreOffice darf von jedem frei verwendet werden. Sie können diese Kopie von Li
 Warum ist LibreOffice für jeden Anwender frei?
 ----------------------------------------------------------------------
 
-Sie können diese Kopie von LibreOffice kostenlos benutzen, weil einzelne Beitragende und Firmensponsoren die Software entwerfen, entwickeln, testen, übersetzen, dokumentieren, unterstützen, vermarkten und auf verschiedene Weise dazu beitragen, LibreOffice zu dem zu machen, was es heute ist - die führende Open Source Office-Software für Heim- und Firmenanwender.
+Sie können diese Kopie von LibreOffice kostenlos benutzen, weil einzelne Beitragende und Firmensponsoren die Software entwerfen, entwickeln, testen, übersetzen, dokumentieren, unterstützen, vermarkten und auf verschiedene Weise dazu beitragen, LibreOffice zu dem zu machen, was es heute ist – die führende Open Source Office-Software für Heim- und Firmenanwender.
 
 Wenn Sie diese Anstrengungen würdigen und sicherstellen möchten, dass LibreOffice auch in Zukunft verfügbar sein wird, tragen Sie am besten selbst zum Projekt bei. Lesen Sie https://de.libreoffice.org/community/ für weitere Informationen. Jeder kann einen eigenen Beitrag leisten.
 
@@ -53,7 +53,7 @@ Dieses Verzeichnis enthält ein Unterverzeichnis "DEBS". Wechseln Sie in das Ver
 
 Rechtsklicken Sie innerhalb des Verzeichnisses und wählen Sie "Im Terminal öffnen". Ein Kommandozeilenfenster wird geöffnet. Geben Sie folgende Befehlszeile auf der Kommandozeile ein (Sie werden aufgefordert, das Root-Kennwort einzugeben, bevor das Kommando ausgeführt wird):
 
-Die folgenden Befehle installieren LibreOffice inklusive Desktop-Integration (Sie können sie einfach per Kopieren-und-Einfügen in einen Terminal übertragen, anstatt sie abzutippen):
+Die folgenden Befehle installieren LibreOffice inklusive Desktop-Integration (Sie können sie einfach per Kopieren-und-Einfügen in ein Terminal übertragen, anstatt sie abzutippen):
 
 sudo dpkg -i *.deb
 
@@ -85,7 +85,7 @@ Hinweise bezüglich der Desktopintegration für Linuxdistributionen, die in den 
 
 Es sollte recht einfach sein, LibreOffice auf hier nicht spezifisch betrachteten Linux-Distributionen zu installieren. Unterschiede könnten sich hauptsächlich bei der Desktopintegration ergeben.
 
-Das Verzeichnis RPMS (beziehungsweise DEBS) enthält auch ein Paket libreoffice6.2-freedesktop-menus-6.2.0.1-1.noarch.rpm (beziehungsweise libreoffice6.2-debian-menus_6.2.0.1-1_all.deb oder ähnlich). Dieses Paket ist für alle Linuxdistributionen geeignet, welche die Freedesktop.org-Spezifikationen/Empfehlungen (https://de.wikipedia.org/wiki/Freedesktop.org) umsetzen, und sollte für alle hier nicht näher betrachteten Linux-Systeme genutzt werden können.
+Das Verzeichnis RPMS (beziehungsweise DEBS) enthält auch ein Paket libreoffice6.4-freedesktop-menus-6.4.0.1-1.noarch.rpm (beziehungsweise libreoffice6.4-debian-menus_6.4.0.1-1_all.deb oder ähnlich). Dieses Paket ist für alle Linux-Distributionen geeignet, welche die Freedesktop.org Spezifikationen/Empfehlungen (https://de.wikipedia.org/wiki/Freedesktop.org) umsetzen, und sollte für alle hier nicht näher betrachteten Linux-Systeme genutzt werden können.
 
 Installation eines Sprachpakets
 ----------------------------------------------------------------------
@@ -108,7 +108,7 @@ Für Mandriva-basierte Systeme: sudo urpmi *.rpm
 
 Für andere Systeme, die RPM benutzen (openSUSE und so weiter): rpm -Uvh *.rpm
 
-Starten Sie dann eine der LibreOffice-Anwendungen, zum Beispiel Writer. Wählen Sie Extras - Optionen... Klicken Sie im Dialog Optionen auf "Spracheinstellungen" und dann auf "Sprachen". Klappen Sie die Dropdown-Liste "Benutzeroberfläche" auf und wählen Sie die gerade installierte Sprache aus. Falls gewünscht führen Sie die gleiche Änderung für "Gebietsschema", "Standardwährung" und die "Standardsprachen der Dokumente" durch.
+Starten Sie dann eine der LibreOffice-Anwendungen, zum Beispiel Writer. Wählen Sie »Extras – Optionen…«. Klicken Sie im Dialog Optionen auf "Spracheinstellungen" und dann auf "Sprachen". Klappen Sie die Dropdown-Liste "Benutzeroberfläche" auf und wählen Sie die gerade installierte Sprache aus. Falls gewünscht führen Sie die gleiche Änderung für "Gebietsschema", "Standardwährung" und die "Standardsprachen der Dokumente" durch.
 
 Nachdem Sie diese Einstellungen vorgenommen haben, klicken Sie auf OK. Der Dialog wird geschlossen und Sie sehen einen Hinweis, dass die Änderungen erst nach einem Neustart von LibreOffice übernommen werden (denken Sie daran, auch den Schnellstarter zu beenden, sofern dieser gestartet ist).
 
@@ -118,15 +118,15 @@ Beim nächsten Start von LibreOffice wird es in der gerade installierten Sprache
 Probleme beim Programmstart
 ----------------------------------------------------------------------
 
-Probleme beim Start von LibreOffice (beispielsweise das Hängenbleiben der Anwendung) oder der Darstellung auf dem Bildschirm sind häufig auf den vom System verwendeten Grafikkartentreiber zurückzuführen. Bitte aktualisieren Sie bei Problemen dieser Art den von Ihnen verwendeten Grafikkartentreiber beziehungsweise verwenden Sie testweise den Standardgrafikkartentreiber Ihres Betriebssystems. Darstellungsprobleme bei 3D-Objekten lassen sich oft auch durch das Abschalten der Option "OpenGL benutzen" unter 'Extras - Optionen... - LibreOffice - Ansicht - 3D-Darstellung' beheben.
+Probleme beim Start von LibreOffice (beispielsweise das Hängenbleiben der Anwendung) oder der Darstellung auf dem Bildschirm sind häufig auf den vom System verwendeten Grafikkartentreiber zurückzuführen. Bitte aktualisieren Sie bei Problemen dieser Art den von Ihnen verwendeten Grafikkartentreiber beziehungsweise verwenden Sie testweise den Standardgrafikkartentreiber Ihres Betriebssystems. Darstellungsprobleme bei 3D-Objekten lassen sich oft auch durch das Abschalten der Option "OpenGL benutzen" unter »Extras – Optionen… – LibreOffice – Ansicht – 3D-Darstellung« beheben.
 
 ----------------------------------------------------------------------
 ALPS/Synaptics Notebook-Touchpads unter Windows
 ----------------------------------------------------------------------
 
-Aufgrund eines Problems im Windows-Treiber können Sie nicht in Ihren LibreOffice-Dokumenten scrollen, indem Sie mit dem Finger über den ALPS/Synaptics-Touchpad fahren.
+Aufgrund eines Problems im Windows-Treiber können Sie nicht in Ihren LibreOffice-Dokumenten rollen, indem Sie mit dem Finger über den ALPS/Synaptics-Touchpad fahren.
 
-Um das Scrollen per Touchpad zu ermöglichen, fügen Sie die folgenden Zeilen in die Datei "C:\Programme\Synaptics\SynTP\SynTPEnh.ini" ein und starten dann Ihren Computer neu:
+Um das Rollen per Touchpad zu ermöglichen, fügen Sie die folgenden Zeilen in die Datei "C:\Programme\Synaptics\SynTP\SynTPEnh.ini" ein und starten dann Ihren Computer neu:
 
 [LibreOffice]
 
@@ -148,7 +148,7 @@ In LibreOffice können nur Tastenkombinationen benutzt werden, die nicht vom Bet
 Probleme beim Versenden von Dokumenten als E-Mail aus LibreOffice
 ----------------------------------------------------------------------
 
-Wenn ein Dokument per 'Datei - Senden - Dokument als E-Mail' oder 'E-Mail als PDF' versendet wird, können Probleme auftreten (das Programm hängt oder stürzt ab). Das liegt an der Windows-Systemdatei "Mapi" (Messaging Application Programming Interface), welche in einigen Dateiversionen Probleme verursacht. Leider können die Probleme nicht auf eine bestimmte Versionsnummer eingegrenzt werden. Für mehr Informationen besuchen Sie bitte https://www.microsoft.com und suchen in der Knowledge Base nach "mapi dll".
+Wenn ein Dokument per »Datei – Senden – Dokument als E-Mail« oder »E-Mail als PDF« versendet wird, können Probleme auftreten (das Programm hängt oder stürzt ab). Das liegt an der Windows-Systemdatei "Mapi" (Messaging Application Programming Interface), welche in einigen Dateiversionen Probleme verursacht. Leider können die Probleme nicht auf eine bestimmte Versionsnummer eingegrenzt werden. Für mehr Informationen besuchen Sie bitte https://www.microsoft.com und suchen in der Knowledge Base nach "mapi dll".
 
 ----------------------------------------------------------------------
 Wichtige Hinweise zur Barrierefreiheit
@@ -160,7 +160,7 @@ Weiterführende Informationen zur Barrierefreiheit in LibreOffice finden Sie unt
 Anwenderunterstützung
 ----------------------------------------------------------------------
 
-Die Seite zur Anwenderunterstützung https://de.libreoffice.org/get-help/community-support/ listet verschiedene Möglichkeiten auf, Hilfe zu LibreOffice zu erhalten. Ihre Frage ist vielleicht schon beantwortet, schauen Sie unter https://de.libreoffice.org/get-help/nabble/ nach oder senden Sie Ihre Fragen an users@de.libreoffice.org. Falls Sie die Liste abonnieren möchten (um E-Mail-Antworten zu erhalten), senden Sie eine leere E-Mail an: users+subscribe@de.libreoffice.org.
+Die Seite zur Anwenderunterstützung https://de.libreoffice.org/get-help/community-support/ listet verschiedene Möglichkeiten auf, Hilfe zu LibreOffice zu erhalten. Ihre Frage ist vielleicht schon beantwortet, schauen Sie unter https://de.libreoffice.org/get-help/nabble/ nach oder durchsuchen Sie die Archive der Mailingliste 'users@libreoffice.org' unter  https://listarchives.libreoffice.org/de/users/. Alternativ senden Sie Ihre Fragen an users@de.libreoffice.org. Falls Sie die Liste abonnieren möchten (um E-Mail-Antworten zu erhalten), senden Sie eine leere E-Mail an: users+subscribe@de.libreoffice.org.
 
 Prüfen Sie auch die FAQs auf der LibreOffice-Webseite.
 
@@ -171,7 +171,7 @@ Fehler & Probleme melden
 Unser System, um Fehler zu melden, zu verfolgen und zu lösen, ist derzeit BugZilla und steht unter https://bugs.documentfoundation.org/ zur Verfügung. Wir möchten jeden ermutigen, selbst Fehler zu melden, die auf der jeweiligen Plattform auftreten könnten. Das aktive Melden von Fehlern ist einer der wichtigsten Beiträge, den die Anwender-Community machen kann, um die Weiterentwicklung von LibreOffice zu unterstützen.
 
 ----------------------------------------------------------------------
-Mitmachen - aber wie?
+Mitmachen – aber wie?
 ----------------------------------------------------------------------
 
 Für die LibreOffice-Community ist es von hohem Wert, wenn Sie sich aktiv in die Entwicklung dieses bedeutenden Open-Source-Projekts einbringen.
@@ -188,9 +188,9 @@ Abonnieren von Mailinglisten
 
 Hier sind einige der Mailinglisten aufgeführt, auf denen Sie sich einschreiben können: https://de.libreoffice.org/get-help/mailing-lists/
 
-* Neuigkeiten: announce@de.libreoffice.org - *Für alle Anwender empfohlen* (niedriges Mailaufkommen)
-* Benutzerhilfe: users@de.libreoffice.org - *Anwenderunterstützung für LibreOffice* (hohes Mailaufkommen)
-* Marketing: marketing@global.libreoffice.org - *LibreOffice bekanntmachen* (hohes Mailaufkommen, englisch)
+* Neuigkeiten: announce@de.libreoffice.org – *Für alle Anwender empfohlen* (niedriges Mailaufkommen)
+* Benutzerhilfe: users@de.libreoffice.org – *Anwenderunterstützung für LibreOffice* (hohes Mailaufkommen)
+* Marketing: marketing@global.libreoffice.org – *LibreOffice bekanntmachen* (hohes Mailaufkommen, englisch)
 * Generelle Entwicklerliste: libreoffice@lists.freedesktop.org (hohes Mailaufkommen, Englisch)
 
 Einem oder mehreren Projekten beitreten
@@ -198,7 +198,7 @@ Einem oder mehreren Projekten beitreten
 
 Selbst mit geringen Erfahrungen in Programmierung und Softwaredesign können Sie wichtige Beiträge zu diesem bedeutenden Open-Source-Projekt leisten. Ja, genau Sie!
 
-Wir hoffen, dass Sie Spaß bei der Arbeit mit dem neuen LibreOffice 6.2 haben und sich uns online anschließen.
+Wir hoffen, dass Sie Spaß bei der Arbeit mit dem neuen LibreOffice 6.4 haben und sich uns online anschließen.
 
 Die LibreOffice-Community
 

@@ -385,7 +385,7 @@
                         <xsl:with-param name="globalData" select="$globalData" />
                         <xsl:with-param name="previousFrameWidths" select="0"/>
                         <xsl:with-param name="previousFrameHeights" select="0"/>
-                        <!-- 2DO for me (Svante) - Not used, uncertain 4now..
+                        <!-- 2DO for me (Svante) - Not used, uncertain 4now...
                         <xsl:with-param name="pageMarginLeft">
                             <xsl:call-template name="getPageMarginLeft"/>
                          </xsl:with-param>-->
@@ -736,8 +736,8 @@
         <!-- the footnote symbol is the prefix for a footnote in the footer -->
         <xsl:param name="footnotePrefix" />
 
-            <!-- empty paragraph tags does not provoke an carridge return,
-                therefore an non breakable space (&nbsp) have been inserted.-->
+            <!-- empty paragraph tags does not provoke a carriage return,
+                therefore a non breakable space (&nbsp) have been inserted.-->
         <xsl:choose>
             <xsl:when test="node()">
                 <xsl:call-template name="apply-styles-and-content">
@@ -992,7 +992,7 @@
         <xsl:if test="@text:anchor-type='paragraph'">
             <xsl:comment>Next 'div' is emulating the top height of a draw:frame.</xsl:comment>
             <!-- When the svg:y is set relative to the paragraph content, the best way to emulate a positive height,
-             is to add an invisbile division inbetween with a height.
+             is to add an invisible division inbetween with a height.
              Often text will flow into this 'gap', which is handled separately!
              -->
             <xsl:if test="$svgY &gt; 0">
@@ -1096,7 +1096,7 @@
                     <xsl:call-template name="widthAndHeight"/>
                     <xsl:text> padding:0; </xsl:text>
                     <xsl:if test="@text:anchor-type!='as-char'">
-                        <!-- all images float (CSS float reltaive) with a left position calculated by svg:x - parentMarginLeft - previousFrameWidths -->
+                        <!-- all images float (CSS float relative) with a left position calculated by svg:x - parentMarginLeft - previousFrameWidths -->
                         <xsl:text> float:left; position:relative; left:</xsl:text>
                         <xsl:value-of select="$leftPosition"/>
                         <xsl:text>cm; </xsl:text>
@@ -1176,7 +1176,7 @@
 
         <!-- no creation of empty headings (without text content)   -->
         <xsl:if test="text() or descendant::text()">
-            <!-- The URL linking of an table-of-content is due to a bug (cp. bug id# 102311) not mapped as URL in the XML.
+            <!-- The URL linking of a table-of-content is due to a bug (cp. bug id# 102311) not mapped as URL in the XML.
                  Linking of the table-of-content can therefore only be archieved by a work-around in HTML -->
             <xsl:call-template name="create-heading">
                 <xsl:with-param name="globalData" select="$globalData"/>
@@ -1224,7 +1224,7 @@
         <xsl:choose>
             <xsl:when test="$globalData/office:styles/text:outline-style/text:outline-level-style[@text:level = current()/@text:outline-level]/@style:num-format != '' and not(@text:is-list-header='true')">
 
-                <!-- Every heading element will get an unique anchor for its file, from its hierarchy level and name:
+                <!-- Every heading element will get a unique anchor for its file, from its hierarchy level and name:
                      For example:  The heading title 'My favorite heading' might get <a name="1_2_2_My_favorite_heading" /> -->
                 <!-- creating an anchor for referencing the heading (e.g. from content table) -->
                 <xsl:variable name="headingNumber">
@@ -1401,9 +1401,10 @@
         <xsl:param name="currentoutlineLevel"/>
         <xsl:param name="i" select="1"/>
 
-        <xsl:variable name="precedingoutlineLevel" select="preceding-sibling::text:h[$i]/@text:outline-level"/>
+        <xsl:variable name="precedingHeading" select="preceding-sibling::text:h[@text:outline-level &lt;= $currentoutlineLevel][$i]"/>
+        <xsl:variable name="precedingoutlineLevel" select="$precedingHeading/@text:outline-level"/>
         <!-- tdf#107696: if text:h has attribute "is-list-header" with "true" value, it mustn't be counted for numbering -->
-        <xsl:variable name="precedingoutlineLevel-is-list-header" select="preceding-sibling::text:h[$i][@text:is-list-header='true']/@text:outline-level"/>
+        <xsl:variable name="precedingoutlineLevel-is-list-header" select="$precedingHeading[@text:is-list-header='true']/@text:outline-level"/>
         <xsl:choose>
             <xsl:when test="($currentoutlineLevel = $precedingoutlineLevel) and (not($precedingoutlineLevel-is-list-header)) ">
                 <xsl:call-template name="calc-heading-digit">
@@ -1421,11 +1422,7 @@
                 </xsl:call-template>
             </xsl:when>
             <xsl:when test="$currentoutlineLevel &lt; $precedingoutlineLevel">
-                <xsl:call-template name="calc-heading-digit">
-                    <xsl:with-param name="value" select="$value"/>
-                    <xsl:with-param name="currentoutlineLevel" select="$currentoutlineLevel"/>
-                    <xsl:with-param name="i" select="$i + 1"/>
-                </xsl:call-template>
+                <xsl:message terminate="yes">this should not happen</xsl:message>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:value-of select="$value"/>
@@ -1608,7 +1605,7 @@
         |   text:space-before (listlevelstyle)  | text:min-label-width   |
         | + fo:left-margin (firstParagraph)     |                        |
 
-        Further details beyond text:list-list..
+        Further details beyond text:list-list...
     -->
     <xsl:key name="listStyles" match=" /*/office:styles/text:list-style | /*/office:automatic-styles/text:list-style | /*/office:styles/style:graphic-properties/text:list-style | /*/office:automatic-styles/style:graphic-properties/text:list-style | /*/office:styles/text:list-style | /*/office:automatic-styles/text:list-style | /*/office:styles/style:graphic-properties/text:list-style | /*/office:automatic-styles/style:graphic-properties/text:list-style" use="@style:name"/>
 
@@ -2017,8 +2014,8 @@
                                     </xsl:variable>
                                     <!-- Numbering is being done by this transformation creating a HTML span representing the number label
                                          The html:span represents the list item/header label (e.g. 1.A.III)
-                                         As the html:span is usually a inline element is formatted by CSS as block element to use width upon it,
-                                         to disable the caridge return float:left is used and later neglected -->
+                                         As the html:span is usually an inline element is formatted by CSS as block element to use width upon it,
+                                         to disable the carriage return float:left is used and later neglected -->
                                     <xsl:element name="span">
                                         <xsl:if test="$listLevelStyle/@text:style-name">
                                             <xsl:attribute name="class">

@@ -12,7 +12,7 @@
     <node id="0224" title="MediaWiki">
         <topic id="help/com.sun.wiki-publisher/wiki.xhp">Wiki útjouwer</topic>
         <topic id="help/com.sun.wiki-publisher/wikiaccount.xhp">MediaWiki</topic>
-        <topic id="help/com.sun.wiki-publisher/wikiformats.xhp">Opmaak foar MediaWiki</topic>
+        <topic id="help/com.sun.wiki-publisher/wikiformats.xhp">Yndieling foar MediaWiki</topic>
         <topic id="help/com.sun.wiki-publisher/wikisend.xhp">Ferstjoere nei MediaWiki</topic>
         <topic id="help/com.sun.wiki-publisher/wikisettings.xhp">MediaWiki opsjes</topic>
     </node>

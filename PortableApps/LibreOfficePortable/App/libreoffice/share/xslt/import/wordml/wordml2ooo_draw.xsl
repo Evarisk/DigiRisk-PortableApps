@@ -209,7 +209,7 @@
                                     endarrowwidth="wide" endarrowlength="long" endcap="round"/>
                     <draw:stroke-dash draw:name="2 2dots 1 dash" draw:style="rect" draw:dots1="2" draw:dots2="1" draw:dots2-length="0.0795in"
                                                     draw:distance="0.102in"/>
-                    Hehe,It need to be revised-->
+                    Hehe, it needs to be revised-->
             </xsl:if>
         </xsl:if>
     </xsl:template>
@@ -348,13 +348,13 @@
             <xsl:otherwise>0</xsl:otherwise>
         </xsl:choose>
     </xsl:template>
-    <xsl:template name="lastest-substr-after">
+    <xsl:template name="latest-substr-after">
         <xsl:param name="str"/>
         <xsl:param name="substr"/>
         <xsl:choose>
             <xsl:when test="contains($str,$substr) and string-length(substring-before($str,$substr)) = 0">
                 <xsl:variable name="restr" select="substring-after($str,$substr)"/>
-                <xsl:call-template name="lastest-substr-after">
+                <xsl:call-template name="latest-substr-after">
                     <xsl:with-param name="str" select="$restr"/>
                     <xsl:with-param name="substr" select="$substr"/>
                 </xsl:call-template>
@@ -455,7 +455,7 @@
             </xsl:call-template>
         </xsl:variable>
         <xsl:variable name="dot2substr">
-            <xsl:call-template name="lastest-substr-after">
+            <xsl:call-template name="latest-substr-after">
                 <xsl:with-param name="str" select="$dstyle"/>
                 <xsl:with-param name="substr" select="$modesubstr1"/>
             </xsl:call-template>

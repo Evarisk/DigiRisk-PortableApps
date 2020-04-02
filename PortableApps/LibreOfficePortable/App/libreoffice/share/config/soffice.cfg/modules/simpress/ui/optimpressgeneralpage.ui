@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Generated with glade 3.18.3 -->
+<!-- Generated with glade 3.22.1 -->
 <interface domain="sd">
   <requires lib="gtk+" version="3.18"/>
   <object class="GtkAdjustment" id="adjustment1">
@@ -9,86 +9,32 @@
     <property name="step_increment">1</property>
     <property name="page_increment">1</property>
   </object>
-  <object class="GtkBox" id="OptSavePage">
+  <object class="GtkAdjustment" id="adjustment2">
+    <property name="upper">100</property>
+    <property name="step_increment">1</property>
+    <property name="page_increment">10</property>
+  </object>
+  <object class="GtkAdjustment" id="adjustment3">
+    <property name="upper">100</property>
+    <property name="step_increment">1</property>
+    <property name="page_increment">10</property>
+  </object>
+  <object class="GtkAdjustment" id="adjustment4">
+    <property name="upper">100</property>
+    <property name="step_increment">1</property>
+    <property name="page_increment">10</property>
+  </object>
+  <object class="GtkAdjustment" id="adjustment5">
+    <property name="upper">100</property>
+    <property name="step_increment">1</property>
+    <property name="page_increment">10</property>
+  </object>
+  <object class="GtkGrid" id="OptSavePage">
     <property name="visible">True</property>
     <property name="can_focus">False</property>
     <property name="border_width">6</property>
-    <property name="orientation">vertical</property>
-    <property name="spacing">12</property>
-    <child>
-      <object class="GtkFrame" id="frame2">
-        <property name="visible">True</property>
-        <property name="can_focus">False</property>
-        <property name="hexpand">True</property>
-        <property name="label_xalign">0</property>
-        <property name="shadow_type">none</property>
-        <child>
-          <object class="GtkAlignment" id="alignment1">
-            <property name="visible">True</property>
-            <property name="can_focus">False</property>
-            <property name="top_padding">6</property>
-            <property name="left_padding">12</property>
-            <child>
-              <object class="GtkGrid" id="grid1">
-                <property name="visible">True</property>
-                <property name="can_focus">False</property>
-                <property name="row_spacing">6</property>
-                <property name="column_spacing">12</property>
-                <property name="column_homogeneous">True</property>
-                <child>
-                  <object class="GtkCheckButton" id="qickedit">
-                    <property name="label" translatable="yes" context="optimpressgeneralpage|qickedit">Allow quick editing</property>
-                    <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">False</property>
-                    <property name="vexpand">True</property>
-                    <property name="use_underline">True</property>
-                    <property name="xalign">0</property>
-                    <property name="draw_indicator">True</property>
-                  </object>
-                  <packing>
-                    <property name="left_attach">0</property>
-                    <property name="top_attach">0</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkCheckButton" id="textselected">
-                    <property name="label" translatable="yes" context="optimpressgeneralpage|textselected">Only text area selectable</property>
-                    <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">False</property>
-                    <property name="vexpand">True</property>
-                    <property name="use_underline">True</property>
-                    <property name="xalign">0</property>
-                    <property name="image_position">right</property>
-                    <property name="draw_indicator">True</property>
-                  </object>
-                  <packing>
-                    <property name="left_attach">1</property>
-                    <property name="top_attach">0</property>
-                  </packing>
-                </child>
-              </object>
-            </child>
-          </object>
-        </child>
-        <child type="label">
-          <object class="GtkLabel" id="label2">
-            <property name="visible">True</property>
-            <property name="can_focus">False</property>
-            <property name="label" translatable="yes" context="optimpressgeneralpage|label2">Text Objects</property>
-            <attributes>
-              <attribute name="weight" value="bold"/>
-            </attributes>
-          </object>
-        </child>
-      </object>
-      <packing>
-        <property name="expand">False</property>
-        <property name="fill">True</property>
-        <property name="position">0</property>
-      </packing>
-    </child>
+    <property name="row_spacing">12</property>
+    <property name="column_spacing">24</property>
     <child>
       <object class="GtkFrame" id="newdocumentframe">
         <property name="visible">True</property>
@@ -139,9 +85,78 @@
         </child>
       </object>
       <packing>
-        <property name="expand">False</property>
-        <property name="fill">True</property>
-        <property name="position">1</property>
+        <property name="left_attach">0</property>
+        <property name="top_attach">0</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkFrame" id="frame2">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="hexpand">True</property>
+        <property name="label_xalign">0</property>
+        <property name="shadow_type">none</property>
+        <child>
+          <object class="GtkAlignment" id="alignment1">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="top_padding">6</property>
+            <property name="left_padding">12</property>
+            <child>
+              <object class="GtkGrid" id="grid1">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="row_spacing">6</property>
+                <property name="column_spacing">12</property>
+                <child>
+                  <object class="GtkCheckButton" id="qickedit">
+                    <property name="label" translatable="yes" context="optimpressgeneralpage|qickedit">Allow quick editing</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">False</property>
+                    <property name="use_underline">True</property>
+                    <property name="xalign">0</property>
+                    <property name="draw_indicator">True</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">0</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkCheckButton" id="textselected">
+                    <property name="label" translatable="yes" context="optimpressgeneralpage|textselected">Only text area selectable</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">False</property>
+                    <property name="use_underline">True</property>
+                    <property name="xalign">0</property>
+                    <property name="image_position">right</property>
+                    <property name="draw_indicator">True</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">1</property>
+                  </packing>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child type="label">
+          <object class="GtkLabel" id="label2">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes" context="optimpressgeneralpage|label2">Text Objects</property>
+            <attributes>
+              <attribute name="weight" value="bold"/>
+            </attributes>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="left_attach">0</property>
+        <property name="top_attach">1</property>
       </packing>
     </child>
     <child>
@@ -164,7 +179,6 @@
                 <property name="hexpand">True</property>
                 <property name="row_spacing">6</property>
                 <property name="column_spacing">12</property>
-                <property name="column_homogeneous">True</property>
                 <child>
                   <object class="GtkCheckButton" id="copywhenmove">
                     <property name="label" translatable="yes" context="optimpressgeneralpage|copywhenmove">Copy when moving</property>
@@ -189,10 +203,10 @@
                       <object class="GtkLabel" id="label6">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
-                        <property name="xalign">0</property>
                         <property name="label" translatable="yes" context="optimpressgeneralpage|label6">Unit of _measurement:</property>
                         <property name="use_underline">True</property>
                         <property name="mnemonic_widget">units</property>
+                        <property name="xalign">0</property>
                       </object>
                       <packing>
                         <property name="left_attach">0</property>
@@ -213,7 +227,7 @@
                   </object>
                   <packing>
                     <property name="left_attach">0</property>
-                    <property name="top_attach">2</property>
+                    <property name="top_attach">4</property>
                   </packing>
                 </child>
                 <child>
@@ -226,12 +240,12 @@
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="double_buffered">False</property>
-                        <property name="xalign">0</property>
                         <property name="label" translatable="yes" context="optimpressgeneralpage|tapstoplabel">Ta_b stops:</property>
                         <property name="use_underline">True</property>
                         <property name="justify">fill</property>
-                        <property name="mnemonic_widget">metricFields:0.00mm</property>
+                        <property name="mnemonic_widget">metricFields</property>
                         <property name="track_visited_links">False</property>
+                        <property name="xalign">0</property>
                       </object>
                       <packing>
                         <property name="left_attach">0</property>
@@ -239,9 +253,10 @@
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkSpinButton" id="metricFields:0.00mm">
+                      <object class="GtkSpinButton" id="metricFields">
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
+                        <property name="activates_default">True</property>
                         <property name="adjustment">adjustment1</property>
                         <property name="digits">2</property>
                       </object>
@@ -252,8 +267,8 @@
                     </child>
                   </object>
                   <packing>
-                    <property name="left_attach">1</property>
-                    <property name="top_attach">2</property>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">5</property>
                   </packing>
                 </child>
                 <child>
@@ -267,8 +282,8 @@
                     <property name="draw_indicator">True</property>
                   </object>
                   <packing>
-                    <property name="left_attach">1</property>
-                    <property name="top_attach">0</property>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">2</property>
                   </packing>
                 </child>
                 <child>
@@ -283,8 +298,8 @@
                     <property name="draw_indicator">True</property>
                   </object>
                   <packing>
-                    <property name="left_attach">1</property>
-                    <property name="top_attach">1</property>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">3</property>
                   </packing>
                 </child>
                 <child>
@@ -319,80 +334,8 @@
         </child>
       </object>
       <packing>
-        <property name="expand">False</property>
-        <property name="fill">True</property>
-        <property name="position">2</property>
-      </packing>
-    </child>
-    <child>
-      <object class="GtkFrame" id="presentationframe">
-        <property name="visible">True</property>
-        <property name="can_focus">False</property>
-        <property name="label_xalign">0</property>
-        <property name="shadow_type">none</property>
-        <child>
-          <object class="GtkAlignment" id="alignment4">
-            <property name="visible">True</property>
-            <property name="can_focus">False</property>
-            <property name="top_padding">6</property>
-            <property name="left_padding">12</property>
-            <child>
-              <object class="GtkGrid" id="grid5">
-                <property name="visible">True</property>
-                <property name="can_focus">False</property>
-                <property name="hexpand">True</property>
-                <property name="row_spacing">6</property>
-                <property name="column_spacing">12</property>
-                <property name="column_homogeneous">True</property>
-                <child>
-                  <object class="GtkCheckButton" id="enremotcont">
-                    <property name="label" translatable="yes" context="optimpressgeneralpage|enremotcont">Enable remote control</property>
-                    <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">False</property>
-                    <property name="use_underline">True</property>
-                    <property name="xalign">0</property>
-                    <property name="draw_indicator">True</property>
-                  </object>
-                  <packing>
-                    <property name="left_attach">0</property>
-                    <property name="top_attach">0</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkCheckButton" id="enprsntcons">
-                    <property name="label" translatable="yes" context="optimpressgeneralpage|enprsntcons">Enable Presenter Console</property>
-                    <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">False</property>
-                    <property name="use_underline">True</property>
-                    <property name="xalign">0</property>
-                    <property name="draw_indicator">True</property>
-                  </object>
-                  <packing>
-                    <property name="left_attach">1</property>
-                    <property name="top_attach">0</property>
-                  </packing>
-                </child>
-              </object>
-            </child>
-          </object>
-        </child>
-        <child type="label">
-          <object class="GtkLabel" id="label7">
-            <property name="visible">True</property>
-            <property name="can_focus">False</property>
-            <property name="label" translatable="yes" context="optimpressgeneralpage|label7">Presentation</property>
-            <attributes>
-              <attribute name="weight" value="bold"/>
-            </attributes>
-          </object>
-        </child>
-      </object>
-      <packing>
-        <property name="expand">False</property>
-        <property name="fill">True</property>
-        <property name="position">3</property>
+        <property name="left_attach">0</property>
+        <property name="top_attach">2</property>
       </packing>
     </child>
     <child>
@@ -420,10 +363,10 @@
                     <property name="can_focus">False</property>
                     <property name="double_buffered">False</property>
                     <property name="margin_right">3</property>
-                    <property name="xalign">0</property>
                     <property name="label" translatable="yes" context="optimpressgeneralpage|label8">_Drawing scale:</property>
                     <property name="use_underline">True</property>
                     <property name="mnemonic_widget">scaleBox</property>
+                    <property name="xalign">0</property>
                   </object>
                   <packing>
                     <property name="left_attach">0</property>
@@ -434,10 +377,10 @@
                   <object class="GtkLabel" id="widthlbl">
                     <property name="can_focus">False</property>
                     <property name="no_show_all">True</property>
-                    <property name="xalign">0</property>
                     <property name="label" translatable="yes" context="optimpressgeneralpage|widthlbl">Page _width:</property>
                     <property name="use_underline">True</property>
-                    <property name="mnemonic_widget">metricWidthFields:0.00mm</property>
+                    <property name="mnemonic_widget">metricWidthFields</property>
+                    <property name="xalign">0</property>
                   </object>
                   <packing>
                     <property name="left_attach">0</property>
@@ -448,10 +391,10 @@
                   <object class="GtkLabel" id="heightlbl">
                     <property name="can_focus">False</property>
                     <property name="no_show_all">True</property>
-                    <property name="xalign">0</property>
                     <property name="label" translatable="yes" context="optimpressgeneralpage|heightlbl">Page _height:</property>
                     <property name="use_underline">True</property>
-                    <property name="mnemonic_widget">metricHeightFields:0.00mm</property>
+                    <property name="mnemonic_widget">metricHeightFields</property>
+                    <property name="xalign">0</property>
                   </object>
                   <packing>
                     <property name="left_attach">2</property>
@@ -459,9 +402,11 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkSpinButton" id="metricWidthFields:0.00mm">
+                  <object class="GtkSpinButton" id="metricWidthFields">
                     <property name="can_focus">False</property>
                     <property name="no_show_all">True</property>
+                    <property name="activates_default">True</property>
+                    <property name="adjustment">adjustment2</property>
                     <property name="digits">2</property>
                   </object>
                   <packing>
@@ -470,9 +415,11 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkSpinButton" id="metricHeightFields:0.00mm">
+                  <object class="GtkSpinButton" id="metricHeightFields">
                     <property name="can_focus">False</property>
                     <property name="no_show_all">True</property>
+                    <property name="activates_default">True</property>
+                    <property name="adjustment">adjustment4</property>
                     <property name="digits">2</property>
                   </object>
                   <packing>
@@ -484,10 +431,10 @@
                   <object class="GtkLabel" id="info1">
                     <property name="can_focus">False</property>
                     <property name="no_show_all">True</property>
-                    <property name="xalign">0</property>
-                    <property name="label" translatable="no">info1</property>
+                    <property name="label">info1</property>
                     <property name="use_underline">True</property>
-                    <property name="mnemonic_widget">metricInfo1Fields:0.00mm</property>
+                    <property name="mnemonic_widget">metricInfo1Fields</property>
+                    <property name="xalign">0</property>
                   </object>
                   <packing>
                     <property name="left_attach">0</property>
@@ -495,9 +442,11 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkSpinButton" id="metricInfo1Fields:0.00mm">
+                  <object class="GtkSpinButton" id="metricInfo1Fields">
                     <property name="can_focus">False</property>
                     <property name="no_show_all">True</property>
+                    <property name="activates_default">True</property>
+                    <property name="adjustment">adjustment3</property>
                   </object>
                   <packing>
                     <property name="left_attach">1</property>
@@ -508,10 +457,10 @@
                   <object class="GtkLabel" id="info2">
                     <property name="can_focus">False</property>
                     <property name="no_show_all">True</property>
-                    <property name="xalign">0</property>
-                    <property name="label" translatable="no">info2</property>
+                    <property name="label">info2</property>
                     <property name="use_underline">True</property>
-                    <property name="mnemonic_widget">metricInfo2Fields:0.00mm</property>
+                    <property name="mnemonic_widget">metricInfo2Fields</property>
+                    <property name="xalign">0</property>
                   </object>
                   <packing>
                     <property name="left_attach">2</property>
@@ -519,9 +468,11 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkSpinButton" id="metricInfo2Fields:0.00mm">
+                  <object class="GtkSpinButton" id="metricInfo2Fields">
                     <property name="can_focus">False</property>
                     <property name="no_show_all">True</property>
+                    <property name="activates_default">True</property>
+                    <property name="adjustment">adjustment5</property>
                   </object>
                   <packing>
                     <property name="left_attach">3</property>
@@ -529,21 +480,14 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkComboBox" id="scaleBox">
+                  <object class="GtkComboBoxText" id="scaleBox">
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
-                    <property name="row_span_column">300</property>
-                    <property name="column_span_column">2</property>
-                    <property name="active">0</property>
-                    <property name="button_sensitivity">off</property>
                     <property name="has_entry">True</property>
-                    <property name="popup_fixed_width">False</property>
                     <child internal-child="entry">
                       <object class="GtkEntry" id="combobox-entry">
-                        <property name="can_focus">False</property>
-                        <property name="xalign">0.5</property>
-                        <property name="shadow_type">none</property>
-                        <property name="caps_lock_warning">False</property>
+                        <property name="can_focus">True</property>
+                        <property name="activates_default">True</property>
                       </object>
                     </child>
                   </object>
@@ -574,9 +518,9 @@
         </child>
       </object>
       <packing>
-        <property name="expand">False</property>
-        <property name="fill">True</property>
-        <property name="position">4</property>
+        <property name="left_attach">0</property>
+        <property name="top_attach">3</property>
+        <property name="width">2</property>
       </packing>
     </child>
     <child>
@@ -596,6 +540,7 @@
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="row_spacing">6</property>
+                <property name="column_spacing">12</property>
                 <child>
                   <object class="GtkCheckButton" id="printermetrics">
                     <property name="label" translatable="yes" context="optimpressgeneralpage|printermetrics">Us_e printer metrics for document formatting</property>
@@ -634,9 +579,9 @@
           <object class="GtkLabel" id="label1">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
-            <property name="xalign">0.49000000953674316</property>
-            <property name="yalign">0.49000000953674316</property>
             <property name="label" translatable="yes" context="optimpressgeneralpage|label1">Compatibility</property>
+            <property name="xalign">0.49</property>
+            <property name="yalign">0.49</property>
             <attributes>
               <attribute name="weight" value="bold"/>
             </attributes>
@@ -644,10 +589,93 @@
         </child>
       </object>
       <packing>
-        <property name="expand">False</property>
-        <property name="fill">True</property>
-        <property name="position">5</property>
+        <property name="left_attach">1</property>
+        <property name="top_attach">2</property>
       </packing>
     </child>
+    <child>
+      <object class="GtkFrame" id="presentationframe">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="label_xalign">0</property>
+        <property name="shadow_type">none</property>
+        <child>
+          <object class="GtkAlignment" id="alignment4">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="top_padding">6</property>
+            <property name="left_padding">12</property>
+            <child>
+              <object class="GtkGrid" id="grid5">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="hexpand">True</property>
+                <property name="row_spacing">6</property>
+                <property name="column_spacing">12</property>
+                <child>
+                  <object class="GtkCheckButton" id="enremotcont">
+                    <property name="label" translatable="yes" context="optimpressgeneralpage|enremotcont">Enable remote control</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">False</property>
+                    <property name="use_underline">True</property>
+                    <property name="xalign">0</property>
+                    <property name="draw_indicator">True</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">0</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkCheckButton" id="enprsntcons">
+                    <property name="label" translatable="yes" context="optimpressgeneralpage|enprsntcons">Enable Presenter Console</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">False</property>
+                    <property name="use_underline">True</property>
+                    <property name="xalign">0</property>
+                    <property name="draw_indicator">True</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">0</property>
+                    <property name="top_attach">1</property>
+                  </packing>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child type="label">
+          <object class="GtkLabel" id="label7">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes" context="optimpressgeneralpage|label7">Presentation</property>
+            <attributes>
+              <attribute name="weight" value="bold"/>
+            </attributes>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="left_attach">1</property>
+        <property name="top_attach">1</property>
+      </packing>
+    </child>
+    <child>
+      <placeholder/>
+    </child>
+  </object>
+  <object class="GtkSizeGroup" id="sizegroupLabel">
+    <widgets>
+      <widget name="label6"/>
+      <widget name="tapstoplabel"/>
+    </widgets>
+  </object>
+  <object class="GtkSizeGroup" id="sizegroupWidget">
+    <widgets>
+      <widget name="units"/>
+      <widget name="metricFields"/>
+    </widgets>
   </object>
 </interface>

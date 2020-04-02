@@ -118,6 +118,7 @@
                 <property name="receives_default">True</property>
                 <property name="use_underline">True</property>
                 <property name="popup">form</property>
+                <property name="draw_indicator">True</property>
                 <child>
                   <placeholder/>
                 </child>
@@ -303,7 +304,7 @@
       </object>
     </child>
     <action-widgets>
-      <action-widget response="0">reset</action-widget>
+      <action-widget response="101">reset</action-widget>
       <action-widget response="-5">ok</action-widget>
       <action-widget response="-6">cancel</action-widget>
       <action-widget response="-11">help</action-widget>

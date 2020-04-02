@@ -1,6 +1,6 @@
 
 ======================================================================
-Lisez-moi LibreOffice 6.2
+Lisez-moi LibreOffice 6.4
 ======================================================================
 
 
@@ -85,7 +85,7 @@ Notes concernant l'intégration à l'environnement de bureau pour les distributi
 
 Il doit être possible d'installer facilement LibreOffice sur d'autres distributions Linux non spécifiquement couvertes par ces instructions d'installation. Le principal aspect dans lequel peut résider une différence est l'intégration à l'environnement de bureau.
 
-Les répertoires RPM (ou DEB respectivement) contiennent également un package nommé libreoffice6.2-freedesktop-menus- 6.2.01-1.noarch.rpm (ou libreoffice6.2-debian-menus_6.2.01-1_all.deb, respectivement, ou similaire). C'est un package pour toutes les distributions Linux qui prend en charge les spécifications/recommandations de Freedesktop.org (https://en.wikipedia.org/wiki/Freedesktop.org) et est fourni pour l'installation sur d'autres distributions Linux non couvertes dans les instructions susmentionnées. 
+Les répertoires RPM (ou DEB respectivement) contiennent également un package nommé libreoffice6.4-freedesktop-menus- 6.4.01-1.noarch.rpm (ou libreoffice6.4-debian-menus_6.4.01-1_all.deb, respectivement, ou similaire). C'est un package pour toutes les distributions Linux qui prend en charge les spécifications/recommandations de Freedesktop.org (https://en.wikipedia.org/wiki/Freedesktop.org) et est fourni pour l'installation sur d'autres distributions Linux non couvertes dans les instructions susmentionnées.
 
 Installation d'un pack de langue
 ----------------------------------------------------------------------
@@ -198,7 +198,7 @@ Rejoindre un ou plusieurs projets
 
 Vous pouvez faire des contributions majeures à cet important projet Open Source, même si vous avez une expérience limitée dans le codage ou le design du programme. Oui, vous !
 
-Nous espérons que vous appréciez de travailler avec le nouveau LibreOffice 6.2 et que vous nous rejoindrez bientôt en ligne.
+Nous espérons que vous appréciez de travailler avec le nouveau LibreOffice 6.4 et que vous nous rejoindrez bientôt en ligne.
 
 La communauté LibreOffice
 

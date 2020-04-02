@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <description xmlns="http://openoffice.org/extensions/description/2006" xmlns:d="http://openoffice.org/extensions/description/2006"  xmlns:xlink="http://www.w3.org/1999/xlink">
 
-    <version value="2.4" />
+    <version value="2.5" />
     <identifier value="spanish.es_ANY.dicts.from.rla-es" />
 
     <display-name>
         <name lang="en-US">Spanish spelling dictionary, hyphenation rules, and thesaurus for Spain and Latin America</name>
-        <name lang="af">Spanish spelling dictionary, hyphenation rules, and thesaurus for Spain and Latin America</name>
+        <name lang="af">Spaanse speltoetser, woordafbreekreëls en tesourus vir Spanje en Latyns-Amerika</name>
         <name lang="am">Spanish spelling dictionary, hyphenation rules, and thesaurus for Spain and Latin America</name>
         <name lang="ar">قاموس التدقيق الإملائي الأسباني، و قواعد فصل المقاطع، و المترادفات، لأسبانيا و أمريكا اللاتينية</name>
         <name lang="as">Spanish spelling dictionary, hyphenation rules, and thesaurus for Spain and Latin America</name>
-        <name lang="ast">Spanish spelling dictionary, hyphenation rules, and thesaurus for Spain and Latin America</name>
+        <name lang="ast">Diccionariu ortográficu del español, riegles de guionización y sinónimos pa España y Latinoamérica</name>
         <name lang="be">Іспанскі правапісны слоўнік, правілы пераносу і тэзаўрус для Іспаніі і Лацінскай Амерыкі</name>
         <name lang="bg">Испански правописен и синонимен речник и сричкопренасяне за Испания и Латинска Америка</name>
         <name lang="bn">Spanish spelling dictionary, hyphenation rules, and thesaurus for Spain and Latin America</name>
@@ -59,7 +59,7 @@
         <name lang="km">Spanish spelling dictionary, hyphenation rules, and thesaurus for Spain and Latin America</name>
         <name lang="kmr-Latn">Spanish spelling dictionary, hyphenation rules, and thesaurus for Spain and Latin America</name>
         <name lang="kn">Spanish spelling dictionary, hyphenation rules, and thesaurus for Spain and Latin America</name>
-        <name lang="ko">Spanish spelling dictionary, hyphenation rules, and thesaurus for Spain and Latin America</name>
+        <name lang="ko">스페인과 라틴아메리카의 스페인어 철자 사전, 하이픈규칙, 유의어 사전</name>
         <name lang="kok">Spanish spelling dictionary, hyphenation rules, and thesaurus for Spain and Latin America</name>
         <name lang="ks">Spanish spelling dictionary, hyphenation rules, and thesaurus for Spain and Latin America</name>
         <name lang="lb">Spanish spelling dictionary, hyphenation rules, and thesaurus for Spain and Latin America</name>
@@ -103,6 +103,7 @@
         <name lang="st">Spanish spelling dictionary, hyphenation rules, and thesaurus for Spain and Latin America</name>
         <name lang="sv">Spansk stavningskontroll, avstavningsregler och synonymordbok för Spanien och Latinamerika</name>
         <name lang="sw-TZ">Spanish spelling dictionary, hyphenation rules, and thesaurus for Spain and Latin America</name>
+        <name lang="szl">Hiszpański słownik ôrtograficzny, prawidła dzielynio słōw i słownik synōnimōw dlo Hiszpanije i Łacińskij Ameryki</name>
         <name lang="ta">ஸ்பெயினுக்கும் இலத்தீன் அமெரிக்காவுக்குமான ஸ்பானிஷ் எழுத்துக்கூட்டு அகராதி, நடுக்கோடிடுடல் விதிகள், நிகண்டு</name>
         <name lang="te">Spanish spelling dictionary, hyphenation rules, and thesaurus for Spain and Latin America</name>
         <name lang="tg">Spanish spelling dictionary, hyphenation rules, and thesaurus for Spain and Latin America</name>

@@ -57,12 +57,12 @@
 
         <xsl:element name="head">
         <xsl:attribute name="profile">http://dublincore.org/documents/dcmi-terms/</xsl:attribute>
-            <xsl:if test="$debugEnabled"><xsl:message>CSS helper variable will be created....</xsl:message></xsl:if>
+            <xsl:if test="$debugEnabled"><xsl:message>CSS helper variable will be created...</xsl:message></xsl:if>
             <xsl:call-template name='xhtml-header-properties'>
                 <xsl:with-param name="globalData" select="$globalData" />
             </xsl:call-template>
 
-            <xsl:if test="$debugEnabled"><xsl:message>CSS variable ready, header will be created....</xsl:message></xsl:if>
+            <xsl:if test="$debugEnabled"><xsl:message>CSS variable ready, header will be created...</xsl:message></xsl:if>
             <!-- constructing the css header simulating inheritance of style-families by style order -->
             <xsl:call-template name='create-css-styleheader'>
                 <xsl:with-param name="globalData" select="$globalData" />
@@ -128,7 +128,7 @@
 
             <xsl:for-each select="$globalData/all-styles/style">
                     <xsl:if test="final-properties != ''">
-                        <!-- NOTE: easy process, as only the style family in conjunction with the style name, makes the style unambigous -->
+                        <!-- NOTE: easy process, as only the style family in conjunction with the style name, makes the style unambiguous -->
                         <xsl:text>.</xsl:text><!--<xsl:value-of select="@style:family" /><xsl:text>:</xsl:text>--><xsl:value-of select="translate(@style:name, '.,;: %()[]/\+', '_____________')"/><xsl:text> { </xsl:text> <xsl:value-of select="final-properties" /><xsl:text>}
     </xsl:text>
                     </xsl:if>

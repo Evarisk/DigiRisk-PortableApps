@@ -1672,7 +1672,6 @@ Const cstUnoPrefix = &quot;.uno:&quot;
 		Case UCase(sOOCommand) = &quot;LISTBOX&quot; : sDispatch = &quot;ListBox&quot;
 		Case UCase(sOOCommand) = &quot;MACRODIALOG&quot; : sDispatch = &quot;MacroDialog&quot;
 		Case UCase(sOOCommand) = &quot;MACROORGANIZER&quot; : sDispatch = &quot;MacroOrganizer&quot;
-		Case UCase(sOOCommand) = &quot;MORECONTROLS&quot; : sDispatch = &quot;MoreControls&quot;
 		Case UCase(sOOCommand) = &quot;NAVIGATIONBAR&quot; : sDispatch = &quot;NavigationBar&quot;
 		Case iVBACommand = acCmdObjectBrowser  Or UCase(sOOCommand) = &quot;NAVIGATOR&quot; : sDispatch = &quot;Navigator&quot;
 		Case UCase(sOOCommand) = &quot;NEWDOC&quot; : sDispatch = &quot;NewDoc&quot;
@@ -1757,7 +1756,7 @@ Const cstNull = -1
 	If IsMissing(pvOption) Then
 		pvOption = cstNull
 	Else
-		If Not Utils._CheckArgument(pvOption, 2, Utils._AddNumeric(), dbSQLPassThrough) Then Goto Exit_Function
+		If Not Utils._CheckArgument(pvOption, 2, Utils._AddNumeric(), Array(cstNull, dbSQLPassThrough)) Then Goto Exit_Function
 	End If
 
 	RunSQL = Application._CurrentDb.RunSQL(pvSQL, pvOption)

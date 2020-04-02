@@ -1,6 +1,6 @@
 
 ======================================================================
-LibreOffice 6.2 ReadMe
+LibreOffice 6.4 ReadMe
 ======================================================================
 
 
@@ -85,7 +85,7 @@ Mandriva 기반 시스템: sudo urpmi *.rpm
 
 이 설치 설명에서 다루지 않은 Linux 배포판에서도 쉽게 LibreOffice를 설치할 수 있습니다. 발생 가능한 다른 점의 주 양상은 데스크톱 통합입니다.
 
-RPMS(또는 DEBS) 디렉터리에도 libreoffice6.2-freedesktop-menus-6.2.0.1-1.noarch.rpm (또는 libreoffice6.2-debian-menus_6.2.0.1-1_all.deb) 이라는 패키지가 있습니다. 이 패키지는 Freedesktop.org 기술 사양/추천 (https://en.wikipedia.org/wiki/Freedesktop.org) 내용을 지원하는 모든 리눅스 배포판을 위한 패키지입니다. 그리고 앞서 기술한 설치 방법을 지원하지 않는 다른 리눅스 배포판을 위한 설치 방법도 제공합니다.
+RPMS(또는 DEBS) 디렉터리에도 libreoffice6.4-freedesktop-menus-6.4.0.1-1.noarch.rpm (또는 libreoffice6.4-debian-menus_6.4.0.1-1_all.deb) 이라는 패키지가 있습니다. 이 패키지는 Freedesktop.org 기술 사양/추천 (https://en.wikipedia.org/wiki/Freedesktop.org) 내용을 지원하는 모든 리눅스 배포판을 위한 패키지입니다. 그리고 앞서 기술한 설치 방법을 지원하지 않는 다른 리눅스 배포판을 위한 설치 방법도 제공합니다.
 
 언어팩 설치하기
 ----------------------------------------------------------------------
@@ -198,7 +198,7 @@ https://ko.libreoffice.org/get-help/mailing-lists/에 여러분이 구독할 수
 
 여러분이 소프트웨어 설계나 코딩 경험이 없다고 하더라도 이 중요한 오픈소스 프로젝트에 주요한 기여를 할 수 있습니다. 네, 여러분이 할 수 있습니다!
 
-우리는 여러분이 LibreOffice 6.2을 위해 일하는 것을 즐기기 바라며 온라인으로 함께 참여하기를 희망합니다.
+우리는 여러분이 LibreOffice 6.4을 위해 일하는 것을 즐기기 바라며 온라인으로 함께 참여하기를 희망합니다.
 
 리브레오피스 커뮤니티
 

@@ -10,7 +10,7 @@
 <tree_view>
 <help_section application="swriter" id="02" title="MediaWiki">
     <node id="0224" title="MediaWiki">
-        <topic id="help/com.sun.wiki-publisher/wiki.xhp">Wiki Publisher</topic>
+        <topic id="help/com.sun.wiki-publisher/wiki.xhp">Wiki-publiseerder</topic>
         <topic id="help/com.sun.wiki-publisher/wikiaccount.xhp">MediaWiki</topic>
         <topic id="help/com.sun.wiki-publisher/wikiformats.xhp">MediaWiki-formate</topic>
         <topic id="help/com.sun.wiki-publisher/wikisend.xhp">Stuur na MediaWiki</topic>

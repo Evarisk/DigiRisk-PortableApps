@@ -1,6 +1,6 @@
 # Translated by desktop-translate and ulfex
 name = "see extras/source/gallery/share/gallery_names.ulf"
-name[af]=Diagrams
+name[af]=Diagramme
 name[am]=ስእላዊ መግለጫ
 name[ar]=مخطّطات
 name[as]=চিত্ৰবোৰ
@@ -31,7 +31,7 @@ name[es]=Diagramas
 name[et]=Diagrammid
 name[eu]=Diagramak
 name[fa]=نمودارها‌
-name[fi]=Diagrammit
+name[fi]=Kaaviot
 name[fr]=Diagrammes
 name[fy]=Diagrammen
 name[ga]=Léaráidí
@@ -98,6 +98,7 @@ name[ss]=Diagrams
 name[st]=Diagrams
 name[sv]=Diagram
 name[sw_TZ]=Diagrams
+name[szl]=Diagramy
 name[ta]=வரைபடங்கள்
 name[te]=డయాగ్రమ్స్
 name[tg]=Диаграммаҳо
